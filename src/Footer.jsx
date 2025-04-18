@@ -47,9 +47,33 @@ const Footer = () => {
                                     <li><a href="">Extended Plan</a></li>
                                     <li><a href="">Community</a></li>
                                 </ui>
-                                <ui className="footer-item"></ui>
-                                <ui className="footer-item"></ui>
-                                <ui className="footer-item"></ui>
+                                <ui className="footer-item">
+                                    <li className="footer-item-title"> Customer Support</li>
+                                    <li><a href="">Help Center</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Report Abuse</a></li>
+                                    <li><a href="">Submit and Dispute</a></li>
+                                    <li><a href="">Policies & Rules</a></li>
+                                    <li><a href="">Online Shopping</a></li>
+                                </ui>
+                                <ui className="footer-item">
+                                    <li className="footer-item-title"> My Account</li>
+                                    <li><a href="">My Account</a></li>
+                                    <li><a href="">Order History</a></li>
+                                    <li><a href="">Shoping Cart</a></li>
+                                    <li><a href="">Compare</a></li>
+                                    <li><a href="">Help Ticket</a></li>
+                                    <li><a href="">Wishlist</a></li>
+                                </ui>
+                                <ui className="footer-item">
+                                    <li className="footer-item-title">Daily Groceries</li>
+                                    <li><a href="">Dairy & Eggs</a></li>
+                                    <li><a href="">Meat & Seafood</a></li>
+                                    <li><a href="">Breakfast Food</a></li>
+                                    <li><a href="">Household Supplies</a></li>
+                                    <li><a href="">Bread & Bakery</a></li>
+                                    <li><a href="">Pantry Staples</a></li>
+                                </ui>
                                 <div className="footer-social"></div>
                             </div>
                         </div>
