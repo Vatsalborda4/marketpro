@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+li{
+    list-style: none;
+
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.header-top {
+  display: block;
+  clear: both;
+  background-color: #299e60;
+}
+.header-top-inne{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+.header-top-item{
+    display: flex;
+    flex-wrap: wrap ;
+    align-items: center;
+}
+
