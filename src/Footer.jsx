@@ -2,6 +2,11 @@ import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { PiFacebookLogoFill } from "react-icons/pi";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 
 const Footer = () => {
         return (
@@ -74,7 +79,20 @@ const Footer = () => {
                                     <li><a href="">Bread & Bakery</a></li>
                                     <li><a href="">Pantry Staples</a></li>
                                 </ui>
-                                <div className="footer-social"></div>
+                                <div className="footer-social">
+                                    <li className="footer-item-title">Shop on The Go</li>
+                                    <li><span>Marketpro App is available. Get it now</span></li>
+                                    <li>
+                                        <span><img src="" alt="" /></span>
+                                        <span><img src="" alt="" /></span>
+                                    </li>
+                                    <li>
+                                        <span><PiFacebookLogoFill /></span>
+                                        <span><FaTwitter /></span>
+                                        <span><BiLogoInstagramAlt /></span>
+                                        <span><FaLinkedin /></span>
+                                    </li>
+                                </div>
                             </div>
                         </div>
                 </footer>
