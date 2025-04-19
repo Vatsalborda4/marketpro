@@ -29,16 +29,17 @@ const FooterMiddle = () => {
                                         <li>
                                             <div className="footer-icon"><PiPhoneCallFill /></div>
                                             <div className="footer-li-text">
-                                                <a href="/tel:+0012345678">+00 123 456 789</a> <span>or</span>
+                                                <a href="/tel:+0012345678">+00 123 456 789</a>
+                                                <span>or</span>
                                                 <a href="/tel:+0987654321">+00 987 654 321</a>
                                             </div>
                                         </li>
                                         <li>
-                                            <span className="footer-icon">
+                                            <div className="footer-icon">
                                             <MdEmail />
-                                            </span>
+                                            </div>
                                             <div className="footer-li-text">
-                                                <a href="/mailto:support24@marketpro.com">support24@marketpro@gmail.come</a>
+                                                <a href="/mailto:support24@marketpro.com">support24@marketpro.come</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -82,15 +83,15 @@ const FooterMiddle = () => {
                                 <div className="footer-social">
                                     <li className="footer-item-title">Shop on The Go</li>
                                     <li><span>Marketpro App is available. Get it now</span></li>
-                                    <li>
-                                        <span><img src="assets\images\store-img1.png" alt="store-img1" /></span>
-                                        <span><img src="assets\images\store-img2.png" alt="store-img2" /></span>
+                                    <li className="img-flex">
+                                        <div><img src="assets\images\store-img1.png" alt="store-img1" /></div>
+                                        <div><img src="assets\images\store-img2.png" alt="store-img2" /></div>
                                     </li>
-                                    <li>
-                                        <span><PiFacebookLogoFill /></span>
-                                        <span><FaTwitter /></span>
-                                        <span><BiLogoInstagramAlt /></span>
-                                        <span><FaLinkedin /></span>
+                                    <li className="footer-icon">
+                                        <div><a href="#"><PiFacebookLogoFill /></a></div>
+                                        <div><a href="#"><FaTwitter /></a></div>
+                                        <div><a href="#"><BiLogoInstagramAlt /></a></div>
+                                        <div><a href="#"><FaLinkedin /></a></div>
                                     </li>
                                 </div>
                             </div>
