@@ -8,17 +8,17 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 
-const Footer = () => {
+const FooterMiddle = () => {
         return (
                 <>
                 <footer>
-                        <img src="" alt="" className="footer-bg" />
+                        <img src="assets/images/body-bottom-bg.png" alt="body-bottom-bg" className="footer-bg" />
                         <div className="container">
                             <div className="footer-inner">
                                 <div className="footer-info">
                                     <div className="footer-logo">
                                         <a href="/">
-                                        <img src="assets/images/body-bottom-bg.png" alt="body-bottom-img" />
+                                        <img src="assets\images\logo.png" alt="logo" />
                                         </a>
                                     </div>
                                     <p className="footer-text">
@@ -83,8 +83,8 @@ const Footer = () => {
                                     <li className="footer-item-title">Shop on The Go</li>
                                     <li><span>Marketpro App is available. Get it now</span></li>
                                     <li>
-                                        <span><img src="" alt="" /></span>
-                                        <span><img src="" alt="" /></span>
+                                        <span><img src="assets\images\store-img1.png" alt="store-img1" /></span>
+                                        <span><img src="assets\images\store-img2.png" alt="store-img2" /></span>
                                     </li>
                                     <li>
                                         <span><PiFacebookLogoFill /></span>
@@ -101,4 +101,4 @@ const Footer = () => {
             )
         }
 
-export default Footer;
+export default FooterMiddle;
