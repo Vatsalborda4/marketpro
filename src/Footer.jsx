@@ -8,7 +8,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 
-const FooterMiddle = () => {
+const Footer = () => {
         return (
                 <>
                 <footer>
@@ -102,4 +102,4 @@ const FooterMiddle = () => {
             )
         }
 
-export default FooterMiddle;
+export default Footer;
