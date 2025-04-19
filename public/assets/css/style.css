@@ -127,7 +127,7 @@ footer .footer-inner .footer-social .footer-item-title {
 	font-size: 21px;
 	font-weight: 700;
 	text-transform: capitalize;
-    margin-bottom: 15px;
+	padding: 10px 0;
 }
 footer .footer-inner .footer-social li span {
 	display: inline-block;
@@ -165,8 +165,91 @@ footer .footer-inner .footer-social .footer-icon div a:hover{
     background-color: #299e60;
 	color: #ffff;
 }
-
 /* end footer bottom css  */
+/* start footer bottom media css  */
+
+/* start media 1199px  */
+@media (max-width:1199px){
+    footer .footer-inner .footer-info{
+		width: 35%;
+		margin: 20px 0;
+	}
+	footer .footer-inner .footer-item{
+		width: 21.65%;
+		padding-right: 10px ;
+		margin: 20px 0;
+	}
+	footer .footer-inner .footer-social {
+		width: 30%;
+	}
+}
+/* end media 1199px  */
+
+/* start media 991px  */
+@media(max-width:991px){
+	footer .footer-inner .footer-info{
+		width: 60%;
+	}
+	footer .footer-inner .footer-item{
+		width: 30%;
+	}
+	footer .footer-inner .footer-social {
+		width: 40%;
+	}
+}
+/* end media 991px  */
+
+/* start media 767px  */
+@media(max-width:767px){
+	footer .footer-inner .footer-info{
+		width: 50%;
+	}
+	footer .footer-inner .footer-item{
+		width: 30%;
+	}
+	footer .footer-inner .footer-social {
+		width: 50%;
+	}
+	footer .footer-inner .footer-item .footer-item-title {
+		font-size: 18px;
+	}
+	footer .footer-inner .footer-social .footer-item-title {
+		font-size: 18px;
+	}
+	footer .footer-inner .footer-social .footer-icon div a{
+		width: 35px;
+		height: 35px;
+		font-size: 20px	;
+	}
+}
+/* end media 767px  */
+
+/* start media 639px  */
+@media(max-width:639px){
+	footer .footer-inner .footer-info{
+		width: 100%;
+		margin: 15px 0;
+	}
+	footer .footer-inner .footer-item{
+		width: 50%;
+		margin: 15px 0;
+	}
+	footer .footer-inner .footer-social {
+		width: 65%;
+		margin: 15px 0;
+	}
+}
+/* end media 639px  */
+
+/* start media 479px  */
+@media(max-width:479px){
+	footer .footer-inner .footer-social {
+		width: 100%;
+	}
+}
+/* end media 479px  */
+
+/* end footer bottom media css  */
 
 /* end footer css  */
 
