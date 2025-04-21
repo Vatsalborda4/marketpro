@@ -31,7 +31,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <div className="footer-icon">
-                    <FaLocationDot />
+                    <span><FaLocationDot /></span>
                   </div>
                   <div className="footer-li-text">
                     789 Inner Lane, Biyes park, California, USA
@@ -39,7 +39,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <div className="footer-icon">
-                    <PiPhoneCallFill />
+                    <span><PiPhoneCallFill /></span>
                   </div>
                   <div className="footer-li-text">
                     <a href="/tel:+0012345678">+00 123 456 789</a>
@@ -49,11 +49,11 @@ const Footer = () => {
                 </li>
                 <li>
                   <div className="footer-icon">
-                    <MdEmail />
+                   <span> <MdEmail /></span>
                   </div>
                   <div className="footer-li-text">
                     <a href="/mailto:support24@marketpro.com">
-                      support24@marketpro.come
+                      support24@marketpro.com
                     </a>
                   </div>
                 </li>
@@ -159,22 +159,22 @@ const Footer = () => {
               <li className="footer-icon">
                 <div>
                   <a href="#">
-                    <PiFacebookLogoFill />
+                    <span><PiFacebookLogoFill /></span>
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <FaTwitter />
+                    <span><FaTwitter /></span>
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <BiLogoInstagramAlt />
+                    <span><BiLogoInstagramAlt /></span>
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <FaLinkedin />
+                    <span><FaLinkedin /></span>
                   </a>
                 </div>
               </li>
