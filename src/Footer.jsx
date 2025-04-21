@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="footer-inner">
             <div className="footer-info">
               <div className="footer-logo">
-                <a href="/">
+                <a href="#">
                   <img src="assets\images\logo.png" alt="logo" />
                 </a>
               </div>
@@ -62,85 +62,85 @@ const Footer = () => {
             <ui className="footer-item">
               <li className="footer-item-title"> Information</li>
               <li>
-                <a href="">Become a Vendor</a>
+                <a href="#">Become a Vendor</a>
               </li>
               <li>
-                <a href="">Affiliate Program</a>
+                <a href="#">Affiliate Program</a>
               </li>
               <li>
-                <a href="">Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
               </li>
               <li>
-                <a href="">Our Suppliers</a>
+                <a href="#">Our Suppliers</a>
               </li>
               <li>
-                <a href="">Extended Plan</a>
+                <a href="#">Extended Plan</a>
               </li>
               <li>
-                <a href="">Community</a>
+                <a href="#">Community</a>
               </li>
             </ui>
             <ui className="footer-item">
               <li className="footer-item-title"> Customer Support</li>
               <li>
-                <a href="">Help Center</a>
+                <a href="#">Help Center</a>
               </li>
               <li>
-                <a href="">Contact Us</a>
+                <a href="#">Contact Us</a>
               </li>
               <li>
-                <a href="">Report Abuse</a>
+                <a href="#">Report Abuse</a>
               </li>
               <li>
-                <a href="">Submit and Dispute</a>
+                <a href="#">Submit and Dispute</a>
               </li>
               <li>
-                <a href="">Policies & Rules</a>
+                <a href="#">Policies & Rules</a>
               </li>
               <li>
-                <a href="">Online Shopping</a>
+                <a href="#">Online Shopping</a>
               </li>
             </ui>
             <ui className="footer-item">
               <li className="footer-item-title"> My Account</li>
               <li>
-                <a href="">My Account</a>
+                <a href="#">My Account</a>
               </li>
               <li>
-                <a href="">Order History</a>
+                <a href="#">Order History</a>
               </li>
               <li>
-                <a href="">Shoping Cart</a>
+                <a href="#">Shoping Cart</a>
               </li>
               <li>
-                <a href="">Compare</a>
+                <a href="#">Compare</a>
               </li>
               <li>
-                <a href="">Help Ticket</a>
+                <a href="#">Help Ticket</a>
               </li>
               <li>
-                <a href="">Wishlist</a>
+                <a href="#">Wishlist</a>
               </li>
             </ui>
             <ui className="footer-item">
               <li className="footer-item-title">Daily Groceries</li>
               <li>
-                <a href="">Dairy & Eggs</a>
+                <a href="#">Dairy & Eggs</a>
               </li>
               <li>
-                <a href="">Meat & Seafood</a>
+                <a href="#">Meat & Seafood</a>
               </li>
               <li>
-                <a href="">Breakfast Food</a>
+                <a href="#">Breakfast Food</a>
               </li>
               <li>
-                <a href="">Household Supplies</a>
+                <a href="#">Household Supplies</a>
               </li>
               <li>
-                <a href="">Bread & Bakery</a>
+                <a href="#">Bread & Bakery</a>
               </li>
               <li>
-                <a href="">Pantry Staples</a>
+                <a href="#">Pantry Staples</a>
               </li>
             </ui>
             <div className="footer-social">
@@ -193,6 +193,7 @@ const Footer = () => {
             <div className="footer-bottom-end">
               <p>We Are Acepting</p>
               <img
+              className="payment-method"
                 src="assets\images\payment-method.png"
                 alt="payment-method"
               />
