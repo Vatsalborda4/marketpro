@@ -1,9 +1,11 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
+import HeaderButtom from "./HeaderButtom";
 
 const Header = () => {
   return (
     <>
+    
       <div className="header-top">
         <div className="container">
           <div className="header-top-inne">
@@ -46,6 +48,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <HeaderButtom/>
     </>
   );
 };
