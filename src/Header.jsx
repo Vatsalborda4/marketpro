@@ -69,9 +69,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
       <HeaderButtom/>
-=======
       {/* end header top  */}
 
       {/* start header middle  */}
@@ -155,7 +153,6 @@ const Header = () => {
         </div>
       </div>
       {/* end header middle  */}
->>>>>>> 319591fb8ebd12f0b47f2c0c83efaf1270588e14
     </>
   );
 };
