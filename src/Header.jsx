@@ -3,9 +3,10 @@ import { FaUserCircle } from "react-icons/fa";
 import { FaCommentDots } from "react-icons/fa6";
 import { PiHeadset } from "react-icons/pi";
 import { FaSearch } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
+import { FaAngleDown } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
@@ -15,7 +16,7 @@ const Header = () => {
         <div className="container">
           <div className="header-top-inner">
             {/* left side */}
-            <uul className="header-top-item ">
+            <ul className="header-top-item ready">
               <li className="header-top-item header-top-icon">
                 <a href="#">Become A Seller</a>
               </li>
@@ -28,32 +29,80 @@ const Header = () => {
               <li className="header-top-item">
                 <a href="#">Returns Policy</a>
               </li>
-            </uul>
+            </ul>
 
             {/* right side  */}
             <ul className="header-top-item">
-              <li className="header-top-item header-top-icon">
+              <li className="header-top-item header-top-icon menu">
                 <a href="#">Help Center</a>
                 <ul className="sub-menu">
                   <li>
-                    <div>
-                      <PiHeadset />
-                    </div>
-                    <div>call center</div>
+                    <span className="icon"><PiHeadset /></span>
+                    <span className="text">call center</span>
                   </li>
                   <li>
-                    <div>
-                      <FaCommentDots />
-                    </div>
-                    live chat
+                    <span className="icon"><FaCommentDots /></span>
+                    <span className="text">live chat</span>
                   </li>
                 </ul>
               </li>
-              <li className="header-top-item header-top-icon">
+              <li className="header-top-item header-top-icon menu">
                 <a href="#">Eng</a>
+                <ul className="sub-menu">
+                  <li>
+                    <span className="img"><img src="assets\images\flag1.png" alt="flag-1" /></span>
+                    <span className="text">english</span>
+                  </li>
+                  <li>
+                    <span className="img"><img src="assets\images\flag2.png" alt="flag-2" /></span>
+                    <span className="text">japan</span>
+                  </li>
+                  <li>
+                    <span className="img"><img src="assets\images\flag3.png" alt="flag-3" /></span>
+                    <span className="text">french</span>
+                  </li>
+                  <li>
+                    <span className="img"><img src="assets\images\flag4.png" alt="flag-4" /></span>
+                    <span className="text">germany</span>
+                  </li>
+                  <li>
+                    <span className="img"><img src="assets\images\flag5.png" alt="flag-5" /></span>
+                    <span className="text">bangladesh</span>
+                  </li>
+                  <li>
+                    <span className="img"><img src="assets\images\flag6.png" alt="flag-6" /></span>
+                    <span className="text">south korea</span>
+                  </li>
+                </ul>
               </li>
-              <li className="header-top-item header-top-icon">
+              <li className="header-top-item header-top-icon menu">
                 <a href="#">USD</a>
+                <ul className="sub-menu">
+                  <li>
+                    <span className="img"><img src="assets\images\flag1.png" alt="flag-1" /></span>
+                    <span className="text">USD</span>
+                  </li>
+                  <li>
+                    <span className="img"><img src="assets\images\flag2.png" alt="flag-2" /></span>
+                    <span className="text">yen</span>
+                  </li>
+                  <li>
+                    <span className="img"><img src="assets\images\flag3.png" alt="flag-3" /></span>
+                    <span className="text">franc</span>
+                  </li>
+                  <li>
+                    <span className="img"><img src="assets\images\flag4.png" alt="flag-4" /></span>
+                    <span className="text">EURO</span>
+                  </li>
+                  <li>
+                    <span className="img"><img src="assets\images\flag5.png" alt="flag-5" /></span>
+                    <span className="text">BTD</span>
+                  </li>
+                  <li>
+                    <span className="img"><img src="assets\images\flag6.png" alt="flag-6" /></span>
+                    <span className="text">WON</span>
+                  </li>
+                </ul>
               </li>
               <li className="header-top-item">
                 <a href="#">
@@ -94,58 +143,47 @@ const Header = () => {
                   <option value="1">Ice Cream</option>
                 </select>
                 <div class="search">
-                  <input
-                    type="text"
-                    className="text"
-                    placeholder="Search for a product or brand"
-                  />
-                  <button type="submit" className="search-icon">
-                    <FaSearch />
-                  </button>
+                  <input type="text" className="text"placeholder="Search for a product or brand" />
+                  <span className="search-icon"><div></div><div><FaSearch /></div></span>
                 </div>
               </div>
               <div className="location-outer">
-                <span className="location-icon">
-                  <FaLocationDot />
-                </span>
-                <span class="text-gray-600 text-xs">Your Location</span>
-                <select className="location-select" name="state">
-                  <option value="1" selected>
-                    Alabama
-                  </option>
-                  <option value="1">Alaska</option>
-                  <option value="1">Arizona</option>
-                  <option value="1">Delaware</option>
-                  <option value="1">Florida</option>
-                  <option value="1">Georgia</option>
-                  <option value="1">Hawaii</option>
-                  <option value="1">Indiana</option>
-                  <option value="1">Marzland</option>
-                  <option value="1">Nevada</option>
-                  <option value="1">New Jersey</option>
-                  <option value="1">New Mexico</option>
-                  <option value="1">New York</option>
-                </select>
+                <div class="location-container">
+                  <div class="location-button">
+                    <span><IoLocationOutline /></span>
+                    <div class="location-text">
+                      <span>Your Location</span>
+                      <span>Alabama</span>
+                    </div>
+                    <span class="dropdown-arrow"><FaAngleDown /></span>
+                  </div>
+                  <div class="dropdown-menu">
+                    <div class="selected">Alabama</div>
+                    <div>Alaska</div>
+                    <div>Arizona</div>
+                    <div>Delaware</div>
+                    <div>Florida</div>
+                    <div>Georgia</div>
+                  </div>
+                </div>
               </div>
             </form>
           </div>
           <div className="header-middle-third">
-            <div className="icon">
-            <span className="text">2</span>
-            <span className="icon-inner">
-            <FaRegHeart /> 
-            </span>
-            <span>Wishlist</span>
+            <div className="icon1">
+              <span className="icon-inner">
+                <FaRegHeart />{" "}
+              </span>
+              <span className="text">2</span>
+              <span>Wishlist</span>
             </div>
-          <div className="icon">
-          <span className="text">2</span>
-          <span  className="icon-inner">
-          <FiShoppingCart />
-          </span>
-          <span>
-            cart 
-          </span>
-          </div>
+            <div className="icon2">
+              <span className="icon-inner">
+                <FiShoppingCart />
+              </span>
+              <span className="text">2</span>
+              <span>cart </span>
+            </div>
           </div>
         </div>
       </div>
