@@ -69,7 +69,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <HeaderButtom/>
       {/* end header top  */}
 
       {/* start header middle  */}
@@ -153,6 +152,8 @@ const Header = () => {
         </div>
       </div>
       {/* end header middle  */}
+      <HeaderButtom/>
+
     </>
   );
 };
