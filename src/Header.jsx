@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
+import HeaderButtom from "./HeaderButtom";
 import { FaCommentDots } from "react-icons/fa6";
 import { PiHeadset } from "react-icons/pi";
 import { FaSearch } from "react-icons/fa";
@@ -11,6 +12,7 @@ import { IoLocationOutline } from "react-icons/io5";
 const Header = () => {
   return (
     <>
+    
       {/* start header top  */}
       <div className="header-top">
         <div className="container">
@@ -188,6 +190,8 @@ const Header = () => {
         </div>
       </div>
       {/* end header middle  */}
+      <HeaderButtom/>
+
     </>
   );
 };
