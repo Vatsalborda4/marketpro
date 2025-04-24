@@ -7,6 +7,8 @@ import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaAngleDown } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
+import HeaderButtom from "./HeaderButtom";
+
 
 const Header = () => {
   return (
@@ -188,6 +190,8 @@ const Header = () => {
         </div>
       </div>
       {/* end header middle  */}
+      <HeaderButtom/>
+
     </>
   );
 };
