@@ -1451,6 +1451,9 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
     z-index: 1;
     position: relative;
   }
+  .promotional-item{
+    width: 50%;
+  }
 }
 
 /* promotional  start*/
