@@ -34,7 +34,7 @@ const Header = () => {
             </ul>
 
             {/* right side  */}
-            <ul className="header-top-item">
+            <ul className="header-top-item header-top-item-right">
               <li className="header-top-item header-top-icon menu">
                 <a href="#">Help Center</a>
                 <ul className="sub-menu">
