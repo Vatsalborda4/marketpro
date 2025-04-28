@@ -3,25 +3,24 @@ import React from "react";
 const Banner = () => {
   return (
     <>
-      <div className="Banner">
+      <div className="banner">
         <div className="container">
           <div className="banner-inner">
-            <a href="" className="scroll-down">
+            <a href="#" className="scroll-down">
               <span>
                 <i class="ph ph-caret-double-down"></i>
               </span>
             </a>
-            {/* <img src="/assets/images/bg/banner-bg.png" alt="" /> */}
             <div className="banner-list">
               <div className="banner-item__content">
                 <h1 class="banner-item__title ">
                   Daily Grocery Order and Get Express Delivery
                 </h1>
-                <a href="">Explore Shop <span className="Banner-icon">
+                <a href="#">Explore Shop <span className="Banner-icon">
                   <i class="ph ph-shopping-cart-simple"></i></span></a>
               </div>
               <div className="banner-item__thumb">
-                <img src="assets/images/thumbs/banner-img1.png" alt="" />
+                <img src="assets/images/banner-img1.png" alt="banner-img" />
               </div>
             </div>
           </div>

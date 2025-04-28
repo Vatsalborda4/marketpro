@@ -9,18 +9,15 @@ const Promotional = () => {
           <div className="promotional-item">
             <div className="promotional-item-inner">
               <img
-                src="assets/images/thumbs/promotional-banner-img1.png"
-                alt=""
+                src="assets/images/promotional-banner-img1.png"
+                alt="Promotional banner showcasing fresh meat"
                 className="promotional-item-img"
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title ">
                   Everyday Fresh Meat
                 </h6>
-                <Link
-                  to="/shop"
-                  className="promotional-a"
-                >
+                <Link to="#" className="promotional-a">
                   Shop Now
                   <span className="promotional-icon ">
                     <i className="ph ph-arrow-right" />
@@ -32,18 +29,15 @@ const Promotional = () => {
           <div className="promotional-item">
             <div className="promotional-item-inner">
               <img
-                src="assets/images/thumbs/promotional-banner-img2.png"
-                alt=""
+                src="assets/images/promotional-banner-img2.png"
+                alt="Promotional banner showcasing fresh vegetables"
                 className="promotional-item-img"
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title ">
                   Daily Fresh Vegetables
                 </h6>
-                <Link
-                  to="/shop"
-                  className="promotional-a"
-                >
+                <Link to="#" className="promotional-a">
                   Shop Now
                   <span className="promotional-icon ">
                     <i className="ph ph-arrow-right" />
@@ -55,18 +49,15 @@ const Promotional = () => {
           <div className="promotional-item">
             <div className="promotional-item-inner">
               <img
-                src="assets/images/thumbs/promotional-banner-img3.png"
-                alt=""
+                src="assets/images/promotional-banner-img3.png"
+                alt="Promotional banner showcasing fresh milk"
                 className="promotional-item-img"
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title ">
                   Everyday Fresh Milk
                 </h6>
-                <Link
-                  to="/shop"
-                  className="promotional-a"
-                >
+                <Link to="#" className="promotional-a">
                   Shop Now
                   <span className="promotional-icon ">
                     <i className="ph ph-arrow-right" />
@@ -78,18 +69,15 @@ const Promotional = () => {
           <div className="promotional-item">
             <div className="promotional-item-inner">
               <img
-                src="assets/images/thumbs/promotional-banner-img4.png"
-                alt=""
+                src="assets/images/promotional-banner-img4.png"
+                alt="Promotional banner showcasing fresh fruits"
                 className="promotional-item-img"
               />
               <div className="promotional-banner-item__content">
                 <h6 className="promotional-banner-item__title ">
                   Everyday Fresh Fruits
                 </h6>
-                <Link
-                  to="/shop"
-                  className="promotional-a"
-                >
+                <Link to="#" className="promotional-a">
                   Shop Now
                   <span className="promotional-icon ">
                     <i className="ph ph-arrow-right" />
