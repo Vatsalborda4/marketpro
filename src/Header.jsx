@@ -8,6 +8,8 @@ import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaAngleDown } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
+import HeaderButtom from "./HeaderButtom";
+
 
 const Header = () => {
   return (
@@ -34,7 +36,7 @@ const Header = () => {
             </ul>
 
             {/* right side  */}
-            <ul className="header-top-item">
+            <ul className="header-top-item header-top-item-right">
               <li className="header-top-item header-top-icon menu">
                 <a href="#">Help Center</a>
                 <ul className="sub-menu">
