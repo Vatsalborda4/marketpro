@@ -3,7 +3,7 @@ import Banner from "../components/Banner";
 import Feature from "../components/Feature";
 import Promotional from "../components/Promotional";
 
-const HomePage = () => {
+const Home = () => {
   return (
     <>
       {/* Banner */}
@@ -15,4 +15,4 @@ const HomePage = () => {
     </>
   );
 };
-export default HomePage;
+export default Home;

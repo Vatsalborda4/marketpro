@@ -72,12 +72,20 @@ img {
 }
 .header-top .header-top-inner .header-top-item > a {
   display: inline-block;
-  transition: 0.2s linear;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: rgb(255, 255, 255);
   transition: all 0.2s linear;
+}
+.header-top .header-top-inner .menu> a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  transition: all 0.2s linear;
+  padding: 0 12px;
 }
 .header-top .header-top-inner .header-top-item .menu {
   position: relative;
@@ -86,7 +94,7 @@ img {
     text-decoration: none;
   }
 }
-.header-top .header-top-inner .header-top-item .menu:hover a::after {
+.header-top .header-top-inner .header-top-item .menu a::after {
   transform: translateY(-50%) rotate(180deg);
 }
 .header-top .header-top-inner .header-top-item .menu a::after {
@@ -96,7 +104,7 @@ img {
   font-size: 9px;
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 15px;
   transform: translate(0, -50%);
   color: rgb(255, 255, 255);
   transition: all 0.2s linear;
@@ -184,7 +192,7 @@ img {
 /* start header middle  */
 .header-middle {
   display: block;
-  padding: 24px 10px;
+  padding: 24px 0px;
   background-color: #f3faf2;
 }
 .header-middle .header-middle-inner {
@@ -473,7 +481,7 @@ option {
 .header-buttom {
   border-color: #e6e6e6;
   background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid #dee2e6;
+  border: 1px solid #dee2e6;
 }
 .header-buttom .header-bottom-inner {
   display: flex;
@@ -697,20 +705,14 @@ option {
   display: block;
   position: relative;
 }
-.header-buttom
-  .header-bottom-inner
-  .header-bottom-menu
-  .menu-inner
-  .menu-item
-  > a {
+.header-buttom .header-bottom-inner .header-bottom-menu .menu-inner .menu-item>a {
   display: inline-block;
-  /* position: absolute; */
   color: #999;
   font-weight: 500;
   padding: 16px 0;
   padding-right: 16px;
   width: 100%;
-  font-size: 14px;
+  font-size: 16px;
 }
 .header-buttom
   .header-bottom-inner
@@ -1432,6 +1434,9 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   footer .footer-inner .footer-social {
     width: 30%;
   }
+  .header-buttom .header-bottom-inner .header-bottom-menu .menu-inner .menu-item>a {
+    font-size: 14px;
+  }
   .banner .banner-inner > .banner-list .banner-item__content .banner-item__title {
     font-size: 46px;
     width: 50%;
@@ -1451,7 +1456,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 /* start media 991px  */
 @media (max-width: 991px) {
   .header-middle {
-    padding: 8px 10px;
+    padding: 8px 0px;
   }
   .header-middle .header-middle-inner .header-middle-third {
     display: none;
@@ -1490,6 +1495,15 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .header-buttom .header-bottom-inner .header-buttom-call {
     display: none;
   }
+  .header-top .header-top-inner .header-top-item .menu a::after {
+    right: 2px;
+    padding: 0 5px;
+  }
+  .header-top .header-top-inner .header-top-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   /* header-buttom end */
   footer .footer-inner .footer-info {
     width: 60%;
@@ -1522,6 +1536,15 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   /* header-buttom start*/
   .header-buttom .header-bottom-inner .header-bottom-category .category-button {
     font-size: 12px;
+  }
+  .header-top .header-top-inner .ready {
+    display: none;
+  }
+  .header-top .header-top-inner .space-between1 {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
   /* header-buttom end*/
   footer .footer-inner .footer-info {
@@ -1606,6 +1629,12 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   }
   .header-buttom .header-bottom-inner .header-bottom-category .category-button .icon .button-text {
     display: none;
+  }
+  .header-top .header-top-inner .menu> a {
+    padding: 0 5px;
+  }
+  .banner .banner-inner > .banner-list .banner-item__content .banner-item__title {
+    font-size: 26px;
   }
   footer .footer-inner .footer-social {
     width: 100%;

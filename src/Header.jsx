@@ -35,6 +35,7 @@ const Header = () => {
 
             {/* right side  */}
             <ul className="header-top-item header-top-item-right">
+              <div className="space-between1">
               <li className="header-top-item header-top-icon menu">
                 <a href="#">Help Center</a>
                 <ul className="sub-menu">
@@ -106,6 +107,8 @@ const Header = () => {
                   </li>
                 </ul>
               </li>
+              </div>
+              <div className="spce-between2">
               <li className="header-top-item">
                 <a href="#">
                   <span>
@@ -114,6 +117,7 @@ const Header = () => {
                   My Account
                 </a>
               </li>
+              </div>
             </ul>
           </div>
         </div>
@@ -122,6 +126,7 @@ const Header = () => {
 
       {/* start header middle  */}
       <div className="header-middle">
+      <div className="container">
         <div className="header-middle-inner">
           <div className="header-middle-first">
             <img src="assets\images\logo.png" alt="logo" />
@@ -188,6 +193,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
       {/* end header middle  */}
       <HeaderButtom/>
