@@ -37,7 +37,7 @@ const Header = () => {
 
             {/* right side  */}
             <ul className="header-top-item header-top-item-right">
-              <div className="space-between1">
+              {/* <div className="space-between1"> */}
               <li className="header-top-item header-top-icon menu">
                 <a href="#">Help Center</a>
                 <ul className="sub-menu">
@@ -55,27 +55,27 @@ const Header = () => {
                 <a href="#">Eng</a>
                 <ul className="sub-menu">
                   <li>
-                    <span className="img"><img src="assets\images\flag1.png" alt="flag-1" /></span>
+                    <span className="img"><img src="assets/images/flag1.webp" alt="flag-1" /></span>
                     <span className="text">english</span>
                   </li>
                   <li>
-                    <span className="img"><img src="assets\images\flag2.png" alt="flag-2" /></span>
+                    <span className="img"><img src="assets/images/flag2.webp" alt="flag-2" /></span>
                     <span className="text">japan</span>
                   </li>
                   <li>
-                    <span className="img"><img src="assets\images\flag3.png" alt="flag-3" /></span>
+                    <span className="img"><img src="assets/images/flag3.webp" alt="flag-3" /></span>
                     <span className="text">french</span>
                   </li>
                   <li>
-                    <span className="img"><img src="assets\images\flag4.png" alt="flag-4" /></span>
+                    <span className="img"><img src="assets/images/flag4.webp" alt="flag-4" /></span>
                     <span className="text">germany</span>
                   </li>
                   <li>
-                    <span className="img"><img src="assets\images\flag5.png" alt="flag-5" /></span>
+                    <span className="img"><img src="assets/images/flag5.webp" alt="flag-5" /></span>
                     <span className="text">bangladesh</span>
                   </li>
                   <li>
-                    <span className="img"><img src="assets\images\flag6.png" alt="flag-6" /></span>
+                    <span className="img"><img src="assets/images/flag6.webp" alt="flag-6" /></span>
                     <span className="text">south korea</span>
                   </li>
                 </ul>
@@ -109,8 +109,8 @@ const Header = () => {
                   </li>
                 </ul>
               </li>
-              </div>
-              <div className="spce-between2">
+              {/* </div> */}
+              {/* <div className="spce-between2"> */}
               <li className="header-top-item">
                 <a href="#">
                   <span>
@@ -119,7 +119,7 @@ const Header = () => {
                   My Account
                 </a>
               </li>
-              </div>
+              {/* </div> */}
             </ul>
           </div>
         </div>
@@ -131,7 +131,7 @@ const Header = () => {
       <div className="container">
         <div className="header-middle-inner">
           <div className="header-middle-first">
-            <img src="assets\images\logo.png" alt="logo" />
+            <img src="assets/images/logo.webp" alt="logo" />
           </div>
           <div className="header-middle-second">
             <form action="#" className="second-item-inner">
@@ -181,7 +181,7 @@ const Header = () => {
           <div className="header-middle-third">
             <div className="icon1">
               <span className="icon-inner">
-                <FaRegHeart />{" "}
+                <FaRegHeart />
               </span>
               <span className="text">2</span>
               <span>Wishlist</span>
