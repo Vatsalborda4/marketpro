@@ -84,27 +84,27 @@ const Header = () => {
                 <a href="#">USD</a>
                 <ul className="sub-menu">
                   <li>
-                    <span className="img"><img src="assets\images\flag1.png" alt="flag-1" /></span>
+                    <span className="img"><img src="assets\images\flag1.webp" alt="flag-1" /></span>
                     <span className="text">USD</span>
                   </li>
                   <li>
-                    <span className="img"><img src="assets\images\flag2.png" alt="flag-2" /></span>
+                    <span className="img"><img src="assets\images\flag2.webp" alt="flag-2" /></span>
                     <span className="text">yen</span>
                   </li>
                   <li>
-                    <span className="img"><img src="assets\images\flag3.png" alt="flag-3" /></span>
+                    <span className="img"><img src="assets\images\flag3.webp" alt="flag-3" /></span>
                     <span className="text">franc</span>
                   </li>
                   <li>
-                    <span className="img"><img src="assets\images\flag4.png" alt="flag-4" /></span>
+                    <span className="img"><img src="assets\images\flag4.webp" alt="flag-4" /></span>
                     <span className="text">EURO</span>
                   </li>
                   <li>
-                    <span className="img"><img src="assets\images\flag5.png" alt="flag-5" /></span>
+                    <span className="img"><img src="assets\images\flag5.webp" alt="flag-5" /></span>
                     <span className="text">BTD</span>
                   </li>
                   <li>
-                    <span className="img"><img src="assets\images\flag6.png" alt="flag-6" /></span>
+                    <span className="img"><img src="assets\images\flag6.webp" alt="flag-6" /></span>
                     <span className="text">WON</span>
                   </li>
                 </ul>

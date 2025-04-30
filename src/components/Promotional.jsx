@@ -9,7 +9,7 @@ const Promotional = () => {
           <div className="promotional-item">
             <div className="promotional-item-inner">
               <img
-                src="assets/images/promotional-banner-img1.png"
+                src="assets/images/promotional-banner-img1.webp"
                 alt="Promotional banner showcasing fresh meat"
                 className="promotional-item-img"
               />
@@ -29,7 +29,7 @@ const Promotional = () => {
           <div className="promotional-item">
             <div className="promotional-item-inner">
               <img
-                src="assets/images/promotional-banner-img2.png"
+                src="assets/images/promotional-banner-img2.webp"
                 alt="Promotional banner showcasing fresh vegetables"
                 className="promotional-item-img"
               />
@@ -49,7 +49,7 @@ const Promotional = () => {
           <div className="promotional-item">
             <div className="promotional-item-inner">
               <img
-                src="assets/images/promotional-banner-img3.png"
+                src="assets/images/promotional-banner-img3.webp"
                 alt="Promotional banner showcasing fresh milk"
                 className="promotional-item-img"
               />
@@ -69,7 +69,7 @@ const Promotional = () => {
           <div className="promotional-item">
             <div className="promotional-item-inner">
               <img
-                src="assets/images/promotional-banner-img4.png"
+                src="assets/images/promotional-banner-img4.webp"
                 alt="Promotional banner showcasing fresh fruits"
                 className="promotional-item-img"
               />

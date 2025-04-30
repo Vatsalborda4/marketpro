@@ -20,7 +20,7 @@ const Banner = () => {
                   <i class="ph ph-shopping-cart-simple"></i></span></a>
               </div>
               <div className="banner-item__thumb">
-                <img src="assets/images/banner-img1.png" alt="banner-img" />
+                <img src="assets/images/banner-img1.webp" alt="banner-img" />
               </div>
             </div>
           </div>

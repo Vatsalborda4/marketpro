@@ -10,7 +10,7 @@ const Feature = () => {
               <div className="feature-item ">
                 <div className="feature-item__thumb ">
                   <Link to="/shop" className="">
-                    <img src="assets/images/feature-img1.png" alt="feature-img1" />
+                    <img src="assets/images/feature-img1.webp" alt="feature-img1" />
                   </Link>
                 </div>
                 <div className="feature-item__content ">
@@ -25,9 +25,9 @@ const Feature = () => {
               <div className="feature-item ">
                 <div className="feature-item__thumb ">
                   <Link to="/shop" className="">
-                    <img src="assets/images/feature-img2.png" alt="feature-img2" />
+                    <img src="assets/images/feature-img2.webp" alt="feature-img2" />
                   </Link>
-                </div>
+                </div>.webp
                 <div className="feature-item__content ">
                   <h6 className="">
                     <Link to="/shop" className="">
@@ -40,9 +40,9 @@ const Feature = () => {
               <div className="feature-item ">
                 <div className="feature-item__thumb ">
                   <Link to="/shop" className="">
-                    <img src="assets/images/feature-img3.png" alt="feature-img3" />
+                    <img src="assets/images/feature-img3.webp" alt="feature-img3" />
                   </Link>
-                </div>
+                </div>.webp
                 <div className="feature-item__content ">
                   <h6 className="">
                     <Link to="/shop" className="">
@@ -55,9 +55,9 @@ const Feature = () => {
               <div className="feature-item ">
                 <div className="feature-item__thumb ">
                   <Link to="/shop" className="">
-                    <img src="assets/images/feature-img4.png" alt="feature-img4" />
+                    <img src="assets/images/feature-img4.webp" alt="feature-img4" />
                   </Link>
-                </div>
+                </div>.webp
                 <div className="feature-item__content ">
                   <h6 className="">
                     <Link to="/shop" className="">
@@ -70,9 +70,9 @@ const Feature = () => {
               <div className="feature-item ">
                 <div className="feature-item__thumb ">
                   <Link to="/shop" className="">
-                    <img src="assets/images/feature-img5.png" alt="feature-img5" />
+                    <img src="assets/images/feature-img5.webp" alt="feature-img5" />
                   </Link>
-                </div>
+                </div>.webp
                 <div className="feature-item__content ">
                   <h6 className="">
                     <Link to="/shop" className="">
@@ -86,8 +86,8 @@ const Feature = () => {
               <div className="feature-item ">
                 <div className="feature-item__thumb ">
                   <Link to="/shop" className="">
-                    <img src="assets/images/feature-img6.png" alt="feature-img6" />
-                  </Link>
+                    <img src="assets/images/feature-img6.webp" alt="feature-img6" />
+                  </Link>.webp
                 </div>
                 <div className="feature-item__content ">
                   <h6 className="">

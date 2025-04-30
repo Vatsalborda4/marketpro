@@ -13,7 +13,7 @@ const Footer = () => {
       {/* start footer middle  */}
       <footer>
         <img
-          src="assets/images/body-bottom-bg.png"
+          src="assets/images/body-bottom-bg.webp"
           alt="body-bottom-bg"
           className="footer-bg"
         />
@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="footer-info">
               <div className="footer-logo">
                 <a href="#">
-                  <img src="assets\images\logo.png" alt="logo" />
+                  <img src="assets\images\logo.webp" alt="logo" />
                 </a>
               </div>
               <p className="footer-text">
@@ -150,10 +150,10 @@ const Footer = () => {
               </li>
               <li className="img-flex">
                 <div>
-                  <img src="assets\images\store-img1.png" alt="store-img1" />
+                  <img src="assets\images\store-img1.webp" alt="store-img1" />
                 </div>
                 <div>
-                  <img src="assets\images\store-img2.png" alt="store-img2" />
+                  <img src="assets\images\store-img2.webp" alt="store-img2" />
                 </div>
               </li>
               <li className="footer-icon">
@@ -194,7 +194,7 @@ const Footer = () => {
               <p>We Are Acepting</p>
               <img
               className="payment-method"
-                src="assets\images\payment-method.png"
+                src="assets\images\payment-method.webp"
                 alt="payment-method"
               />
             </div>
