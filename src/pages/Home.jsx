@@ -4,7 +4,7 @@ import Feature from "../components/Feature";
 import Promotional from "../components/Promotional";
 import FlashSales from "../components/FlashSales";
 
-const HomePage = () => {
+const Home = () => {
   return (
     <>
       {/* Banner */}
@@ -18,4 +18,4 @@ const HomePage = () => {
     </>
   );
 };
-export default HomePage;
+export default Home;
