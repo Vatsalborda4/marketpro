@@ -36,10 +36,10 @@ const FlashSales = () => {
               </h6>
                 <ul className="flash-sales-slider-countdown-list">
                   <li className="flash-sales-slider-countdown-list-inner">
-                    <span className="days" />1 Days
+                    <span className="days" />234 Days
                   </li>
                   <li className="flash-sales-slider-countdown-list-inner">
-                    <span className="hours" />2 Hours
+                    <span className="hours" />21 Hours
                   </li>
                   <li className="flash-sales-slider-countdown-list-inner">
                     <span className="minutes" />
@@ -74,18 +74,18 @@ const FlashSales = () => {
               </h6>
                 <ul className="flash-sales-slider-countdown-list">
                   <li className="flash-sales-slider-countdown-list-inner">
-                    <span className="days" />1 Days
+                    <span className="days" />134 Days
                   </li>
                   <li className="flash-sales-slider-countdown-list-inner">
-                    <span className="hours" />2 Hours
+                    <span className="hours" />19 Hours
                   </li>
                   <li className="flash-sales-slider-countdown-list-inner">
                     <span className="minutes" />
-                    30 Min
+                    50 Min
                   </li>
                   <li className="flash-sales-slider-countdown-list-inner">
                     <span className="seconds" />
-                    39 Sec
+                    29 Sec
                   </li>
                 </ul>
               <Link to="/shop" className="flash-sales-slider-btn">
