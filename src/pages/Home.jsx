@@ -3,6 +3,8 @@ import Banner from "../components/Banner";
 import Feature from "../components/Feature";
 import Promotional from "../components/Promotional";
 import FlashSales from "../components/FlashSales";
+import ProductList from "../components/ProductList";
+import Offer from "../components/Offer";
 
 const Home = () => {
   return (
@@ -15,6 +17,10 @@ const Home = () => {
       <Promotional />
 
       <FlashSales />
+
+      <ProductList/>
+
+      <Offer/>
     </>
   );
 };
