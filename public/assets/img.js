@@ -2,7 +2,7 @@ const fs = require('fs');
 const sharp = require('sharp');
 const path = require('path');
 
-const inputFolder = './images'; // Make sure this is correct
+const inputFolder = './images'; // ✅ Ensure this folder exists and has .png files
 
 fs.readdirSync(inputFolder).forEach(file => {
   if (path.extname(file).toLowerCase() === '.png') {
@@ -13,7 +13,7 @@ fs.readdirSync(inputFolder).forEach(file => {
       .toFile(outputPath)
       .then(() => {
         console.log(`Converted: ${file} -> ${path.basename(outputPath)}`);
-        fs.unlinkSync(inputPath); // Delete the original .png file
+        fs.unlinkSync(inputPath); // ✅ delete the original .png
       })
       .catch(err => console.error(`Error converting ${file}:`, err));
   }
