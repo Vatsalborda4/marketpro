@@ -10,15 +10,15 @@ const Offer = () => {
             <div className="offer-inner-item-inner">
               <img
                 src="assets/images/offer-shape.webp"
-                alt=""
+                alt="Decorative shape for offer"
                 className="offer-inner-item-img"
               />
               <div className="offer-inner-item-thumb">
-                <img src="assets/images/offer-img1.webp" alt="" />
+                <img src="assets/images/offer-img1.webp" alt="Promotional offer image 1" />
               </div>
               <div className="offer-inner-item-right">
                 <div className="offer-inner-item-logo">
-                  <img src="assets/images/offer-logo.webp" alt="" />
+                  <img src="assets/images/offer-logo.webp" alt="Offer logo" />
                 </div>
                 <h4 className="offer-inner-item-text">$5 off your first order</h4>
                 <div className="offer-inner-item-Delivery">
@@ -44,15 +44,15 @@ const Offer = () => {
             <div className="offer-inner-item-inner">
               <img
                 src="assets/images/offer-shape.webp"
-                alt=""
+                alt="Decorative shape for offer"
                 className="offer-inner-item-img"
               />
               <div className="offer-inner-item-thumb">
-                <img src="assets/images/offer-img2.webp" alt="" />
+                <img src="assets/images/offer-img2.webp" alt="Promotional offer image 2" />
               </div>
               <div className="offer-inner-item-right">
                 <div className="offer-inner-item-logo">
-                  <img src="assets/images/offer-logo.webp" alt="" />
+                  <img src="assets/images/offer-logo.webp" alt="Offer logo" />
                 </div>
                 <h4 className="offer-inner-item-text">$5 off your first order</h4>
                 <div className="offer-inner-item-Delivery">

@@ -24,11 +24,11 @@ const FlashSales = () => {
           <div className="flash-sales-slider-item">
             <img
               src="assets/images/flash-sale-bg1.webp"
-              alt=""
+              alt="Background for Fresh Vegetables"
               className=" flash-sales-item-bg"
             />
             <div className="flash-sales-slider-item-thumb">
-              <img src="/assets/images/flash-sale-img1.webp" alt="" />
+              <img src="/assets/images/flash-sale-img1.webp" alt="Fresh Vegetables" />
             </div>
             <div className="flash-sales-slider-item-content">
               <h6 className="flash-sales-slider-item-content-title">
@@ -62,11 +62,11 @@ const FlashSales = () => {
           <div className="flash-sales-slider-item">
             <img
               src="assets/images/flash-sale-bg2.webp"
-              alt=""
+              alt="Background for Daily Snacks"
               className=" flash-sales-item-bg"
             />
             <div className="flash-sales-slider-item-thumb">
-              <img src="assets/images/flash-sale-img2.webp" alt="" />
+              <img src="assets/images/flash-sale-img2.webp" alt="Daily Snacks" />
             </div>
             <div className="flash-sales-slider-item-content">
               <h6 className="flash-sales-slider-item-content-title">

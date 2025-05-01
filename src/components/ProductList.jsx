@@ -18,7 +18,7 @@ const ProductList = () => {
                 to="/product-details"
                 className="product-card-img"
               >
-                <img src="assets/images/product-img1.webp" alt="" />
+                <img src="assets/images/product-img1.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
               </Link>
               <div className="product-card-content">
                 <div className="product-card-price ">
@@ -82,7 +82,7 @@ const ProductList = () => {
                 to="/product-details"
                 className="product-card-img"
               >
-                <img src="assets/images/product-img2.webp" alt="" />
+                <img src="assets/images/product-img2.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
               </Link>
               <div className="product-card-content">
                 <div className="product-card-price ">
@@ -146,7 +146,7 @@ const ProductList = () => {
                 to="/product-details"
                 className="product-card-img"
               >
-                <img src="assets/images/product-img3.webp" alt="" />
+                <img src="assets/images/product-img3.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
               </Link>
               <div className="product-card-content">
                 <div className="product-card-price ">
@@ -210,7 +210,7 @@ const ProductList = () => {
                 to="/product-details"
                 className="product-card-img"
               >
-                <img src="assets/images/product-img1.webp" alt="" />
+                <img src="assets/images/product-img1.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
               </Link>
               <div className="product-card-content">
                 <div className="product-card-price ">
@@ -274,7 +274,7 @@ const ProductList = () => {
                 to="/product-details"
                 className="product-card-img"
               >
-                <img src="assets/images/product-img5.webp" alt="" />
+                <img src="assets/images/product-img5.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
               </Link>
               <div className="product-card-content">
                 <div className="product-card-price ">
@@ -338,7 +338,7 @@ const ProductList = () => {
                 to="/product-details"
                 className="product-card-img"
               >
-                <img src="assets/images/product-img6.webp" alt="" />
+                <img src="assets/images/product-img6.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
               </Link>
               <div className="product-card-content">
                 <div className="product-card-price ">
