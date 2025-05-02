@@ -12,7 +12,7 @@ const FlashSales = () => {
             </h5>
             <div className="section-heading-inner-item-right">
               <Link
-                to="/shop"
+                to="#"
                 className="section-heading-link"
               >
                 View All Deals
@@ -50,7 +50,7 @@ const FlashSales = () => {
                     39 Sec
                   </li>
                 </ul>
-              <Link to="/shop" className="flash-sales-slider-btn">
+              <Link to="#" className="flash-sales-slider-btn">
                 Shop Now
                 <span className="flash-sales-slider-btn-inner">
                   <i className="ph ph-arrow-right" />
@@ -88,7 +88,7 @@ const FlashSales = () => {
                     29 Sec
                   </li>
                 </ul>
-              <Link to="/shop" className="flash-sales-slider-btn">
+              <Link to="#" className="flash-sales-slider-btn">
                 Shop Now
                 <span className="flash-sales-slider-btn-inner">
                   <i className="ph ph-arrow-right" />

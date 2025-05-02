@@ -9,13 +9,13 @@ const ProductList = () => {
           <div className="product-inner-item">
             <div className="product-card">
               <Link
-                to="/cart"
+                to="#"
                 className="product-card-add"
               >
                 Add <i className="ph ph-shopping-cart" />
               </Link>
               <Link
-                to="/product-details"
+                to="#"
                 className="product-card-img"
               >
                 <img src="assets/images/product-img1.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
@@ -37,7 +37,7 @@ const ProductList = () => {
                   <span className="product-card-rating-totle">(17k)</span>
                 </div>
                 <h6 className="product-card-title">
-                  <Link to="/product-details" className="product-card-title-inner">
+                  <Link to="#" className="product-card-title-inner">
                     Taylor Farms Broccoli Florets Vegetables
                   </Link>
                 </h6>
@@ -73,13 +73,13 @@ const ProductList = () => {
           <div className="product-inner-item">
             <div className="product-card">
               <Link
-                to="/cart"
+                to="#"
                 className="product-card-add"
               >
                 Add <i className="ph ph-shopping-cart" />
               </Link>
               <Link
-                to="/product-details"
+                to="#"
                 className="product-card-img"
               >
                 <img src="assets/images/product-img2.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
@@ -101,7 +101,7 @@ const ProductList = () => {
                   <span className="product-card-rating-totle">(17k)</span>
                 </div>
                 <h6 className="product-card-title">
-                  <Link to="/product-details" className="product-card-title-inner">
+                  <Link to="#" className="product-card-title-inner">
                     Taylor Farms Broccoli Florets Vegetables
                   </Link>
                 </h6>
@@ -137,13 +137,13 @@ const ProductList = () => {
           <div className="product-inner-item">
             <div className="product-card">
               <Link
-                to="/cart"
+                to="#"
                 className="product-card-add"
               >
                 Add <i className="ph ph-shopping-cart" />
               </Link>
               <Link
-                to="/product-details"
+                to="#"
                 className="product-card-img"
               >
                 <img src="assets/images/product-img3.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
@@ -165,7 +165,7 @@ const ProductList = () => {
                   <span className="product-card-rating-totle">(17k)</span>
                 </div>
                 <h6 className="product-card-title">
-                  <Link to="/product-details" className="product-card-title-inner">
+                  <Link to="#" className="product-card-title-inner">
                     Taylor Farms Broccoli Florets Vegetables
                   </Link>
                 </h6>
@@ -201,13 +201,13 @@ const ProductList = () => {
           <div className="product-inner-item">
             <div className="product-card">
               <Link
-                to="/cart"
+                to="#"
                 className="product-card-add"
               >
                 Add <i className="ph ph-shopping-cart" />
               </Link>
               <Link
-                to="/product-details"
+                to="#"
                 className="product-card-img"
               >
                 <img src="assets/images/product-img1.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
@@ -229,7 +229,7 @@ const ProductList = () => {
                   <span className="product-card-rating-totle">(17k)</span>
                 </div>
                 <h6 className="product-card-title">
-                  <Link to="/product-details" className="product-card-title-inner">
+                  <Link to="#" className="product-card-title-inner">
                     Taylor Farms Broccoli Florets Vegetables
                   </Link>
                 </h6>
@@ -265,13 +265,13 @@ const ProductList = () => {
           <div className="product-inner-item">
             <div className="product-card">
               <Link
-                to="/cart"
+                to="#"
                 className="product-card-add"
               >
                 Add <i className="ph ph-shopping-cart" />
               </Link>
               <Link
-                to="/product-details"
+                to="#"
                 className="product-card-img"
               >
                 <img src="assets/images/product-img5.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
@@ -293,7 +293,7 @@ const ProductList = () => {
                   <span className="product-card-rating-totle">(17k)</span>
                 </div>
                 <h6 className="product-card-title">
-                  <Link to="/product-details" className="product-card-title-inner">
+                  <Link to="#" className="product-card-title-inner">
                     Taylor Farms Broccoli Florets Vegetables
                   </Link>
                 </h6>
@@ -329,13 +329,13 @@ const ProductList = () => {
           <div className="product-inner-item">
             <div className="product-card">
               <Link
-                to="/cart"
+                to="#"
                 className="product-card-add"
               >
                 Add <i className="ph ph-shopping-cart" />
               </Link>
               <Link
-                to="/product-details"
+                to="#"
                 className="product-card-img"
               >
                 <img src="assets/images/product-img6.webp" alt="Taylor Farms Broccoli Florets Vegetables" />
@@ -357,7 +357,7 @@ const ProductList = () => {
                   <span className="product-card-rating-totle">(17k)</span>
                 </div>
                 <h6 className="product-card-title">
-                  <Link to="/product-details" className="product-card-title-inner">
+                  <Link to="#" className="product-card-title-inner">
                     Taylor Farms Broccoli Florets Vegetables
                   </Link>
                 </h6>
