@@ -121,6 +121,91 @@ const Header = () => {
               </li>
               {/* </div> */}
             </ul>
+            <div className="header-top-item header-top-item-right media space-between">
+              <ul className="space-between1">
+                <li className="header-top-item header-top-icon menu">
+                  <a href="#">Help Center</a>
+                  <ul className="sub-menu">
+                    <li>
+                      <span className="icon"><PiHeadset /></span>
+                      <span className="text">call center</span>
+                    </li>
+                    <li>
+                      <span className="icon"><FaCommentDots /></span>
+                      <span className="text">live chat</span>
+                    </li>
+                  </ul>
+                </li>
+                <li className="header-top-item header-top-icon menu">
+                  <a href="#">Eng</a>
+                  <ul className="sub-menu">
+                    <li>
+                      <span className="img"><img src="assets/images/flag1.webp" alt="flag-1" /></span>
+                      <span className="text">english</span>
+                    </li>
+                    <li>
+                      <span className="img"><img src="assets/images/flag2.webp" alt="flag-2" /></span>
+                      <span className="text">japan</span>
+                    </li>
+                    <li>
+                      <span className="img"><img src="assets/images/flag3.webp" alt="flag-3" /></span>
+                      <span className="text">french</span>
+                    </li>
+                    <li>
+                      <span className="img"><img src="assets/images/flag4.webp" alt="flag-4" /></span>
+                      <span className="text">germany</span>
+                    </li>
+                    <li>
+                      <span className="img"><img src="assets/images/flag5.webp" alt="flag-5" /></span>
+                      <span className="text">bangladesh</span>
+                    </li>
+                    <li>
+                      <span className="img"><img src="assets/images/flag6.webp" alt="flag-6" /></span>
+                      <span className="text">south korea</span>
+                    </li>
+                  </ul>
+                </li>
+                <li className="header-top-item header-top-icon menu">
+                  <a href="#">USD</a>
+                  <ul className="sub-menu">
+                    <li>
+                      <span className="img"><img src="assets/images/flag1.webp" alt="flag-1" /></span>
+                      <span className="text">USD</span>
+                    </li>
+                    <li>
+                      <span className="img"><img src="assets/images/flag2.webp" alt="flag-2" /></span>
+                      <span className="text">yen</span>
+                    </li>
+                    <li>
+                      <span className="img"><img src="assets/images/flag3.webp" alt="flag-3" /></span>
+                      <span className="text">franc</span>
+                    </li>
+                    <li>
+                      <span className="img"><img src="assets/images/flag4.webp" alt="flag-4" /></span>
+                      <span className="text">EURO</span>
+                    </li>
+                    <li>
+                      <span className="img"><img src="assets/images/flag5.webp" alt="flag-5" /></span>
+                      <span className="text">BTD</span>
+                    </li>
+                    <li>
+                      <span className="img"><img src="assets/images/flag6.webp" alt="flag-6" /></span>
+                      <span className="text">WON</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul className="spce-between2">
+                <li className="header-top-item">
+                  <a href="#">
+                    <span>
+                      <i className="fa-regular fa-circle-user"></i>
+                    </span>
+                    My Account
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
