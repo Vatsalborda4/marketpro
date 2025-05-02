@@ -12,14 +12,14 @@ const Banner = () => {
               </span>
             </a>
             <div className="banner-list">
-              <div className="banner-item__content">
-                <h1 className="banner-item__title ">
+              <div className="banner-item-content">
+                <h1 className="banner-item-title ">
                   Daily Grocery Order and Get Express Delivery
                 </h1>
                 <a href="#">Explore Shop <span className="Banner-icon">
                   <i className="ph ph-shopping-cart-simple"></i></span></a>
               </div>
-              <div className="banner-item__thumb">
+              <div className="banner-item-thumb">
                 <img src="assets/images/banner-img1.webp" alt="banner-img" />
               </div>
             </div>

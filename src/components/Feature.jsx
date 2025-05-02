@@ -8,12 +8,12 @@ const Feature = () => {
         <div className="feature-inner">
           <div className="feature-inner-item">
               <div className="feature-item ">
-                <div className="feature-item__thumb ">
+                <div className="feature-item-thumb">
                   <Link to="#" className="">
                     <img src="assets/images/feature-img1.webp" alt="feature-img1" />
                   </Link>
                 </div>
-                <div className="feature-item__content ">
+                <div className="feature-item-content ">
                   <h6 className="">
                     <Link to="#" className="">
                       Vegetables
@@ -23,12 +23,12 @@ const Feature = () => {
                 </div>
               </div>
               <div className="feature-item ">
-                <div className="feature-item__thumb ">
+                <div className="feature-item-thumb ">
                   <Link to="#" className="">
                     <img src="assets/images/feature-img2.webp" alt="feature-img2" />
                   </Link>
                 </div>
-                <div className="feature-item__content ">
+                <div className="feature-item-content ">
                   <h6 className="">
                     <Link to="#" className="">
                       Fish &amp; Meats
@@ -38,12 +38,12 @@ const Feature = () => {
                 </div>
               </div>
               <div className="feature-item ">
-                <div className="feature-item__thumb ">
+                <div className="feature-item-thumb ">
                   <Link to="#" className="">
                     <img src="assets/images/feature-img3.webp" alt="feature-img3" />
                   </Link>
                 </div>
-                <div className="feature-item__content ">
+                <div className="feature-item-content ">
                   <h6 className="">
                     <Link to="#" className="">
                       Desserts
@@ -53,12 +53,12 @@ const Feature = () => {
                 </div>
               </div>
               <div className="feature-item ">
-                <div className="feature-item__thumb ">
+                <div className="feature-item-thumb ">
                   <Link to="#" className="">
                     <img src="assets/images/feature-img4.webp" alt="feature-img4" />
                   </Link>
                 </div>
-                <div className="feature-item__content ">
+                <div className="feature-item-content ">
                   <h6 className="">
                     <Link to="#" className="">
                       Drinks &amp; Juice
@@ -68,12 +68,12 @@ const Feature = () => {
                 </div>
               </div>
               <div className="feature-item ">
-                <div className="feature-item__thumb ">
+                <div className="feature-item-thumb ">
                   <Link to="#" className="">
                     <img src="assets/images/feature-img5.webp" alt="feature-img5" />
                   </Link>
                 </div>
-                <div className="feature-item__content ">
+                <div className="feature-item-content ">
                   <h6 className="">
                     <Link to="#" className="">
                       Animals Food
@@ -84,12 +84,12 @@ const Feature = () => {
                 </div>
               
               <div className="feature-item ">
-                <div className="feature-item__thumb ">
+                <div className="feature-item-thumb ">
                   <Link to="#" className="">
                     <img src="assets/images/feature-img6.webp" alt="feature-img6" />
                   </Link>
                 </div>
-                <div className="feature-item__content ">
+                <div className="feature-item-content ">
                   <h6 className="">
                     <Link to="#" className="">
                       Fresh Fruits
