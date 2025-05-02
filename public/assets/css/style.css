@@ -58,8 +58,8 @@ img {
 .header-top-item-right.media.space-between {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Ensures vertical alignment */
-  width: 100%; /* Ensures the container spans the full width */
+  align-items: center; 
+  width: 100%;
 }
 .header-top .header-top-inner .header-top-item {
   display: inline-block;
@@ -104,11 +104,17 @@ img {
 .header-top .header-top-inner .header-top-item .menu {
   position: relative;
   transition: all 0.2s linear;
-  :hover {
-    text-decoration: none;
-  }
 }
-.header-top .header-top-inner .header-top-item .menu a::after {
+.header-top .header-top-inner .menu:hover {
+  text-decoration: none;
+}
+.header-top .header-top-inner .header-top-item-right .menu:hover .sub-menu{
+  visibility: visible
+}
+.header-top .header-top-inner .header-top-item .menu:hover a{
+  text-decoration: none;
+}
+.header-top .header-top-inner .header-top-item .menu:hover a::after {
   transform: translateY(-50%) rotate(180deg);
 }
 .header-top .header-top-inner .header-top-item .menu a::after {
@@ -292,8 +298,6 @@ img {
   font-weight: 600;
 }
 .category-submenu-item-inner {
-  /* height: 100%; */
-  /* height: 500px; */
   transition: all 0.2s linear;
   background: #fff;
   border-radius: 6px;
@@ -634,7 +638,9 @@ img {
 }
 /* header bottom end */
 .header-top .header-top-inner .header-top-item .header-top-icon .sub-menu {
-  display: none;
+  visibility: hidden;
+  transition: all 0.2 linear;
+  display: block;
 }
 .header-top .header-top-inner .header-top-item > .menu:hover .sub-menu {
   margin-block-start: 0;
@@ -2301,6 +2307,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
     .banner-item__content
     .banner-item__title {
     font-size: 28px;
+    width: 100%;
   }
   .feature .feature-inner .feature-inner-item .feature-item {
     display: block;
@@ -2337,10 +2344,18 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
     justify-content: space-between;
     align-items: center;
   }
+  .header-top .header-top-inner .header-top-item .menu:hover .sub-menu{
+    visibility: visible;
+    opacity: 1;
+    top: 50%;
+  }
   .space-between1,
 .spce-between2 {
   display: flex;  
-  gap: 16px; 
+  gap: 0px; 
+}
+.header-top .header-top-inner .header-top-icon{
+  margin-right: 0px;
 }
   /* header-buttom end*/
   footer .footer-inner .footer-info {
