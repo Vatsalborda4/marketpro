@@ -21,7 +21,7 @@ const HeaderButtom = () => {
                   <li className="category-submenu-item">
                     <a className="" href="">
                       <span className="">
-                        <i class="ph ph-carrot"></i>
+                        <i className="ph ph-carrot"></i>
                       </span>
                       <span>Vegetables &amp; Fruit</span>
                       <span className="caret">
@@ -366,18 +366,18 @@ const HeaderButtom = () => {
               <div className="header-right-icon">
                 <div className="header-right-icon-inner">
                   <button>
-                    <span><i class="ph ph-magnifying-glass"></i></span>
+                    <span><i className="ph ph-magnifying-glass"></i></span>
                   </button>
                   <a href="">
-                    <span><i class="ph ph-heart"></i></span>
+                    <span><i className="ph ph-heart"></i></span>
                   </a>
                   <a href="">
-                    <span><i class="ph ph-shopping-cart-simple"></i></span>
+                    <span><i className="ph ph-shopping-cart-simple"></i></span>
                   </a>
                 </div>
               </div>
               <button className="header-right-menuicon">
-                <i class="ph ph-list"></i>
+                <i className="ph ph-list"></i>
               </button>
             </div>
           </div>

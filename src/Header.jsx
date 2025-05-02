@@ -114,7 +114,7 @@ const Header = () => {
               <li className="header-top-item">
                 <a href="#">
                   <span>
-                    <i class="fa-regular fa-circle-user"></i>
+                    <i className="fa-regular fa-circle-user"></i>
                   </span>
                   My Account
                 </a>
@@ -151,23 +151,23 @@ const Header = () => {
                   <option value="1">Noodles & Rice</option>
                   <option value="1">Ice Cream</option>
                 </select>
-                <div class="search">
+                <div className="search">
                   <input type="text" className="text"placeholder="Search for a product or brand" />
-                  <span className="search-icon"><div></div><div><FaSearch /></div></span>
+                  <span className="search-icon"><div style={{display:"flex",alignItems:"center",justifyContent:"center"}}> <i className="ph ph-magnifying-glass"></i></div></span>
                 </div>
               </div>
               <div className="location-outer">
-                <div class="location-container">
-                  <div class="location-button">
+                <div className="location-container">
+                  <div className="location-button">
                     <span><IoLocationOutline /></span>
-                    <div class="location-text">
+                    <div className="location-text">
                       <span>Your Location</span>
                       <span>Alabama</span>
                     </div>
-                    <span class="dropdown-arrow"><FaAngleDown /></span>
+                    <span className="dropdown-arrow"><FaAngleDown /></span>
                   </div>
-                  <div class="dropdown-menu">
-                    <div class="selected">Alabama</div>
+                  <div className="dropdown-menu">
+                    <div className="selected">Alabama</div>
                     <div>Alaska</div>
                     <div>Arizona</div>
                     <div>Delaware</div>
