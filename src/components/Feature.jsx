@@ -27,7 +27,7 @@ const Feature = () => {
                   <Link to="#" className="">
                     <img src="assets/images/feature-img2.webp" alt="feature-img2" />
                   </Link>
-                </div>.webp
+                </div>
                 <div className="feature-item__content ">
                   <h6 className="">
                     <Link to="#" className="">
@@ -42,7 +42,7 @@ const Feature = () => {
                   <Link to="#" className="">
                     <img src="assets/images/feature-img3.webp" alt="feature-img3" />
                   </Link>
-                </div>.webp
+                </div>
                 <div className="feature-item__content ">
                   <h6 className="">
                     <Link to="#" className="">
@@ -57,7 +57,7 @@ const Feature = () => {
                   <Link to="#" className="">
                     <img src="assets/images/feature-img4.webp" alt="feature-img4" />
                   </Link>
-                </div>.webp
+                </div>
                 <div className="feature-item__content ">
                   <h6 className="">
                     <Link to="#" className="">
@@ -72,7 +72,7 @@ const Feature = () => {
                   <Link to="#" className="">
                     <img src="assets/images/feature-img5.webp" alt="feature-img5" />
                   </Link>
-                </div>.webp
+                </div>
                 <div className="feature-item__content ">
                   <h6 className="">
                     <Link to="#" className="">
@@ -87,7 +87,7 @@ const Feature = () => {
                 <div className="feature-item__thumb ">
                   <Link to="#" className="">
                     <img src="assets/images/feature-img6.webp" alt="feature-img6" />
-                  </Link>.webp
+                  </Link>
                 </div>
                 <div className="feature-item__content ">
                   <h6 className="">
