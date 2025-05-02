@@ -18,7 +18,7 @@ const Home = () => {
 
       <FlashSales />
 
-      <ProductList/>
+      <ProductList  />
 
       <Offer/>
     </>
