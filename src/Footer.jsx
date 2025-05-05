@@ -159,22 +159,22 @@ const Footer = () => {
               <li className="footer-icon">
                 <div>
                   <a href="#">
-                    <span><PiFacebookLogoFill /></span>
+                    <span><i className="ph-fill ph-facebook-logo"></i></span>
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <span><FaTwitter /></span>
+                    <span><i className="ph-fill ph-twitter-logo"></i></span>
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <span><BiLogoInstagramAlt /></span>
+                    <span><i className="ph-fill ph-instagram-logo"></i></span>
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <span><FaLinkedin /></span>
+                    <span ><i className="ph-fill ph-linkedin-logo"></i></span>
                   </a>
                 </div>
               </li>
