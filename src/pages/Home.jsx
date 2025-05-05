@@ -5,6 +5,7 @@ import Promotional from "../components/Promotional";
 import FlashSales from "../components/FlashSales";
 import ProductList from "../components/ProductList";
 import Offer from "../components/Offer";
+import Recommended from "../components/Recommended";
 
 const Home = () => {
   return (
@@ -21,6 +22,8 @@ const Home = () => {
       <ProductList  />
 
       <Offer/>
+
+      <Recommended/>
     </>
   );
 };
