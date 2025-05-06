@@ -149,16 +149,111 @@ const Recommended = () => {
     <div className="product">
       <div className="container">
         <div className="Recommended-heading">
-          <div className="Recommended-heading-inner">
-            <h5 className="Recommended-heading-inner-item-left">
-              Recommended for you
-            </h5>
-            <div className="Recommended-heading-inner-item-right">
-              <Link to="#" className="Recommended-heading-link">
-                View All Deals
-              </Link>
-            </div>
-          </div>
+          <h5 className="">Recommended for you</h5>
+          <ul
+            className="common-tab "
+            id="pills-tab"
+            role="tablist"
+          >
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link active"
+                id="pills-all-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-all"
+                type="button"
+                role="tab"
+                aria-controls="pills-all"
+                aria-selected="true"
+              >
+                All
+              </button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link"
+                id="pills-grocery-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-grocery"
+                type="button"
+                role="tab"
+                aria-controls="pills-grocery"
+                aria-selected="false"
+              >
+                Grocery
+              </button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link"
+                id="pills-fruits-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-fruits"
+                type="button"
+                role="tab"
+                aria-controls="pills-fruits"
+                aria-selected="false"
+              >
+                Fruits
+              </button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link"
+                id="pills-juices-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-juices"
+                type="button"
+                role="tab"
+                aria-controls="pills-juices"
+                aria-selected="false"
+              >
+                Juices
+              </button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link"
+                id="pills-vegetables-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-vegetables"
+                type="button"
+                role="tab"
+                aria-controls="pills-vegetables"
+                aria-selected="false"
+              >
+                Vegetables
+              </button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link"
+                id="pills-snacks-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-snacks"
+                type="button"
+                role="tab"
+                aria-controls="pills-snacks"
+                aria-selected="false"
+              >
+                Snacks
+              </button>
+            </li>
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link"
+                id="pills-organic-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-organic"
+                type="button"
+                role="tab"
+                aria-controls="pills-organic"
+                aria-selected="false"
+              >
+                Organic Foods
+              </button>
+            </li>
+          </ul>
         </div>
         <div className="product-inner">
           {products.map((product) => (
