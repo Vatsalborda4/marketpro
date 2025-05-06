@@ -14,6 +14,7 @@ import TopVendors from "../components/TopVendors";
 import Delivery from "../components/Delivery";
 import Brands from "../components/Brands";
 import Shipping from "../components/Shipping";
+import Newsletter from "../components/Newsletter";
 
 const Home = () => {
   return (
@@ -48,6 +49,7 @@ const Home = () => {
       <NewArrival />
       
       <Shipping/>
+      <Newsletter/>
     </>
   );
 };
