@@ -16,7 +16,22 @@ const Brands = () => {
               </div>
             </div>
             <div className="brands-logos">
-              <Swiper slidesPerView={6} spaceBetween={10} loop>
+              <Swiper slidesPerView={6} spaceBetween={10}
+                  breakpoints={{
+                    0: {
+                      slidesPerView: 2, // for viewports up to 991px
+                    },
+                    360: {
+                      slidesPerView: 3, // for viewports up to 991px
+                    },
+                    426: {
+                      slidesPerView: 4, // for viewports up to 991px
+                    },
+                    576: {
+                      slidesPerView: 6, // for viewports 992px and above
+                    },
+                  }}
+              loop>
                 <SwiperSlide>
                   <img src="assets/images/brand-img1.webp" alt="Brand 1" />
                 </SwiperSlide>

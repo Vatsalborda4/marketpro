@@ -5,147 +5,147 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 
 const products = [
-    {
-      id: 1,
-      sale: "New",
-      img: "assets/images/product-img7.webp",
-      title: "C-500 Antioxidant Protect Dietary Supplement",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-    {
-      id: 2,
-      sale: "Sale 50%",
-      img: "assets/images/product-img8.webp",
-      title: "Marcel's Modern Pantry Almond Unsweetened",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-    {
-      id: 3,
-      sale: "Sale 50%",
-      img: "assets/images/product-img9.webp",
-      title: "O Organics Milk, Whole, Vitamin D",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-    {
-      id: 4,
-      sale: "Best Sale",
-      img: "assets/images/product-img10.webp",
-      title: "Whole Grains and Seeds Organic Bread",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-    {
-      id: 5,
-      sale: "Best Sale",
-      img: "assets/images/product-img11.webp",
-      title: "Luceme Yogurt, Lowfat, Strawberry",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-    {
-      id: 6,
-      sale: "Sale 50%",
-      img: "assets/images/product-img12.webp",
-      title: "Nature Valley Whole Grain Oats and Honey Protein",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-    {
-      id: 7,
-      sale: "New",
-      img: "assets/images/product-img13.webp",
-      title: "C-500 Antioxidant Protect Dietary Supplement",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-    {
-      id: 8,
-      sale: "Sale 50%",
-      img: "assets/images/product-img14.webp",
-      title: "C-500 Antioxidant Protect Dietary Supplement",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-    {
-      id: 9,
-      sale: "New",
-      img: "assets/images/product-img15.webp",
-      title: "C-500 Antioxidant Protect Dietary Supplement",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-    {
-      id: 10,
-      sale: "Sale 50%",
-      img: "assets/images/product-img16.webp",
-      title: "Good & Gather Farmed Atlantic Salmon",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-    {
-      id: 11,
-      sale: "Sale 50%",
-      img: "assets/images/product-img17.webp",
-      title: "Market Pantry 41-50 Raw Large Shrimp",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-    {
-      id: 12,
-      sale: "New",
-      img: "assets/images/product-img18.webp",
-      title: "Tropicana 100% Juice, Orange, No Pulp",
-      store: "By Lucky Supermarket",
-      originalPrice: "$28.99",
-      discountedPrice: "$14.99",
-      rating: "4.8",
-      reviews: "(17k)",
-    },
-  ];
-  
-  const getSaleStyle = (sale) => {
-    if (sale === "Sale 50%") return { backgroundColor: "#dc2626" };
-    if (sale.toLowerCase() === "new") return { backgroundColor: "#ff9f29" };
-    if (sale.toLowerCase() === "") return { display: "none" };
-    if (sale === "Best Sale") return { backgroundColor: "#2563eb" };
-    return {};
-  };
+  {
+    id: 1,
+    sale: "New",
+    img: "assets/images/product-img7.webp",
+    title: "C-500 Antioxidant Protect Dietary Supplement",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+  {
+    id: 2,
+    sale: "Sale 50%",
+    img: "assets/images/product-img8.webp",
+    title: "Marcel's Modern Pantry Almond Unsweetened",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+  {
+    id: 3,
+    sale: "Sale 50%",
+    img: "assets/images/product-img9.webp",
+    title: "O Organics Milk, Whole, Vitamin D",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+  {
+    id: 4,
+    sale: "Best Sale",
+    img: "assets/images/product-img10.webp",
+    title: "Whole Grains and Seeds Organic Bread",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+  {
+    id: 5,
+    sale: "Best Sale",
+    img: "assets/images/product-img11.webp",
+    title: "Luceme Yogurt, Lowfat, Strawberry",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+  {
+    id: 6,
+    sale: "Sale 50%",
+    img: "assets/images/product-img12.webp",
+    title: "Nature Valley Whole Grain Oats and Honey Protein",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+  {
+    id: 7,
+    sale: "New",
+    img: "assets/images/product-img13.webp",
+    title: "C-500 Antioxidant Protect Dietary Supplement",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+  {
+    id: 8,
+    sale: "Sale 50%",
+    img: "assets/images/product-img14.webp",
+    title: "C-500 Antioxidant Protect Dietary Supplement",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+  {
+    id: 9,
+    sale: "New",
+    img: "assets/images/product-img15.webp",
+    title: "C-500 Antioxidant Protect Dietary Supplement",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+  {
+    id: 10,
+    sale: "Sale 50%",
+    img: "assets/images/product-img16.webp",
+    title: "Good & Gather Farmed Atlantic Salmon",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+  {
+    id: 11,
+    sale: "Sale 50%",
+    img: "assets/images/product-img17.webp",
+    title: "Market Pantry 41-50 Raw Large Shrimp",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+  {
+    id: 12,
+    sale: "New",
+    img: "assets/images/product-img18.webp",
+    title: "Tropicana 100% Juice, Orange, No Pulp",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.99",
+    discountedPrice: "$14.99",
+    rating: "4.8",
+    reviews: "(17k)",
+  },
+];
+
+const getSaleStyle = (sale) => {
+  if (sale === "Sale 50%") return { backgroundColor: "#dc2626" };
+  if (sale.toLowerCase() === "new") return { backgroundColor: "#ff9f29" };
+  if (sale.toLowerCase() === "") return { display: "none" };
+  if (sale === "Best Sale") return { backgroundColor: "#2563eb" };
+  return {};
+};
 const HotDeals = () => {
   return (
     <>
@@ -182,44 +182,57 @@ const HotDeals = () => {
                     Fresh Vegetables
                   </h4>
                   <ul className="hotdeals-sales-slider-countdown-list">
-                  <li className="hotdeals-sales-slider-countdown-list-inner">
-                    <span className="days" />234 Days
-                  </li>
-                  <li className="hotdeals-sales-slider-countdown-list-inner">
-                    <span className="hours" />21 Hours
-                  </li>
-                  <li className="hotdeals-sales-slider-countdown-list-inner">
-                    <span className="minutes" />30 Min
-                  </li>
-                  <li className="hotdeals-sales-slider-countdown-list-inner">
-                    <span className="seconds" />39 Sec
-                  </li>
-                </ul>
-                <div className="btn-div">
-                  <Link
-                    to="#"
-                    className="hotdeals-offer-inner-item-btn"
-                    tabIndex={0}
-                  >
-                    Shop Now
-                    <span className="hotdeals-offer-inner-item-btn-icon">
-                      <i className="ph ph-arrow-right" />
-                    </span>
-                  </Link>
+                    <li className="hotdeals-sales-slider-countdown-list-inner">
+                      <span className="days" />
+                      234 Days
+                    </li>
+                    <li className="hotdeals-sales-slider-countdown-list-inner">
+                      <span className="hours" />
+                      21 Hours
+                    </li>
+                    <li className="hotdeals-sales-slider-countdown-list-inner">
+                      <span className="minutes" />
+                      30 Min
+                    </li>
+                    <li className="hotdeals-sales-slider-countdown-list-inner">
+                      <span className="seconds" />
+                      39 Sec
+                    </li>
+                  </ul>
+                  <div className="btn-div">
+                    <Link
+                      to="#"
+                      className="hotdeals-offer-inner-item-btn"
+                      tabIndex={0}
+                    >
+                      Shop Now
+                      <span className="hotdeals-offer-inner-item-btn-icon">
+                        <i className="ph ph-arrow-right" />
+                      </span>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
             <div className="hotdeals-inner-right">
               <Swiper
-                slidesPerView={3}
+                slidesPerView={2}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 1,
+                  },
+                  576: {
+                    slidesPerView: 2,
+                  },
+                  1199: {},
+                }}
                 spaceBetween={7}
                 loop={true}
                 autoplay={{
                   delay: 3000,
                   disableOnInteraction: false,
                 }}
-                
+
                 // modules={[Autoplay]}
               >
                 {products.map((product) => (
@@ -271,15 +284,14 @@ const HotDeals = () => {
                               {product.rating}
                             </span>
                             <span className="hotdeals-product-card-rating-star">
-                              <i className="ph-fill ph-star" />
+                              <i class="ph-fill ph-star"></i>{" "}
                             </span>
                             <span className="hotdeals-product-card-rating-totle">
                               {product.reviews}
                             </span>
                           </div>
                           <Link to="#" className="hotdeals-add">
-                            Add To Cart{" "}
-                            <i className="ph ph-shopping-cart" />
+                            Add To Cart <i className="ph ph-shopping-cart" />
                           </Link>
                         </div>
                       </div>

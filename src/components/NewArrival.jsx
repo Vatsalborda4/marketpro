@@ -159,6 +159,20 @@ const NewArrival = () => {
         <div className="newarrival-inner">
           <Swiper
             slidesPerView={4}
+            breakpoints={{
+              0: {
+                slidesPerView: 1, // for viewports up to 991px
+              },
+              426: {
+                slidesPerView: 2, // for viewports up to 991px
+              },
+              576: {
+                slidesPerView: 3, // for viewports up to 991px
+              },
+              992: {
+                slidesPerView: 4, // for viewports 992px and above
+              },
+            }}
             spaceBetween={10}
             loop={true}
             

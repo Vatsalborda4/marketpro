@@ -1,19 +1,37 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
 
 const HeaderButtom = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
+
   const toggleSidebar = () => setIsOpen(!isOpen);
   const toggleSidebar2 = () => setIsOpen2(!isOpen2);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <div className="header-buttom">
+      <div className={`header-buttom ${isFixed ? "fixed" : ""}`}>
         <div className="container">
           <div className="header-bottom-inner">
             <div className="header-bottom-category">
-              <button type="button" className="category-button toggle-btn" onClick={toggleSidebar2}>
+              <button
+                type="button"
+                className="category-button toggle-btn"
+                onClick={toggleSidebar2}
+              >
                 <span className="icon ">
                   <i className="ph ph-dots-nine"></i>{" "}
                 </span>
@@ -419,7 +437,6 @@ const HeaderButtom = () => {
           <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>grocery & staples</a></li>
         </ul>
       </div>
-  
     </>
   );
 };

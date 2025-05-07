@@ -61,8 +61,9 @@ const BestSells = () => {
       <div className="container">
         <div className="BestSells-heading">
           <div className="BestSells-heading-inner">
-            <h5 className="BestSells-heading-inner-item-left">Daily Best Sells</h5>
-         
+            <h5 className="BestSells-heading-inner-item-left">
+              Daily Best Sells
+            </h5>
           </div>
         </div>
         <div className="BestSells-inner">
@@ -71,6 +72,11 @@ const BestSells = () => {
               <div className="BestSells-card">
                 <Link to="#" className="BestSells-card-img">
                   <img src={product.img} alt={product.title} />
+                  <div className="BestSells-time">
+                    <span>9 Houres</span>
+                    <span>45 Min</span>
+                    <span>25 Sec</span>
+                  </div>
                 </Link>
                 <div className="BestSells-card-content">
                   <div className="BestSells-card-price">
@@ -129,7 +135,6 @@ const BestSells = () => {
                   </Link>
                 </div>
                 <span
-                 
                   className="BestSells-sale"
                   style={{ backgroundColor: "#dc2626 " }}
                 >
@@ -139,46 +144,48 @@ const BestSells = () => {
             </div>
           ))}
         </div>
-           <div className="BestSells-inner-left">
-                      <div className="BestSells-offer-inner-item-inner">
-                        <img
-                          src="assets/images/special-snacks.webp"
-                          alt="Decorative shape for BestSells-offer"
-                          className="BestSells-offer-inner-item-img"
-                        />
-                
-                        <div className="BestSells-offer-inner-item-right">
-                          <h4 className="BestSells-offer-inner-item-text">
-                          Special Snacks                          </h4>
-                          <ul className="BestSells-sales-slider-countdown-list">
-                          <li className="BestSells-sales-slider-countdown-list-inner">
-                            <span className="days" />234 Days
-                          </li>
-                          <li className="BestSells-sales-slider-countdown-list-inner">
-                            <span className="hours" />21 Hours
-                          </li>
-                          <li className="BestSells-sales-slider-countdown-list-inner">
-                            <span className="minutes" />30 Min
-                          </li>
-                          <li className="BestSells-sales-slider-countdown-list-inner">
-                            <span className="seconds" />39 Sec
-                          </li>
-                        </ul>
-                        <div className="btn-div">
-                          <Link
-                            to="#"
-                            className="BestSells-offer-inner-item-btn"
-                            tabIndex={0}
-                          >
-                            Shop Now
-                            <span className="BestSells-offer-inner-item-btn-icon">
-                              <i className="ph ph-arrow-right" />
-                            </span>
-                          </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+        <div className="BestSells-inner-left">
+          <div className="BestSells-offer-inner-item-inner">
+            <img
+              src="assets/images/special-snacks.webp"
+              alt="Decorative shape for BestSells-offer"
+              className="BestSells-offer-inner-item-img"
+            />
+
+            <div className="BestSells-offer-inner-item-right">
+              <h4 className="BestSells-offer-inner-item-text">
+                Special Snacks{" "}
+              </h4>
+              <ul className="BestSells-sales-slider-countdown-list">
+              
+                <li className="BestSells-sales-slider-countdown-list-inner">
+                  <span className="hours" />
+                  21 Hours
+                </li>
+                <li className="BestSells-sales-slider-countdown-list-inner">
+                  <span className="minutes" />
+                  30 Min
+                </li>
+                <li className="BestSells-sales-slider-countdown-list-inner">
+                  <span className="seconds" />
+                  39 Sec
+                </li>
+              </ul>
+              <div className="btn-div">
+                <Link
+                  to="#"
+                  className="BestSells-offer-inner-item-btn"
+                  tabIndex={0}
+                >
+                  Shop Now
+                  <span className="BestSells-offer-inner-item-btn-icon">
+                    <i className="ph ph-arrow-right" />
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

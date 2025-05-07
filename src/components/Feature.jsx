@@ -74,8 +74,28 @@ const Feature = () => {
         <div className="feature-inner">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            spaceBetween={50}
-            slidesPerView={6}
+            spaceBetween={20}
+            slidesPerView={5}
+            breakpoints={{
+              0: {
+                slidesPerView: 1, // for viewports up to 991px
+              },
+              360: {
+                slidesPerView: 2, // for viewports up to 991px
+              },
+              426: {
+                slidesPerView: 3, // for viewports up to 991px
+              },
+              576: {
+                slidesPerView: 4, // for viewports up to 991px
+              },
+              768: {
+                slidesPerView: 5, // for viewports up to 991px
+              },
+              992: {
+                slidesPerView: 6, // for viewports 992px and above
+              },
+            }}
             navigation
             loop={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}

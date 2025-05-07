@@ -31,6 +31,14 @@ const FlashSales = () => {
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           spaceBetween={10}
           slidesPerView={2}
+          breakpoints={{
+            0: {
+              slidesPerView: 1, // for viewports up to 991px
+            },
+            992: {
+              slidesPerView: 2, // for viewports 992px and above
+            },
+          }}
           loop={true}
           className="flash-sales-slider"
         >
