@@ -306,7 +306,7 @@ const HeaderButtom = () => {
                   </ul>
                 </li>
                 <li className="menu-item">
-                  <span className="pages-new">New</span>
+                  <span className="pages-new" style={{lineHeight:"21px"}}>New</span>
                   <a href="#">Pages</a>
                   <ul className="sum-menu">
                     <li className="sum-menu-item">

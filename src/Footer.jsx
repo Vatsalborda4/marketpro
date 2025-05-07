@@ -170,7 +170,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <a href="#">
-                    <span><i className="ph-fill ph-linkedin-logo"></i></span>
+                    <span ><i className="ph-fill ph-linkedin-logo"></i></span>
                   </a>
                 </div>
               </li>

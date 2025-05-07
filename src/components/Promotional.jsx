@@ -13,8 +13,8 @@ const Promotional = () => {
                 alt="Promotional banner showcasing fresh meat"
                 className="promotional-item-img"
               />
-              <div className="promotional-banner-item__content">
-                <h6 className="promotional-banner-item__title ">
+              <div className="promotional-banner-item-content">
+                <h6 className="promotional-banner-item-title ">
                   Everyday Fresh Meat
                 </h6>
                 <Link to="#" className="promotional-a">
@@ -33,8 +33,8 @@ const Promotional = () => {
                 alt="Promotional banner showcasing fresh vegetables"
                 className="promotional-item-img"
               />
-              <div className="promotional-banner-item__content">
-                <h6 className="promotional-banner-item__title ">
+              <div className="promotional-banner-item-content">
+                <h6 className="promotional-banner-item-title ">
                   Daily Fresh Vegetables
                 </h6>
                 <Link to="#" className="promotional-a">
@@ -53,8 +53,8 @@ const Promotional = () => {
                 alt="Promotional banner showcasing fresh milk"
                 className="promotional-item-img"
               />
-              <div className="promotional-banner-item__content">
-                <h6 className="promotional-banner-item__title ">
+              <div className="promotional-banner-item-content">
+                <h6 className="promotional-banner-item-title ">
                   Everyday Fresh Milk
                 </h6>
                 <Link to="#" className="promotional-a">
@@ -73,8 +73,8 @@ const Promotional = () => {
                 alt="Promotional banner showcasing fresh fruits"
                 className="promotional-item-img"
               />
-              <div className="promotional-banner-item__content">
-                <h6 className="promotional-banner-item__title ">
+              <div className="promotional-banner-item-content">
+                <h6 className="promotional-banner-item-title ">
                   Everyday Fresh Fruits
                 </h6>
                 <Link to="#" className="promotional-a">
