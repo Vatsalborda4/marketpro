@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
 import Home from "./pages/Home";
+import ContactUs from "./pages/ContactUs";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,7 +13,7 @@ root.render(
     <Routes>
        <Route path="/" element={<Home/>} />
       {/* <Route path="about" element={<About />} /> */}
-      {/* <Route path="contact" element={<Contact />} />  */}
+      <Route path="contact" element={<ContactUs />} /> 
     </Routes>
     <Footer />
   </BrowserRouter>
