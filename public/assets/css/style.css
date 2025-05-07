@@ -3451,7 +3451,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   padding-block: 16px;
   transition: 0.2s linear;
   position: relative;
-  padding: 16px 8px;
+  padding: 16px 8px;  
 }
 .newarrival .newarrival-inner .newarrival-inner-item .newarrival-card:hover {
   border-color: #299e60;
@@ -5982,7 +5982,20 @@ input[type="number"] {
     padding: 0;
   }
   /* offer end */
+  /* contact page  start */
+  .contact .contact-row .contact-left{
+    width: 100%;
+  }
+  .contact .contact-row .contact-right{
+    width: 100%;
+  }
+  .contact .contact-row .contact-right .contact-bottom .contact-bottom-link{
+    flex-grow: 1;
+    width: auto;
+  }
+  /* contact page end */
 }
+
 /* end media 991px  */
 
 /* start media 767px  */
@@ -6237,6 +6250,7 @@ input[type="number"] {
   .Shipping .Shipping-card {
     width: 100%;
   }
+
 }
 /* start media 479px  */
 @media (max-width: 479px) {
@@ -6304,7 +6318,11 @@ input[type="number"] {
   .feature .feature-inner .feature-inner-item .feature-item:nth-last-child(6) {
     display: none;
   }
+  .contact .contact-row .contact-left .contact-box form .contact-box-inner .contact-box-inner-item{
+    width: 100%;
+  }
 }
+
 /* end media 479px  */
 /* end  media */
 @media (max-width: 424px) {
