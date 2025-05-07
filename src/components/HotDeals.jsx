@@ -213,7 +213,7 @@ const HotDeals = () => {
             <div className="hotdeals-inner-right">
               <Swiper
                 slidesPerView={3}
-                spaceBetween={30}
+                spaceBetween={7}
                 loop={true}
                 autoplay={{
                   delay: 3000,

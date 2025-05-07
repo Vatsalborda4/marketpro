@@ -3013,13 +3013,13 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   margin-top: 12px;
 }
 
-.hotdeals-product-inner
+
   .hotdeals-product-inner-item
   .hotdeals-product-card
   .hotdeals-product-card-content
   .hotdeals-product-card-price {
   display: block;
-  margin-bottom: 16px;
+  margin: 16px auto;
 }
 
   .hotdeals-product-inner-item
