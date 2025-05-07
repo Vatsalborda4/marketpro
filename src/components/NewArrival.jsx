@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
-import { Autoplay } from "swiper";
+import { Autoplay } from "swiper/modules";
 
 const products = [
   {
@@ -158,6 +158,8 @@ const NewArrival = () => {
         </div>
         <div className="newarrival-inner">
           <Swiper
+          modules={[Autoplay]}
+
             slidesPerView={4}
             breakpoints={{
               0: {
@@ -177,7 +179,7 @@ const NewArrival = () => {
             loop={true}
             
             autoplay={{
-              delay: 2500,
+              delay: 3000,
               disableOnInteraction: false,
             }}
           >

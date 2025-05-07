@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import { Navigation, Pagination, Autoplay, A11y } from "swiper/modules";
 import "swiper/css";
-
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 const products = [
   {
     id: 1,
@@ -216,6 +217,7 @@ const HotDeals = () => {
             </div>
             <div className="hotdeals-inner-right">
               <Swiper
+                modules={[Autoplay]}
                 slidesPerView={2}
                 breakpoints={{
                   0: {
@@ -228,12 +230,7 @@ const HotDeals = () => {
                 }}
                 spaceBetween={7}
                 loop={true}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-
-                // modules={[Autoplay]}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
               >
                 {products.map((product) => (
                   <SwiperSlide key={product.id}>
