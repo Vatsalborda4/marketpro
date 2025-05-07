@@ -1,28 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import "swiper/css";
+
 const products = [
-    // {
-    //   id: 1,
-    //   sale: "",
-    //   img: "assets/images/product-img7.webp",
-    //   title: "C-500 Antioxidant Protect Dietary Supplement",
-    //   store: "By Lucky Supermarket",
-    //   originalPrice: "$28.99",
-    //   discountedPrice: "$14.99",
-    //   rating: "4.8",
-    //   reviews: "(17k)",
-    // },
-    // {
-    //   id: 2,
-    //   sale: "Sale 50%",
-    //   img: "assets/images/product-img8.webp",
-    //   title: "Marcel's Modern Pantry Almond Unsweetened",
-    //   store: "By Lucky Supermarket",
-    //   originalPrice: "$28.99",
-    //   discountedPrice: "$14.99",
-    //   rating: "4.8",
-    //   reviews: "(17k)",
-    // },
+    {
+      id: 1,
+      sale: "New",
+      img: "assets/images/product-img7.webp",
+      title: "C-500 Antioxidant Protect Dietary Supplement",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 2,
+      sale: "Sale 50%",
+      img: "assets/images/product-img8.webp",
+      title: "Marcel's Modern Pantry Almond Unsweetened",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
     {
       id: 3,
       sale: "Sale 50%",
@@ -45,50 +49,50 @@ const products = [
       rating: "4.8",
       reviews: "(17k)",
     },
-    // {
-    //   id: 5,
-    //   sale: "",
-    //   img: "assets/images/product-img11.webp",
-    //   title: "Luceme Yogurt, Lowfat, Strawberry",
-    //   store: "By Lucky Supermarket",
-    //   originalPrice: "$28.99",
-    //   discountedPrice: "$14.99",
-    //   rating: "4.8",
-    //   reviews: "(17k)",
-    // },
-    // {
-    //   id: 6,
-    //   sale: "Sale 50%",
-    //   img: "assets/images/product-img12.webp",
-    //   title: "Nature Valley Whole Grain Oats and Honey Protein",
-    //   store: "By Lucky Supermarket",
-    //   originalPrice: "$28.99",
-    //   discountedPrice: "$14.99",
-    //   rating: "4.8",
-    //   reviews: "(17k)",
-    // },
-    // {
-    //   id: 7,
-    //   sale: "",
-    //   img: "assets/images/product-img13.webp",
-    //   title: "C-500 Antioxidant Protect Dietary Supplement",
-    //   store: "By Lucky Supermarket",
-    //   originalPrice: "$28.99",
-    //   discountedPrice: "$14.99",
-    //   rating: "4.8",
-    //   reviews: "(17k)",
-    // },
-    // {
-    //   id: 8,
-    //   sale: "Sale 50%",
-    //   img: "assets/images/product-img14.webp",
-    //   title: "C-500 Antioxidant Protect Dietary Supplement",
-    //   store: "By Lucky Supermarket",
-    //   originalPrice: "$28.99",
-    //   discountedPrice: "$14.99",
-    //   rating: "4.8",
-    //   reviews: "(17k)",
-    // },
+    {
+      id: 5,
+      sale: "Best Sale",
+      img: "assets/images/product-img11.webp",
+      title: "Luceme Yogurt, Lowfat, Strawberry",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 6,
+      sale: "Sale 50%",
+      img: "assets/images/product-img12.webp",
+      title: "Nature Valley Whole Grain Oats and Honey Protein",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 7,
+      sale: "New",
+      img: "assets/images/product-img13.webp",
+      title: "C-500 Antioxidant Protect Dietary Supplement",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 8,
+      sale: "Sale 50%",
+      img: "assets/images/product-img14.webp",
+      title: "C-500 Antioxidant Protect Dietary Supplement",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
     {
       id: 9,
       sale: "New",
@@ -100,39 +104,39 @@ const products = [
       rating: "4.8",
       reviews: "(17k)",
     },
-    // {
-    //   id: 10,
-    //   sale: "Sale 50%",
-    //   img: "assets/images/product-img16.webp",
-    //   title: "Good & Gather Farmed Atlantic Salmon",
-    //   store: "By Lucky Supermarket",
-    //   originalPrice: "$28.99",
-    //   discountedPrice: "$14.99",
-    //   rating: "4.8",
-    //   reviews: "(17k)",
-    // },
-    // {
-    //   id: 11,
-    //   sale: "Sale 50%",
-    //   img: "assets/images/product-img17.webp",
-    //   title: "Market Pantry 41-50 Raw Large Shrimp",
-    //   store: "By Lucky Supermarket",
-    //   originalPrice: "$28.99",
-    //   discountedPrice: "$14.99",
-    //   rating: "4.8",
-    //   reviews: "(17k)",
-    // },
-    // {
-    //   id: 12,
-    //   sale: "New",
-    //   img: "assets/images/product-img18.webp",
-    //   title: "Tropicana 100% Juice, Orange, No Pulp",
-    //   store: "By Lucky Supermarket",
-    //   originalPrice: "$28.99",
-    //   discountedPrice: "$14.99",
-    //   rating: "4.8",
-    //   reviews: "(17k)",
-    // },
+    {
+      id: 10,
+      sale: "Sale 50%",
+      img: "assets/images/product-img16.webp",
+      title: "Good & Gather Farmed Atlantic Salmon",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 11,
+      sale: "Sale 50%",
+      img: "assets/images/product-img17.webp",
+      title: "Market Pantry 41-50 Raw Large Shrimp",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 12,
+      sale: "New",
+      img: "assets/images/product-img18.webp",
+      title: "Tropicana 100% Juice, Orange, No Pulp",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
   ];
   
   const getSaleStyle = (sale) => {
@@ -207,64 +211,82 @@ const HotDeals = () => {
               </div>
             </div>
             <div className="hotdeals-inner-right">
-                   <div className="hotdeals-product-inner">
-                          {products.map((product) => (
-                            <div className="hotdeals-product-inner-item" key={product.id}>
-                              <div className="hotdeals-product-card">
-                                {product.sale && (
-                                  <Link
-                                    to="#"
-                                    className="hotdeals-product-sale"
-                                    style={getSaleStyle(product.sale)}
-                                  >
-                                    {product.sale}
-                                  </Link>
-                                )}
-                                <Link to="#" className="hotdeals-product-card-img">
-                                  <img src={product.img} alt={product.title} />
-                                </Link>
-                                <div className="hotdeals-product-card-content">
-                                  <h6 className="hotdeals-product-card-title">
-                                    <Link to="#" className="hotdeals-product-card-title-inner">
-                                      {product.title}
-                                    </Link>
-                                  </h6>
-                                  <div className="hotdeals-product-card-Lucky">
-                                    <span className="hotdeals-product-card-storefront">
-                                      <i className="ph-fill ph-storefront" />
-                                    </span>
-                                   <span className="hotdeals-product-card-Lucky-text">
-                                      {product.store}
-                                    </span>
-                                  </div>
-                                  <div className="hotdeals-product-card-price">
-                                    <span className="hotdeals-product-card-price-dec">
-                                      {product.originalPrice}
-                                    </span>
-                                    <span className="hotdeals-product-card-price-ong">
-                                      {product.discountedPrice}{" "}
-                                      <span className="hotdeals-product-card-price-oty">/Qty</span>
-                                    </span>
-                                  </div>
-                                  <div className="hotdeals-product-card-rating">
-                                    <span className="hotdeals-product-card-rating-num">
-                                      {product.rating}
-                                    </span>
-                                    <span className="hotdeals-product-card-rating-star">
-                                      <i className="ph-fill ph-star" />
-                                    </span>
-                                    <span className="hotdeals-product-card-rating-totle">
-                                      {product.reviews}
-                                    </span>
-                                  </div>
-                                  <Link to="#" className="hotdeals-add">
-                                    Add To Cart <i className="ph ph-shopping-cart" />
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                          ))}
+              <Swiper
+                slidesPerView={3}
+                spaceBetween={7}
+                loop={true}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,
+                }}
+                
+                // modules={[Autoplay]}
+              >
+                {products.map((product) => (
+                  <SwiperSlide key={product.id}>
+                    <div className="hotdeals-product-inner-item">
+                      <div className="hotdeals-product-card">
+                        {product.sale && (
+                          <Link
+                            to="#"
+                            className="hotdeals-product-sale"
+                            style={getSaleStyle(product.sale)}
+                          >
+                            {product.sale}
+                          </Link>
+                        )}
+                        <Link to="#" className="hotdeals-product-card-img">
+                          <img src={product.img} alt={product.title} />
+                        </Link>
+                        <div className="hotdeals-product-card-content">
+                          <h6 className="hotdeals-product-card-title">
+                            <Link
+                              to="#"
+                              className="hotdeals-product-card-title-inner"
+                            >
+                              {product.title}
+                            </Link>
+                          </h6>
+                          <div className="hotdeals-product-card-Lucky">
+                            <span className="hotdeals-product-card-storefront">
+                              <i className="ph-fill ph-storefront" />
+                            </span>
+                            <span className="hotdeals-product-card-Lucky-text">
+                              {product.store}
+                            </span>
+                          </div>
+                          <div className="hotdeals-product-card-price">
+                            <span className="hotdeals-product-card-price-dec">
+                              {product.originalPrice}
+                            </span>
+                            <span className="hotdeals-product-card-price-ong">
+                              {product.discountedPrice}{" "}
+                              <span className="hotdeals-product-card-price-oty">
+                                /Qty
+                              </span>
+                            </span>
+                          </div>
+                          <div className="hotdeals-product-card-rating">
+                            <span className="hotdeals-product-card-rating-num">
+                              {product.rating}
+                            </span>
+                            <span className="hotdeals-product-card-rating-star">
+                              <i className="ph-fill ph-star" />
+                            </span>
+                            <span className="hotdeals-product-card-rating-totle">
+                              {product.reviews}
+                            </span>
+                          </div>
+                          <Link to="#" className="hotdeals-add">
+                            Add To Cart{" "}
+                            <i className="ph ph-shopping-cart" />
+                          </Link>
                         </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </div>
           </div>
         </div>
@@ -272,4 +294,5 @@ const HotDeals = () => {
     </>
   );
 };
+
 export default HotDeals;

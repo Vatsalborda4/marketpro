@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import { Autoplay } from "swiper";
 
 const products = [
   {
@@ -46,94 +50,94 @@ const products = [
     rating: "4.8",
     reviews: "(17k)",
   },
-  //   {
-  //     id: 5,
-  //     sale: "",
-  //     img: "assets/images/product-img11.webp",
-  //     title: "Luceme Yogurt, Lowfat, Strawberry",
-  //     store: "By Lucky Supermarket",
-  //     originalPrice: "$28.99",
-  //     discountedPrice: "$14.99",
-  //     rating: "4.8",
-  //     reviews: "(17k)",
-  //   },
-  //   {
-  //     id: 6,
-  //     sale: "Sale 50%",
-  //     img: "assets/images/product-img12.webp",
-  //     title: "Nature Valley Whole Grain Oats and Honey Protein",
-  //     store: "By Lucky Supermarket",
-  //     originalPrice: "$28.99",
-  //     discountedPrice: "$14.99",
-  //     rating: "4.8",
-  //     reviews: "(17k)",
-  //   },
-  //   {
-  //     id: 7,
-  //     sale: "",
-  //     img: "assets/images/product-img13.webp",
-  //     title: "C-500 Antioxidant Protect Dietary Supplement",
-  //     store: "By Lucky Supermarket",
-  //     originalPrice: "$28.99",
-  //     discountedPrice: "$14.99",
-  //     rating: "4.8",
-  //     reviews: "(17k)",
-  //   },
-  //   {
-  //     id: 8,
-  //     sale: "Sale 50%",
-  //     img: "assets/images/product-img14.webp",
-  //     title: "C-500 Antioxidant Protect Dietary Supplement",
-  //     store: "By Lucky Supermarket",
-  //     originalPrice: "$28.99",
-  //     discountedPrice: "$14.99",
-  //     rating: "4.8",
-  //     reviews: "(17k)",
-  //   },
-  //   {
-  //     id: 9,
-  //     sale: "New",
-  //     img: "assets/images/product-img15.webp",
-  //     title: "C-500 Antioxidant Protect Dietary Supplement",
-  //     store: "By Lucky Supermarket",
-  //     originalPrice: "$28.99",
-  //     discountedPrice: "$14.99",
-  //     rating: "4.8",
-  //     reviews: "(17k)",
-  //   },
-  //   {
-  //     id: 10,
-  //     sale: "Sale 50%",
-  //     img: "assets/images/product-img16.webp",
-  //     title: "Good & Gather Farmed Atlantic Salmon",
-  //     store: "By Lucky Supermarket",
-  //     originalPrice: "$28.99",
-  //     discountedPrice: "$14.99",
-  //     rating: "4.8",
-  //     reviews: "(17k)",
-  //   },
-  //   {
-  //     id: 11,
-  //     sale: "Sale 50%",
-  //     img: "assets/images/product-img17.webp",
-  //     title: "Market Pantry 41-50 Raw Large Shrimp",
-  //     store: "By Lucky Supermarket",
-  //     originalPrice: "$28.99",
-  //     discountedPrice: "$14.99",
-  //     rating: "4.8",
-  //     reviews: "(17k)",
-  //   },
-  //   {
-  //     id: 12,
-  //     sale: "New",
-  //     img: "assets/images/product-img18.webp",
-  //     title: "Tropicana 100% Juice, Orange, No Pulp",
-  //     store: "By Lucky Supermarket",
-  //     originalPrice: "$28.99",
-  //     discountedPrice: "$14.99",
-  //     rating: "4.8",
-  //     reviews: "(17k)",
-  //   },
+    {
+      id: 5,
+      sale: "",
+      img: "assets/images/product-img11.webp",
+      title: "Luceme Yogurt, Lowfat, Strawberry",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 6,
+      sale: "Sale 50%",
+      img: "assets/images/product-img12.webp",
+      title: "Nature Valley Whole Grain Oats and Honey Protein",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 7,
+      sale: "",
+      img: "assets/images/product-img13.webp",
+      title: "C-500 Antioxidant Protect Dietary Supplement",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 8,
+      sale: "Sale 50%",
+      img: "assets/images/product-img14.webp",
+      title: "C-500 Antioxidant Protect Dietary Supplement",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 9,
+      sale: "New",
+      img: "assets/images/product-img15.webp",
+      title: "C-500 Antioxidant Protect Dietary Supplement",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 10,
+      sale: "Sale 50%",
+      img: "assets/images/product-img16.webp",
+      title: "Good & Gather Farmed Atlantic Salmon",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 11,
+      sale: "Sale 50%",
+      img: "assets/images/product-img17.webp",
+      title: "Market Pantry 41-50 Raw Large Shrimp",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
+    {
+      id: 12,
+      sale: "New",
+      img: "assets/images/product-img18.webp",
+      title: "Tropicana 100% Juice, Orange, No Pulp",
+      store: "By Lucky Supermarket",
+      originalPrice: "$28.99",
+      discountedPrice: "$14.99",
+      rating: "4.8",
+      reviews: "(17k)",
+    },
 ];
 
 const NewArrival = () => {
@@ -153,54 +157,67 @@ const NewArrival = () => {
           </div>
         </div>
         <div className="newarrival-inner">
-          {products.map((product) => (
-            <div className="newarrival-inner-item" key={product.id}>
-              <div className="newarrival-card">
-                <Link to="#" className="newarrival-card-img">
-                  <img src={product.img} alt={product.title} />
-                </Link>
-                <div className="newarrival-card-content">
-                  <div className="newarrival-card-rating">
-                    <span className="newarrival-card-rating-num">
-                      {product.rating}
-                    </span>
-                    <span className="newarrival-card-rating-star">
-                      <i className="ph-fill ph-star" />
-                    </span>
-                    <span className="newarrival-card-rating-totle">
-                      {product.reviews}
-                    </span>
-                  </div>
-                  <h6 className="newarrival-card-title">
-                    <Link to="#" className="newarrival-card-title-inner">
-                      {product.title}
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={10}
+            loop={true}
+            
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+          >
+            {products.map((product) => (
+              <SwiperSlide key={product.id}>
+                <div className="newarrival-inner-item">
+                  <div className="newarrival-card">
+                    <Link to="#" className="newarrival-card-img">
+                      <img src={product.img} alt={product.title} />
                     </Link>
-                  </h6>
-                  <div className="newarrival-card-Lucky">
-                    <span className="newarrival-card-storefront">
-                      <i className="ph-fill ph-storefront" />
-                    </span>
-                    <span className="newarrival-card-Lucky-text">
-                      {product.store}
-                    </span>
+                    <div className="newarrival-card-content">
+                      <div className="newarrival-card-rating">
+                        <span className="newarrival-card-rating-num">
+                          {product.rating}
+                        </span>
+                        <span className="newarrival-card-rating-star">
+                          <i className="ph-fill ph-star" />
+                        </span>
+                        <span className="newarrival-card-rating-totle">
+                          {product.reviews}
+                        </span>
+                      </div>
+                      <h6 className="newarrival-card-title">
+                        <Link to="#" className="newarrival-card-title-inner">
+                          {product.title}
+                        </Link>
+                      </h6>
+                      <div className="newarrival-card-Lucky">
+                        <span className="newarrival-card-storefront">
+                          <i className="ph-fill ph-storefront" />
+                        </span>
+                        <span className="newarrival-card-Lucky-text">
+                          {product.store}
+                        </span>
+                      </div>
+                      <div className="newarrival-card-price">
+                        <span className="newarrival-card-price-dec">
+                          {product.originalPrice}
+                        </span>
+                        <br />
+                        <span className="newarrival-card-price-ong">
+                          {product.discountedPrice}{" "}
+                          <span className="newarrival-card-price-oty">/Qty</span>
+                        </span>
+                      </div>
+                      <Link to="#" className="newarrival-add">
+                        Add <i className="ph ph-shopping-cart" />
+                      </Link>
+                    </div>
                   </div>
-                  <div className="newarrival-card-price">
-                    <span className="newarrival-card-price-dec">
-                      {product.originalPrice}
-                    </span>
-                    <br />
-                    <span className="newarrival-card-price-ong">
-                      {product.discountedPrice}{" "}
-                      <span className="newarrival-card-price-oty">/Qty</span>
-                    </span>
-                  </div>
-                  <Link to="#" className="newarrival-add">
-                    Add <i className="ph ph-shopping-cart" />
-                  </Link>
                 </div>
-              </div>
-            </div>
-          ))}
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
