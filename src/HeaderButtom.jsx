@@ -1,14 +1,37 @@
-import React from "react";
-import { TbGridDots } from "react-icons/tb";
-import { FaChevronDown } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+
 const HeaderButtom = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
+
+  const toggleSidebar = () => setIsOpen(!isOpen);
+  const toggleSidebar2 = () => setIsOpen2(!isOpen2);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <div className="header-buttom">
+      <div className={`header-buttom ${isFixed ? "fixed" : ""}`}>
         <div className="container">
           <div className="header-bottom-inner">
             <div className="header-bottom-category">
-              <button type="button" className="category-button">
+              <button
+                type="button"
+                className="category-button toggle-btn"
+                onClick={toggleSidebar2}
+              >
                 <span className="icon ">
                   <i className="ph ph-dots-nine"></i>{" "}
                 </span>
@@ -301,7 +324,7 @@ const HeaderButtom = () => {
                   </ul>
                 </li>
                 <li className="menu-item">
-                  <span className="pages-new">New</span>
+                  <span className="pages-new" style={{lineHeight:"21px"}}>New</span>
                   <a href="#">Pages</a>
                   <ul className="sum-menu">
                     <li className="sum-menu-item">
@@ -366,22 +389,53 @@ const HeaderButtom = () => {
               <div className="header-right-icon">
                 <div className="header-right-icon-inner">
                   <button>
-                    <span><i className="ph ph-magnifying-glass"></i></span>
+                    <span>
+                      <i className="ph ph-magnifying-glass"></i>
+                    </span>
                   </button>
                   <a href="#">
-                    <span><i className="ph ph-heart"></i></span>
+                    <span>
+                      <i className="ph ph-heart"></i>
+                    </span>
                   </a>
                   <a href="#">
-                    <span><i className="ph ph-shopping-cart-simple"></i></span>
+                    <span>
+                      <i className="ph ph-shopping-cart-simple"></i>
+                    </span>
                   </a>
                 </div>
               </div>
-              <button className="header-right-menuicon">
-                <i className="ph ph-list"></i>
+              <button className="header-right-menuicon toggle-btn" onClick={toggleSidebar}>
+                <i className="ph ph-list"></i>   
               </button>
             </div>
           </div>
         </div>
+      </div>
+      <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+        <span className="close-btn" onClick={toggleSidebar}>✕</span>
+        <h2 className="logo"><img src="assets/images/logo.webp" alt="logo" /></h2>
+        <ul className="sidebar-menu">
+          <li className="menu-item"><a href="#" className="text">Home</a></li>
+          <li className="menu-item"><a href="#" className="text">Shop</a></li>
+          <li className="menu-item"><a href="#" className="text">pages</a></li>
+          <li className="menu-item"><a href="#" className="text">Vendors</a></li>
+          <li className="menu-item"><a href="#" className="text">Blog</a></li>
+          <li className="menu-item"><a href="#" className="text">Contact us</a></li>
+        </ul>
+      </div>
+      <div className={`sidebar2 ${isOpen2 ? 'open' : ''}`}>
+        <span className="close-btn" onClick={toggleSidebar2}>✕</span>
+        <h2 className="logo"><img src="assets/images/logo.webp" alt="logo" /></h2>
+        <ul className="sidebar-menu">
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-carrot"></i></span>vegetables & Fruit</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>Beverages</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>meats & Seafood</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>breackfast & dairy</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>frozen foods</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>biscuits & snacks</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>grocery & staples</a></li>
+        </ul>
       </div>
     </>
   );

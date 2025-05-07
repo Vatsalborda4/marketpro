@@ -199,7 +199,7 @@ const Header = () => {
                 <li className="header-top-item">
                   <a href="#">
                     <span>
-                      <i className="fa-regular fa-circle-user"></i>
+                      <i className="ph ph-user-circle"></i>
                     </span>
                     My Account
                   </a>
@@ -266,14 +266,14 @@ const Header = () => {
           <div className="header-middle-third">
             <div className="icon1">
               <span className="icon-inner">
-                <FaRegHeart />
+                <i className="ph ph-heart"></i>
               </span>
               <span className="text">2</span>
               <span>Wishlist</span>
             </div>
             <div className="icon2">
               <span className="icon-inner">
-                <FiShoppingCart />
+                <i className="ph ph-shopping-cart-simple"></i>
               </span>
               <span className="text">2</span>
               <span>cart </span>
