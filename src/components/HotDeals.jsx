@@ -224,7 +224,9 @@ const HotDeals = () => {
                   576: {
                     slidesPerView: 2,
                   },
-                  1199: {},
+                  1199: {
+                    slidesPerView: 3,
+                  },
                 }}
                 spaceBetween={7}
                 loop={true}
