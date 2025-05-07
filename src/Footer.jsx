@@ -1,9 +1,5 @@
 import React from "react";
-import { FaLocationDot } from "react-icons/fa6";
-import { PiPhoneCallFill } from "react-icons/pi";
-import { MdEmail } from "react-icons/md";
 import { BiLogoInstagramAlt } from "react-icons/bi";
-import { PiFacebookLogoFill } from "react-icons/pi";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -31,7 +27,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <div className="footer-icon">
-                    <span><FaLocationDot /></span>
+                    <span><i className="ph-fill ph-map-pin"></i></span>
                   </div>
                   <div className="footer-li-text">
                     789 Inner Lane, Biyes park, California, USA
@@ -39,7 +35,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <div className="footer-icon">
-                    <span><PiPhoneCallFill /></span>
+                    <span><i className="ph-fill ph-phone-call"></i></span>
                   </div>
                   <div className="footer-li-text">
                     <a href="/tel:+0012345678">+00 123 456 789</a>
@@ -49,7 +45,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <div className="footer-icon">
-                   <span> <MdEmail /></span>
+                   <span> <i className="ph-fill ph-envelope"></i></span>
                   </div>
                   <div className="footer-li-text">
                     <a href="/mailto:support24@marketpro.com">
@@ -159,22 +155,22 @@ const Footer = () => {
               <li className="footer-icon">
                 <div>
                   <a href="#">
-                    <span><PiFacebookLogoFill /></span>
+                    <span><i className="ph-fill ph-facebook-logo"></i></span>
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <span><FaTwitter /></span>
+                    <span><i className="ph-fill ph-twitter-logo"></i></span>
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <span><BiLogoInstagramAlt /></span>
+                    <span><i className="ph-fill ph-instagram-logo"></i></span>
                   </a>
                 </div>
                 <div>
                   <a href="#">
-                    <span><FaLinkedin /></span>
+                    <span><i className="ph-fill ph-linkedin-logo"></i></span>
                   </a>
                 </div>
               </li>
