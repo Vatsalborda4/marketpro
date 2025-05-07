@@ -3739,7 +3739,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   background-color: #299e60;
   border-radius: 20px;
 }
-.newarrival-add {
+.newarrival .newarrival-inner .newarrival-inner-item .newarrival-card .newarrival-card-content .newarrival-add {
   display: inline-flex;
   position: absolute;
   right: 10px;
@@ -3754,6 +3754,12 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   background-color: #299e60;
   color: white;
 }
+.newarrival .newarrival-inner .newarrival-inner-item .newarrival-card .newarrival-card-content .newarrival-add:hover{
+  background-color: #1f7b4a;
+
+}
+
+
 
 /*  NewArrival end*/
 
@@ -4105,7 +4111,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   background-color: #299e60;
   border-radius: 20px;
 }
-.Organic-add {
+.Organic .Organic-inner .Organic-inner-item .Organic-card .Organic-card-content .Organic-add {
   display: inline-flex;
   position: absolute;
   right: 10px;
@@ -4119,6 +4125,10 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   gap: 0.5rem;
   background-color: hsl(148, 59%, 93.9%);
   color: #299e60;
+}
+.Organic .Organic-inner .Organic-inner-item .Organic-card .Organic-card-content .Organic-add:hover{
+  background-color: #299e60 ;
+  color: white;
 }
 /* Organic end  */
 /* BestSells .start */
@@ -4623,6 +4633,11 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   z-index: 1;
   font-weight: 500;
   align-items: center;
+  transition: all .2s linear;
+  z-index: 11111;
+}
+.BestSells-offer-inner-item-inner .BestSells-offer-inner-item-right .BestSells-offer-inner-item-btn:hover{
+  background-color: hsl(25,100%,39.2%) 
 }
 
 .BestSells-offer-inner-item-inner
@@ -4868,6 +4883,11 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   line-height: 1;
 }
 
+.delivery-text a:hover
+{
+  background-color: hsl(25,100%,39.2%) 
+  
+}
 .delivery-text a span {
   font-size: 20px;
   display: inline-flex;
@@ -4974,7 +4994,10 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   align-items: center;
   gap: 15px;
   margin: 10px;
-  
+  transition: all 0.2s linear;
+}
+.Shipping .Shipping-card .Shipping-card-inner:hover{
+  background-color: hsl(148,59%,87.8%) ;
 }
 .Shipping .Shipping-card .icon {
   background-color: #299e60 ;
