@@ -18,4 +18,3 @@ root.render(
     <Footer />
   </BrowserRouter>
 );
-
