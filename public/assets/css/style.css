@@ -5789,6 +5789,12 @@ input[type="number"] {
 
 /* start media 991px  */
 @media (max-width: 991px) {
+  .header-top .header-top-inner .menu > a {
+    padding: 0 7px;
+  }
+  .header-top .header-top-inner .header-top-item > a {
+    font-size: 12px;
+  }
   .header-middle {
     padding: 8px 0px;
   }
