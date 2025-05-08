@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
 
 const Brands = () => {
@@ -16,7 +17,9 @@ const Brands = () => {
               </div>
             </div>
             <div className="brands-logos">
+
               <Swiper slidesPerView={6} spaceBetween={10}
+          modules={[Autoplay]}
                   breakpoints={{
                     0: {
                       slidesPerView: 2, // for viewports up to 991px
@@ -33,6 +36,10 @@ const Brands = () => {
                     1199: {
                       slidesPerView: 5, // for viewports 992px and above
                     },
+                  }}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
                   }}
               loop>
                 <SwiperSlide>
