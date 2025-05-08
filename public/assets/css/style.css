@@ -364,7 +364,7 @@ img {
   position: absolute;
   visibility: hidden;
   width: 300px;
-  padding: 16px 0;
+  padding-block: 16px;
   z-index: 99999999999;
   box-shadow: 0 7px 21px -5px #0000001a, 0 4px 21px -4px #0000001a;
 }
@@ -2079,7 +2079,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .section-heading-inner
   .section-heading-inner-item-left {
   margin-bottom: 0;
- font-size: 28.35px;
+  font-size: clamp(1.25rem, 1.2rem + 0.722vw, 2.25rem);
   font-weight: 700;
   line-height: 1.2;
   font-family: Quicksand, sans-serif;
@@ -2103,15 +2103,6 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
-  transition: all 0.2s ease;
-}
-.flash-sales
-  .section-heading
-  .section-heading-inner
-  .section-heading-inner-item-right
-  .section-heading-link:hover {
-  color: #299e60;
-  text-decoration: underline;
 }
 .flash-sales .flash-sales-slider {
   display: flex;
@@ -2189,6 +2180,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   background-color: #299e60;
   font-size: 14px;
   padding: 10px 20px;
+  /* border: 1px solid #0000; */
   border-radius: 20px;
   color: #fff;
   font-family: Inter, sans-serif;
@@ -2308,7 +2300,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   justify-content: space-between;
   border: 1px solid #e6e6e6;
   border-radius: 16px;
-  padding: 16px 0;
+  padding-block: 16px;
   transition: 0.2s linear;
   position: relative;
   padding: 16px 8px;
@@ -2583,6 +2575,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   flex-direction: column;
   justify-content: center;
   overflow: visible;
+  /* color: var(--bs-progress-bar-color); */
   text-align: center;
   white-space: nowrap;
   background-color: #299e60;
@@ -2786,12 +2779,11 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 .product .product-inner .product-inner-item .product-card .product-sale {
   display: inline-block;
   position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 8px;
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
   font-weight: 500;
   border-radius: 16px 0 16px 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #f8faf9;
 }
 .product .product-inner .product-inner-item .product-card .Recommended-add {
@@ -2800,9 +2792,9 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   justify-content: center;
   font-size: 12px;
   padding: 9px 12px;
-  margin-top: 24px;
+  margin-block-start: 1.5rem;
   border-radius: 22px;
-  gap:8px;
+  gap: 0.5rem;
   background-color: hsl(148, 59%, 93.9%);
   color: #299e60;
 }
@@ -2824,7 +2816,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   gap: 16px;
 }
 .Recommended-heading .common-tab {
-  margin-bottom: 20px;
+  margin-block-end: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -2832,13 +2824,14 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 .Recommended-heading > h5 {
   color: #121535;
   font-family: Quicksand, sans-serif;
- font-size: 28.35px;
+  font-size: clamp(1.25rem, 1.2rem + 0.722vw, 2.25rem);
   font-weight: 700;
   line-height: 1.2;
 }
 .Recommended-heading .common-tab > .nav-item > .nav-link {
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 6px 16px;
+
   border-radius: 50px;
   color: grey;
   font-weight: 400;
@@ -2883,7 +2876,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 
 /* hotdeals  start  */
 .hotdeals {
-  padding-top: 80px;
+  padding-block-start: 80px;
 }
 .hotdeals .hotdeals-heading {
   display: block;
@@ -2921,21 +2914,13 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
-  transition: all 0.2s ease;
-}
-.hotdeals-heading
-  .hotdeals-heading-inner
-  .hotdeals-heading-inner-item-right
-  .hotdeals-heading-link:hover {
-  color: #299e60;
-  text-decoration: underline;
 }
 .hotdeals-inner {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 *12px);
-  margin-right: calc(-0.5 *12px);
-  margin-left: calc(-0.5 *12px);
+  margin-top: calc(-1 * 0.75rem);
+  margin-right: calc(-0.5 * 0.75rem);
+  margin-left: calc(-0.5 * 0.75rem);
 }
 .hotdeals-inner-left {
   width: 33.33%;
@@ -2948,7 +2933,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 28px;
+  padding: 1.75rem;
   z-index: 1;
   flex-wrap: wrap;
   position: relative;
@@ -2979,8 +2964,8 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 
 .hotdeals-offer-inner-item-inner .hotdeals-offer-inner-item-right {
   display: block;
-  padding-top: 24px ;
-  padding-bottom: 24px ;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
   margin: 0 auto;
 }
@@ -3064,7 +3049,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   gap: 6px;
   flex-wrap: wrap;
   list-style: none;
-  margin-block: 32px ;
+  margin-block: 2rem;
 }
 
 .hotdeals-sales-slider-countdown-list
@@ -3086,7 +3071,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   width: 66.66%;
   padding-right: calc(0.75rem * 0.5);
   padding-left: calc(0.75rem * 0.5);
-  margin-top: 12px;
+  margin-top: 0.75rem;
 }
 
 .hotdeals-product-inner {
@@ -3098,6 +3083,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 }
 .hotdeals-product-inner-item {
   display: block;
+
   padding-right: calc(12px * 0.5);
   padding-left: calc(12px * 0.5);
 }
@@ -3108,7 +3094,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   justify-content: space-between;
   border: 1px solid #e6e6e6;
   border-radius: 16px;
-  padding: 16px 0;
+  padding-block: 16px;
   transition: 0.2s linear;
   position: relative;
   padding: 16px 8px;
@@ -3361,6 +3347,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   flex-direction: column;
   justify-content: center;
   overflow: visible;
+  /* color: var(--bs-progress-bar-color); */
   text-align: center;
   white-space: nowrap;
   background-color: #299e60;
@@ -3372,19 +3359,19 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   justify-content: center;
   font-size: 12px;
   padding: 9px 12px;
-  margin-top: 24px;
+  margin-block-start: 1.5rem;
   border-radius: 22px;
-  gap:8px;
+  gap: 0.5rem;
   background-color: hsl(148, 59%, 93.9%);
   color: #299e60;
 }
 .hotdeals-product-sale {
   display: inline-block;
-  padding-block: 4px;
-  padding: 0 8px;
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
   font-weight: 400;
   border-radius: 16px 0 16px 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 21px;
   color: #f8faf9;
   position: absolute;
@@ -3416,7 +3403,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .newarrival-heading-inner
   .newarrival-heading-inner-item-left {
   margin-bottom: 0;
- font-size: 28.35px;
+  font-size: clamp(1.25rem, 1.2rem + 0.722vw, 2.25rem);
   font-weight: 700;
   line-height: 1.2;
   font-family: Quicksand, sans-serif;
@@ -3440,15 +3427,6 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
-  transition: all 0.2s ease;
-}
-.newarrival
-  .newarrival-heading
-  .newarrival-heading-inner
-  .newarrival-heading-inner-item-right
-  .newarrival-heading-link:hover {
-  color: #299e60;
-  text-decoration: underline;
 }
 .newarrival .newarrival-inner {
   display: flex;
@@ -3470,7 +3448,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   justify-content: space-between;
   border: 1px solid #e6e6e6;
   border-radius: 16px;
-  padding: 16px 0;
+  padding-block: 16px;
   transition: 0.2s linear;
   position: relative;
   padding: 16px 8px;  
@@ -3753,6 +3731,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   flex-direction: column;
   justify-content: center;
   overflow: visible;
+  /* color: var(--bs-progress-bar-color); */
   text-align: center;
   white-space: nowrap;
   background-color: #299e60;
@@ -3772,9 +3751,9 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   justify-content: center;
   font-size: 12px;
   padding: 9px 12px;
-  margin-top: 24px;
+  margin-block-start: 1.5rem;
   border-radius: 22px;
-  gap:8px;
+  gap: 0.5rem;
   background-color: #299e60;
   color: white;
 }
@@ -3811,7 +3790,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .Organic-heading-inner
   .Organic-heading-inner-item-left {
   margin-bottom: 0;
- font-size: 28.35px;
+  font-size: clamp(1.25rem, 1.2rem + 0.722vw, 2.25rem);
   font-weight: 700;
   line-height: 1.2;
   font-family: Quicksand, sans-serif;
@@ -3835,15 +3814,6 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
-  transition: all 0.2s ease;
-}
-.Organic
-  .Organic-heading
-  .Organic-heading-inner
-  .Organic-heading-inner-item-right
-  .Organic-heading-link:hover {
-  color: #299e60;
-  text-decoration: underline;
 }
 .Organic .Organic-inner {
   display: flex;
@@ -3854,6 +3824,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 }
 .Organic .Organic-inner .Organic-inner-item {
   display: block;
+
   padding-right: calc(12px * 0.5);
   padding-left: calc(12px * 0.5);
   margin-top: 12px;
@@ -3865,10 +3836,10 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   justify-content: space-between;
   border: 1px solid #e6e6e6;
   border-radius: 16px;
-  padding: 16px 0;
+  padding-block: 1rem;
   transition: 0.2s linear;
   position: relative;
-  padding: 0 8px;
+  padding-inline: 0.5rem;
 }
 .Organic .Organic-inner .Organic-inner-item .Organic-card:hover {
   border-color: #299e60;
@@ -4139,6 +4110,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   flex-direction: column;
   justify-content: center;
   overflow: visible;
+  /* color: var(--bs-progress-bar-color); */
   text-align: center;
   white-space: nowrap;
   background-color: #299e60;
@@ -4158,9 +4130,9 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   justify-content: center;
   font-size: 12px;
   padding: 9px 12px;
-  margin-top: 24px;
+  margin-block-start: 1.5rem;
   border-radius: 22px;
-  gap:8px;
+  gap: 0.5rem;
   background-color: hsl(148, 59%, 93.9%);
   color: #299e60;
 }
@@ -4174,8 +4146,6 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: white;
 }
 /* Organic end  */
-
-
 /* BestSells .start */
 
 .BestSells {
@@ -4199,7 +4169,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .BestSells-heading-inner
   .BestSells-heading-inner-item-left {
   margin-bottom: 0;
-  font-size: 26.35px;
+  font-size: clamp(1.25rem, 1.2rem + 0.722vw, 2.25rem);
   font-weight: 700;
   line-height: 1.2;
   font-family: Quicksand, sans-serif;
@@ -4331,7 +4301,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #1a1a1a;
   font-size: 11px;
   padding: 6px;
-  gap:4px;
+  gap: 0.25rem;
   margin: 0 7px;
   border-radius: 8px;
   font-weight: 500;
@@ -4544,11 +4514,13 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .BestSells-card-progressbar
   .BestSells-card-progressbar-line {
   display: flex;
+
   height: 4px;
   transition: none;
   flex-direction: column;
   justify-content: center;
   overflow: visible;
+  /* color: var(--bs-progress-bar-color); */
   text-align: center;
   white-space: nowrap;
   background-color: #299e60;
@@ -4563,28 +4535,31 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   justify-content: center;
   font-size: 12px;
   padding: 9px 12px;
-  margin-top: 24px;
+  margin-block-start: 1.5rem;
   border-radius: 22px;
-  gap:8px;
+  gap: 0.5rem;
   background-color: hsl(148, 59%, 93.9%);
   color: #299e60;
 }
 .BestSells-sale {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 20px;
   display: inline-block;
-  padding: 4px 8px;
+  padding-block: 0.25rem;
+  padding-inline: 0.5rem;
+  font-weight: 500;
+  /* line-height: ; */
   border-radius: 16px 0 16px 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #f8faf9;
-  line-height: 21px;
+  line-height: 1.5;
 }
 .BestSells-inner-left {
   width: 100%;
   padding-right: calc(0.75rem * 0.5);
   padding-left: calc(0.75rem * 0.5);
-  margin-top:12px;
+  margin-top: 0.75rem;
 }
 .BestSells-offer-inner-item-inner {
   gap: 16px;
@@ -4593,7 +4568,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   background-color: #ecdbec;
   display: flex;
   flex-direction: column;
-  padding: 28px;
+  padding: 1.75rem;
   z-index: -1;
   flex-wrap: wrap;
   position: relative;
@@ -4614,8 +4589,9 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 
 .BestSells-offer-inner-item-inner .BestSells-offer-inner-item-right {
   display: block;
-  padding-top: 24px ;
-  padding-bottom: 24px ;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
   margin: 0 auto;
 }
 
@@ -4704,7 +4680,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   gap: 6px;
   flex-wrap: wrap;
   list-style: none;
-  margin-block: 32px ;
+  margin-block: 2rem;
 }
 
 .BestSells-sales-slider-countdown-list
@@ -4717,6 +4693,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   background-color: #299e60;
   border-radius: 8px;
   padding: clamp(6px, -35.968px + 3vw, 12px) clamp(8px, -47.968px + 4vw, 16px);
+
   font-weight: 500;
   position: relative;
 }
@@ -4737,7 +4714,6 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 .topvendors .topvendors-heading h5 {
   font-size: 24px;
   margin: 0;
-  font-family: Quicksand, sans-serif;
 }
 
 .topvendors .topvendors-link {
@@ -4749,22 +4725,21 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 
 .topvendors .topvendors-link:hover {
   color: #299e60;
-  text-decoration: underline;
 }
 
 .topvendors .vendor-grid {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * 24px);
-  margin-right: calc(-0.5 * 24px);
-  margin-left: calc(-0.5 * 24px);
+  margin-top: calc(-1 * 1.5rem);
+  margin-right: calc(-0.5 * 1.5rem);
+  margin-left: calc(-0.5 * 1.5rem);
 }
 
 .topvendors .vendor-grid .vendor-col {
   width: 33.33%;
-  padding-right: calc(24px * 0.5);
-  padding-left: calc(24px * 0.5);
-  margin-top: 24px;
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
+  margin-top: 1.5rem;
 }
 
 .topvendors .vendor-grid .vendor-col .vendor-card {
@@ -4772,21 +4747,21 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   mask-position: top;
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
-  padding-block-end: 24px;
-  padding-inline: 16px;
+  padding-block-end: 1.5rem;
+  padding-inline: 1rem;
   text-align: center;
 }
 
 .topvendors .vendor-grid .vendor-col .vendor-card .vendor-logo {
   max-width: 66px;
   display: inline-block;
-  margin:12px;
+  margin: 0.75rem;
   text-align: center;
 }
 
 .topvendors .vendor-grid .vendor-col .vendor-card .vendor-title {
-  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 24px);
-  margin-top: 32px;
+  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 1.5rem);
+  margin-block-start: 2rem;
   font-weight: 700;
   font-family: Quicksand, sans-serif;
   margin: 16px 0;
@@ -4794,15 +4769,16 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 
 .topvendors .vendor-grid .vendor-col .vendor-card .vendor-delivery {
   display: block;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #121535;
 }
 
 .topvendors .vendor-grid .vendor-col .vendor-card .vendor-promotion-btn {
   display: inline-block;
-  padding-block: 6px;
-  padding-inline: 16px;
-  margin-top:8px;
+  padding-block: 0.375rem;
+  padding-inline: 1rem;
+
+  margin-block-start: 0.5rem;
   background-color: #fa6800;
   color: #ffffff;
   border-radius: 20px;
@@ -4820,7 +4796,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-  margin-top: 22px;
+  margin-block-start: 1.375rem;
   text-align: center;
 }
 
@@ -4895,7 +4871,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 }
 
 .delivery-text h4 {
-  font-size: clamp(24px, 0.5569rem + 1.444vw, 40px);
+  font-size: clamp(1.5rem, 0.5569rem + 1.444vw, 2.5rem);
   font-family: Quicksand, sans-serif;
   margin-bottom: 8px;
   color: white;
@@ -4963,7 +4939,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 }
 
 .brand-title h2 {
-  font-size: 26.35px;
+  font-size: 24px;
   font-weight: 700;
   color: #111;
   font-family: Quicksand, sans-serif;
@@ -4976,17 +4952,10 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 }
 
 .brand-inner a {
-  color: #4d4d4d;
+  color: #111;
   font-weight: 500;
   text-decoration: none;
-  font-size: 14px;
-  transition: all 0.2s ease;
 }
-.brand-inner a:hover {
-  color: #299e60;
-  text-decoration: underline;
-}
-
 
 .arwbtn {
   width: 40px;
@@ -5021,7 +4990,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 
 /* Shipping .start */
 .Shipping-outer {
-  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 .Shipping {
   display: flex;
@@ -5073,7 +5042,6 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 
 /* Newsletter .start */
 .newsletter-outer {
-  display: block;
 }
 .newsletter {
   background: #121535;
@@ -5104,11 +5072,10 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 }
 
 .item1 h2 {
-  font-size: clamp(2.25rem, -0.07348px + 6.3692vw, 4.5rem);
-  font-weight: 700;
+  font-size: clamp(2.25rem, -0.0733rem + 6.3692vw, 4.5rem);
+  font-weight: bold;
   line-height: 1.2;
   margin-bottom: 20px;
-  font-family: "Quicksand", sans-serif;
 }
 
 .item1 p {
@@ -5117,7 +5084,6 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #f1f1f1;
   margin-bottom: 30px;
   text-transform: uppercase;
-
 }
 
 .form {
@@ -5137,7 +5103,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   border-radius: 40px 0 0 40px;
   outline: none;
   flex: 1;
-  color: #0000;
+  color: #333;
   padding: 15px 20px;
   font-size: 16px;
   border: none;
@@ -5156,7 +5122,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   font-size: 14px;
   border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .form button:hover {
@@ -5183,19 +5149,19 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 /* Contact page start  */
 .breadcrumb {
   background-color: #f3faf2;
-  padding-block: 26px;
+  padding-block: 1.625rem;
   margin-bottom: 0;
 }
 .breadcrumb .breadcrumb-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 1rem;
   align-items: center;
   justify-content: space-between;
 }
 .breadcrumb .breadcrumb-wrapper > h6 {
   color: #121535;
-  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 24px);
+  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 1.5rem);
   font-family: Quicksand, sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -5203,16 +5169,16 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 .breadcrumb .breadcrumb-wrapper .breadcrumb-inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 0.5rem;
   align-items: center;
 }
 .breadcrumb .breadcrumb-wrapper .breadcrumb-inner .breadcrumb-inner {
   align-self: center;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .breadcrumb .breadcrumb-wrapper .breadcrumb-inner .breadcrumb-inner-item > a {
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   color: #1a1a1a;
   display: flex;
   text-decoration: none;
@@ -5236,25 +5202,25 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 .contact .contact-row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * 48px);
-  /* margin-right: calc(-0.5 * 24px); */
-  /* margin-left: calc(-0.5 * 24px); */
+  margin-top: calc(-1 * 3rem);
+  /* margin-right: calc(-0.5 * 1.5rem); */
+  /* margin-left: calc(-0.5 * 1.5rem); */
 }
 .contact .contact-row .contact-left {
   width: 66.66%;
-  padding-right: calc(24px * .5);
-  padding-left: calc(24px * .5);
-  margin-top: 48px;
+  padding-right: calc(1.5rem * .5);
+  padding-left: calc(1.5rem * .5);
+  margin-top: 3rem;
 }
 .contact .contact-row .contact-left .contact-box {
-  border-radius: 16px;
+  border-radius: 1rem;
   border: 1px solid #e6e6e6;
-  padding-block: 40px;
-  padding-inline: 24px;
+  padding-block: 2.5rem;
+  padding-inline: 1.5rem;
 }
 .contact .contact-row .contact-left .contact-box form > h6 {
   margin-block-end: 2rem;
-  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 24px);
+  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 1.5rem);
   color: #121535;
   font-family: Quicksand, sans-serif;
   font-weight: 700;
@@ -5264,9 +5230,9 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 .contact .contact-row .contact-left .contact-box form .contact-box-inner {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * 24px);
-  margin-right: calc(-0.5 * 24px);
-  margin-left: calc(-0.5 * 24px);
+  margin-top: calc(-1 * 1.5rem);
+  margin-right: calc(-0.5 * 1.5rem);
+  margin-left: calc(-0.5 * 1.5rem);
 }
 .contact
   .contact-row
@@ -5277,9 +5243,9 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .contact-box-inner-item {
   width: 50%;
   max-width: 100%;
-  padding-right: calc(24px * 0.5);
-  padding-left: calc(24px * 0.5);
-  margin-top: 24px;
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
+  margin-top: 1.5rem;
 }
 .contact
   .contact-row
@@ -5300,12 +5266,12 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .contact-box-label {
   display: flex;
   font-family: Exo, sans-serif;
-  margin-block-end: 0.25rem  ;
-  margin-bottom: 24px ;
+  margin-block-end: 0.25rem !important;
+  margin-bottom: 1.5rem !important;
   font-weight: 600;
   align-items: center;
   gap: 0.25rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #1a1a1a;
 }
 .contact
@@ -5330,7 +5296,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .contact-box-inner
   .contact-box-inner-item
   .contact-box-input {
-  padding-inline: 16px;
+  padding-inline: 1rem;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
   color: #121535;
@@ -5362,10 +5328,10 @@ input[type="number"] {
   .contact-box-inner-item
   .contact-box-btn {
   background-color: hsl(148, 59%, 31.2%);
-  border-radius: 8px;
+  border-radius: 0.5rem;
   padding-block: 1.125rem;
   padding-inline: 2rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 18px 32px;
   color: white;
 }
@@ -5381,19 +5347,19 @@ input[type="number"] {
 }
 .contact .contact-row .contact-right {
   width: 33.33%;
-  padding-right: calc(24px * .5);
-  padding-left: calc(24px * .5);
-  margin-top: 48px;
+  padding-right: calc(1.5rem * .5);
+  padding-left: calc(1.5rem * .5);
+  margin-top: 3rem;
 }
 .contact .contact-row .contact-right .contact-box {
-  border-radius: 16px;
+  border-radius: 1rem;
   border: 1px solid #e6e6e6;
-  padding-block: 40px;
-  padding-inline: 24px;
+  padding-block: 2.5rem;
+  padding-inline: 1.5rem;
 }
 .contact .contact-row .contact-right .contact-box > h6 {
   margin-block-end: 2rem;
-  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 24px);
+  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 1.5rem);
   color: #121535;
   font-family: Quicksand, sans-serif;
   font-weight: 700;
@@ -5401,8 +5367,8 @@ input[type="number"] {
   padding: 0 0 16px;
 }
 .contact .contact-row .contact-right .contact-box .contact-box-r-inner {
-  gap: 16px;
-  margin-block-end: 16px;
+  gap: 1rem;
+  margin-block-end: 1rem;
   align-items: center;
   display: flex;
 }
@@ -5416,9 +5382,9 @@ input[type="number"] {
   display: flex;
   border-radius: 50%;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  font-size: 24px;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
   color: #299e60;
   border: 1px solid #e6e6e6;
 }
@@ -5428,7 +5394,7 @@ input[type="number"] {
   .contact-box
   .contact-box-r-inner
   .contact-box-r-inner-link {
-  font-size: 16px;
+  font-size: 1rem;
   display: inline-block;
   transition: 0.2s linear;
   color: #1a1a1a;
@@ -5442,21 +5408,21 @@ input[type="number"] {
   color: #299e60;
 }
 .contact .contact-row .contact-right .contact-bottom {
-  gap: 16px;
+  gap: 1rem;
   align-items: center;
   display: flex;
-  margin-block-start: 24px;
+  margin-block-start: 1.5rem;
   flex-wrap: wrap;
 }
 .contact .contact-row .contact-right .contact-bottom .contact-bottom-link {
-  gap: 8px;
+  gap: 0.5rem;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: #121535;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-inline: 16px;
+  padding-inline: 1rem;
   padding: 0.625rem;
   flex-wrap: wrap;
 }
@@ -5477,7 +5443,7 @@ input[type="number"] {
   .contact-bottom
   .contact-bottom-link
   .contact-bottom-link-icon {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   font-size: 1.25rem;
   background-color: #299e60;
   height: 2rem;
@@ -5523,7 +5489,7 @@ input[type="number"] {
     padding: 8px;
   }
   .header-top .header-top-inner .header-top-item > a {
-    font-size: 14px;
+    font-size: 12px;
   }
   footer .footer-inner .footer-info {
     width: 35%;
@@ -5579,28 +5545,28 @@ input[type="number"] {
     .hotdeals-product-card-content
     .hotdeals-product-card-title
     .hotdeals-product-card-title-inner {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .hotdeals-product-inner-item
     .hotdeals-product-card
     .hotdeals-product-card-content
     .hotdeals-product-card-Lucky
     .hotdeals-product-card-Lucky-text {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .hotdeals-product-inner-item
     .hotdeals-product-card
     .hotdeals-product-card-content
     .hotdeals-product-card-rating
     .hotdeals-product-card-rating-num {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .hotdeals-product-inner-item
     .hotdeals-product-card
     .hotdeals-product-card-content
     .hotdeals-product-card-rating
     .hotdeals-product-card-rating-totle {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   .hotdeals-product-inner-item
     .hotdeals-product-card
@@ -5612,56 +5578,168 @@ input[type="number"] {
     .hotdeals-product-card-content
     .hotdeals-product-card-price
     .hotdeals-product-card-price-ong {
-    font-size:12px;
+    font-size: 0.75rem;
   }
   /* hotdeals end */
 
-/* /BestSells start  */
-.BestSells .BestSells-inner .BestSells-inner-item .BestSells-card .BestSells-card-content .BestSells-card-price .BestSells-card-price-dec ,
-.BestSells .BestSells-inner .BestSells-inner-item .BestSells-card .BestSells-card-content .BestSells-card-price .BestSells-card-price-ong{
-  font-size:12px;
-}
-.BestSells .BestSells-heading{
-  margin-bottom: 24px;
-} 
-.BestSells .BestSells-inner .BestSells-inner-item .BestSells-card .BestSells-card-content .BestSells-card-rating .BestSells-card-rating-num,.BestSells .BestSells-inner .BestSells-inner-item .BestSells-card .BestSells-card-content .BestSells-card-rating .BestSells-card-rating-totle , .BestSells .BestSells-inner .BestSells-inner-item .BestSells-card .BestSells-card-content .BestSells-card-Lucky .BestSells-card-Lucky-text , .BestSells .BestSells-inner .BestSells-inner-item .BestSells-card .BestSells-card-content .BestSells-card-progress .BestSells-card-Sold{
-  font-size: 10px;
+  /* /BestSells start  */
+  .BestSells
+    .BestSells-inner
+    .BestSells-inner-item
+    .BestSells-card
+    .BestSells-card-content
+    .BestSells-card-price
+    .BestSells-card-price-dec,
+  .BestSells
+    .BestSells-inner
+    .BestSells-inner-item
+    .BestSells-card
+    .BestSells-card-content
+    .BestSells-card-price
+    .BestSells-card-price-ong {
+    font-size: 0.75rem;
+  }
+  .BestSells
+    .BestSells-inner
+    .BestSells-inner-item
+    .BestSells-card
+    .BestSells-card-content
+    .BestSells-card-rating
+    .BestSells-card-rating-num,
+  .BestSells
+    .BestSells-inner
+    .BestSells-inner-item
+    .BestSells-card
+    .BestSells-card-content
+    .BestSells-card-rating
+    .BestSells-card-rating-totle,
+  .BestSells
+    .BestSells-inner
+    .BestSells-inner-item
+    .BestSells-card
+    .BestSells-card-content
+    .BestSells-card-Lucky
+    .BestSells-card-Lucky-text,
+  .BestSells
+    .BestSells-inner
+    .BestSells-inner-item
+    .BestSells-card
+    .BestSells-card-content
+    .BestSells-card-progress
+    .BestSells-card-Sold {
+    font-size: 0.625rem;
+  }
+  .BestSells
+    .BestSells-inner
+    .BestSells-inner-item
+    .BestSells-card
+    .BestSells-card-content
+    .BestSells-card-title
+    .BestSells-card-title-inner {
+    font-size: 0.875rem;
+  }
 
-}
-.BestSells .BestSells-inner .BestSells-inner-item .BestSells-card .BestSells-card-content .BestSells-card-title .BestSells-card-title-inner{
-  font-size: 14px;
-}
-
-
-/* /BestSells end  */
-/* Organic start  */
-.Organic .Organic-inner .Organic-inner-item .Organic-card .Organic-card-content .Organic-card-rating .Organic-card-rating-num , .Organic .Organic-inner .Organic-inner-item .Organic-card .Organic-card-content .Organic-card-rating .Organic-card-rating-totle , .Organic .Organic-inner .Organic-inner-item .Organic-card .Organic-card-content .Organic-card-Lucky .Organic-card-Lucky-text{
-  font-size: 10px;
-}
-.Organic .Organic-heading{
-  margin-bottom: 24px; 
-}
-.Organic .Organic-inner .Organic-inner-item .Organic-card .Organic-card-content .Organic-card-title .Organic-card-title-inner{
-  font-size: 14px;
-
-}
-.Organic .Organic-inner .Organic-inner-item .Organic-card .Organic-card-content .Organic-card-price .Organic-card-price-dec , .Organic .Organic-inner .Organic-inner-item .Organic-card .Organic-card-content .Organic-card-price .Organic-card-price-ong{
-  font-size:12px;
-
-}
-/* Organic end  */
-/* newarrival start  */
-.newarrival .newarrival-inner .newarrival-inner-item .newarrival-card .newarrival-card-content .newarrival-card-rating .newarrival-card-rating-num , .newarrival .newarrival-inner .newarrival-inner-item .newarrival-card .newarrival-card-content .newarrival-card-rating .newarrival-card-rating-totle , .newarrival .newarrival-inner .newarrival-inner-item .newarrival-card .newarrival-card-content .newarrival-card-Lucky .newarrival-card-Lucky-text{
-  font-size: 10px;
-}
-.newarrival .newarrival-inner .newarrival-inner-item .newarrival-card .newarrival-card-content .newarrival-card-title .newarrival-card-title-inner{
-  font-size: 14px;
-}
-.newarrival .newarrival-inner .newarrival-inner-item .newarrival-card .newarrival-card-content .newarrival-card-price .newarrival-card-price-dec , .newarrival .newarrival-inner .newarrival-inner-item .newarrival-card .newarrival-card-content .newarrival-card-price .newarrival-card-price-ong{
-  font-size:12px;
-
-}
-/* newarrival end  */
+  /* /BestSells end  */
+  /* Organic start  */
+  .Organic
+    .Organic-inner
+    .Organic-inner-item
+    .Organic-card
+    .Organic-card-content
+    .Organic-card-rating
+    .Organic-card-rating-num,
+  .Organic
+    .Organic-inner
+    .Organic-inner-item
+    .Organic-card
+    .Organic-card-content
+    .Organic-card-rating
+    .Organic-card-rating-totle,
+  .Organic
+    .Organic-inner
+    .Organic-inner-item
+    .Organic-card
+    .Organic-card-content
+    .Organic-card-Lucky
+    .Organic-card-Lucky-text {
+    font-size: 0.625rem;
+  }
+  .Organic
+    .Organic-inner
+    .Organic-inner-item
+    .Organic-card
+    .Organic-card-content
+    .Organic-card-title
+    .Organic-card-title-inner {
+    font-size: 0.875rem;
+  }
+  .Organic
+    .Organic-inner
+    .Organic-inner-item
+    .Organic-card
+    .Organic-card-content
+    .Organic-card-price
+    .Organic-card-price-dec,
+  .Organic
+    .Organic-inner
+    .Organic-inner-item
+    .Organic-card
+    .Organic-card-content
+    .Organic-card-price
+    .Organic-card-price-ong {
+    font-size: 0.75rem;
+  }
+  /* Organic end  */
+  /* newarrival start  */
+  .newarrival
+    .newarrival-inner
+    .newarrival-inner-item
+    .newarrival-card
+    .newarrival-card-content
+    .newarrival-card-rating
+    .newarrival-card-rating-num,
+  .newarrival
+    .newarrival-inner
+    .newarrival-inner-item
+    .newarrival-card
+    .newarrival-card-content
+    .newarrival-card-rating
+    .newarrival-card-rating-totle,
+  .newarrival
+    .newarrival-inner
+    .newarrival-inner-item
+    .newarrival-card
+    .newarrival-card-content
+    .newarrival-card-Lucky
+    .newarrival-card-Lucky-text {
+    font-size: 0.625rem;
+  }
+  .newarrival
+    .newarrival-inner
+    .newarrival-inner-item
+    .newarrival-card
+    .newarrival-card-content
+    .newarrival-card-title
+    .newarrival-card-title-inner {
+    font-size: 0.875rem;
+  }
+  .newarrival
+    .newarrival-inner
+    .newarrival-inner-item
+    .newarrival-card
+    .newarrival-card-content
+    .newarrival-card-price
+    .newarrival-card-price-dec,
+  .newarrival
+    .newarrival-inner
+    .newarrival-inner-item
+    .newarrival-card
+    .newarrival-card-content
+    .newarrival-card-price
+    .newarrival-card-price-ong {
+    font-size: 0.75rem;
+  }
+  /* newarrival end  */
   /* flash-sales star
   t  */
   .flash-sales .section-heading {
@@ -5678,16 +5756,6 @@ input[type="number"] {
     .product-card-img
     > img {
     max-width: 120px;
-  }
-  .Recommended-heading > h5 {
-    width: 100%;
-  }
-  .Recommended-heading{
-    flex-wrap: nowrap;
-    margin-bottom: 24px;
-  }
-  .Recommended-heading .common-tab {
-    flex-wrap: nowrap;
   }
   .product
     .product-inner
@@ -5720,7 +5788,7 @@ input[type="number"] {
     .product-card-content
     .product-card-rating
     .product-card-rating-num {
-    font-size: 10.048px ;
+    font-size: 0.628rem;
   }
   .product
     .product-inner
@@ -5729,7 +5797,7 @@ input[type="number"] {
     .product-card-content
     .product-card-rating
     .product-card-rating-totle {
-    font-size: 10.048px ;
+    font-size: 0.628rem;
   }
   .product
     .product-inner
@@ -5738,7 +5806,7 @@ input[type="number"] {
     .product-card-content
     .product-card-Lucky
     .product-card-Lucky-text {
-    font-size: 10.048px ;
+    font-size: 0.628rem;
   }
   .product
     .product-inner
@@ -5747,7 +5815,7 @@ input[type="number"] {
     .product-card-content
     .product-card-progress
     .product-card-Sold {
-    font-size: 10.048px ;
+    font-size: 0.628rem;
   }
   .product
     .product-inner
@@ -5759,9 +5827,6 @@ input[type="number"] {
   }
   /* product end */
 
-  .newarrival .newarrival-heading {
-    margin-bottom: 24px;
-  }
   /* offer start */
   .offer
     .offer-inner
@@ -5779,62 +5844,53 @@ input[type="number"] {
   .item2 {
     display: none;
     width: 50%;
-    text-align: righ
-} 
-.item1 h2{
-  font-family: 62px;
-}
+    text-align: righ;
+  }
 }
 /* end media 1199px  */
 
 /* start media 991px  */
 @media (max-width: 991px) {
-  .header-top .header-top-inner .menu > a {
-    padding: 0 7px;
-  }
-  .header-top .header-top-inner .header-top-item > a {
-    font-size: 12px;
-  }
   .header-middle {
     padding: 8px 0px;
   }
   .header-buttom
-  .header-bottom-inner
-  .header-bottom-category
-  .category-button
-  .category-submenu {
-  display: none;
-}
-.header-middle .header-middle-inner .header-middle-third {
-  display: none;
-}
-.header-middle
-  .header-middle-inner
-  .header-middle-second
-  .second-item-inner
-  .search {
-  display: none;
-}
-.header-middle
-  .header-middle-inner
-  .header-middle-second
-  .second-item-inner
-  .form-flex {
-  padding-right: 0px;
-}
-.header-middle
-  .header-middle-inner
-  .header-middle-second
-  .second-item-inner
-  .form-flex
-  .select-categories {
-  font-size: 12px;
-  background-color: #fff;
-  height: 36px;
-  border: 1px solid transparent;
-  border-radius: 50px;
-  padding-left: 7px;
-}
+    .header-bottom-inner
+    .header-bottom-category
+    .category-button
+    .category-submenu {
+    display: none;
+  }
+  .header-middle .header-middle-inner .header-middle-third {
+    display: none;
+  }
+  .header-middle
+    .header-middle-inner
+    .header-middle-second
+    .second-item-inner
+    .search {
+    display: none;
+  }
+  .header-middle
+    .header-middle-inner
+    .header-middle-second
+    .second-item-inner
+    .form-flex {
+    padding-right: 0px;
+  }
+  .header-middle
+    .header-middle-inner
+    .header-middle-second
+    .second-item-inner
+    .form-flex
+    .select-categories {
+    font-size: 12px;
+    background-color: #fff;
+    height: 36px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding-left: 7px;
+  }
   .location-outer
     .location-container
     .location-button
@@ -6093,7 +6149,7 @@ input[type="number"] {
     display: none;
   }
   .item1 h2 {
-    font-size: clamp(2.25rem, -0.07348px + 6.3692vw, 4.5rem);
+    font-size: clamp(2.25rem, -0.0733rem + 6.3692vw, 4.5rem);
   }
 }
 
@@ -6274,12 +6330,13 @@ input[type="number"] {
     width: 100%;
   }
 }
-.fixed {
+
+.header-buttom.fixed {
   position: fixed;
-  top: 0 ;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: #fff; 
+  background-color: #fff; /* set background as needed */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
