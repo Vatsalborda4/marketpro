@@ -2103,6 +2103,15 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
+  transition: all 0.2s ease;
+}
+.flash-sales
+  .section-heading
+  .section-heading-inner
+  .section-heading-inner-item-right
+  .section-heading-link:hover {
+  color: #299e60;
+  text-decoration: underline;
 }
 .flash-sales .flash-sales-slider {
   display: flex;
@@ -2912,6 +2921,14 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
+  transition: all 0.2s ease;
+}
+.hotdeals-heading
+  .hotdeals-heading-inner
+  .hotdeals-heading-inner-item-right
+  .hotdeals-heading-link:hover {
+  color: #299e60;
+  text-decoration: underline;
 }
 .hotdeals-inner {
   display: flex;
@@ -3423,6 +3440,15 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
+  transition: all 0.2s ease;
+}
+.newarrival
+  .newarrival-heading
+  .newarrival-heading-inner
+  .newarrival-heading-inner-item-right
+  .newarrival-heading-link:hover {
+  color: #299e60;
+  text-decoration: underline;
 }
 .newarrival .newarrival-inner {
   display: flex;
@@ -3809,6 +3835,15 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
+  transition: all 0.2s ease;
+}
+.Organic
+  .Organic-heading
+  .Organic-heading-inner
+  .Organic-heading-inner-item-right
+  .Organic-heading-link:hover {
+  color: #299e60;
+  text-decoration: underline;
 }
 .Organic .Organic-inner {
   display: flex;
@@ -4714,6 +4749,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 
 .topvendors .topvendors-link:hover {
   color: #299e60;
+  text-decoration: underline;
 }
 
 .topvendors .vendor-grid {
@@ -4859,7 +4895,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 }
 
 .delivery-text h4 {
-  font-size: clamp(24px, 0.5569rem + 1.444vw, 2.5rem);
+  font-size: clamp(24px, 0.5569rem + 1.444vw, 40px);
   font-family: Quicksand, sans-serif;
   margin-bottom: 8px;
   color: white;
@@ -4940,11 +4976,17 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 }
 
 .brand-inner a {
-  color: #111;
+  color: #4d4d4d;
   font-weight: 500;
   text-decoration: none;
   font-size: 14px;
+  transition: all 0.2s ease;
 }
+.brand-inner a:hover {
+  color: #299e60;
+  text-decoration: underline;
+}
+
 
 .arwbtn {
   width: 40px;
@@ -5062,7 +5104,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 }
 
 .item1 h2 {
-  font-size: clamp(2.25rem, -0.0733rem + 6.3692vw, 4.5rem);
+  font-size: clamp(2.25rem, -0.07348px + 6.3692vw, 4.5rem);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -5141,19 +5183,19 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 /* Contact page start  */
 .breadcrumb {
   background-color: #f3faf2;
-  padding-block: 1.625rem;
+  padding-block: 26px;
   margin-bottom: 0;
 }
 .breadcrumb .breadcrumb-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 16px;
   align-items: center;
   justify-content: space-between;
 }
 .breadcrumb .breadcrumb-wrapper > h6 {
   color: #121535;
-  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 1.5rem);
+  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 24px);
   font-family: Quicksand, sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -5161,16 +5203,16 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 .breadcrumb .breadcrumb-wrapper .breadcrumb-inner {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 8px;
   align-items: center;
 }
 .breadcrumb .breadcrumb-wrapper .breadcrumb-inner .breadcrumb-inner {
   align-self: center;
-  font-size: 0.875rem;
+  font-size: 14px;
 }
 .breadcrumb .breadcrumb-wrapper .breadcrumb-inner .breadcrumb-inner-item > a {
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
   color: #1a1a1a;
   display: flex;
   text-decoration: none;
@@ -5194,25 +5236,25 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 .contact .contact-row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * 3rem);
-  /* margin-right: calc(-0.5 * 1.5rem); */
-  /* margin-left: calc(-0.5 * 1.5rem); */
+  margin-top: calc(-1 * 48px);
+  /* margin-right: calc(-0.5 * 24px); */
+  /* margin-left: calc(-0.5 * 24px); */
 }
 .contact .contact-row .contact-left {
   width: 66.66%;
-  padding-right: calc(1.5rem * .5);
-  padding-left: calc(1.5rem * .5);
-  margin-top: 3rem;
+  padding-right: calc(24px * .5);
+  padding-left: calc(24px * .5);
+  margin-top: 48px;
 }
 .contact .contact-row .contact-left .contact-box {
-  border-radius: 1rem;
+  border-radius: 16px;
   border: 1px solid #e6e6e6;
-  padding-block: 2.5rem;
-  padding-inline: 1.5rem;
+  padding-block: 40px;
+  padding-inline: 24px;
 }
 .contact .contact-row .contact-left .contact-box form > h6 {
   margin-block-end: 2rem;
-  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 1.5rem);
+  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 24px);
   color: #121535;
   font-family: Quicksand, sans-serif;
   font-weight: 700;
@@ -5222,9 +5264,9 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 .contact .contact-row .contact-left .contact-box form .contact-box-inner {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * 1.5rem);
-  margin-right: calc(-0.5 * 1.5rem);
-  margin-left: calc(-0.5 * 1.5rem);
+  margin-top: calc(-1 * 24px);
+  margin-right: calc(-0.5 * 24px);
+  margin-left: calc(-0.5 * 24px);
 }
 .contact
   .contact-row
@@ -5235,9 +5277,9 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .contact-box-inner-item {
   width: 50%;
   max-width: 100%;
-  padding-right: calc(1.5rem * 0.5);
-  padding-left: calc(1.5rem * 0.5);
-  margin-top: 1.5rem;
+  padding-right: calc(24px * 0.5);
+  padding-left: calc(24px * 0.5);
+  margin-top: 24px;
 }
 .contact
   .contact-row
@@ -5258,12 +5300,12 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .contact-box-label {
   display: flex;
   font-family: Exo, sans-serif;
-  margin-block-end: 0.25rem !important;
-  margin-bottom: 1.5rem !important;
+  margin-block-end: 0.25rem  ;
+  margin-bottom: 24px ;
   font-weight: 600;
   align-items: center;
   gap: 0.25rem;
-  font-size: 0.875rem;
+  font-size: 14px;
   color: #1a1a1a;
 }
 .contact
@@ -5288,7 +5330,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   .contact-box-inner
   .contact-box-inner-item
   .contact-box-input {
-  padding-inline: 1rem;
+  padding-inline: 16px;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
   color: #121535;
@@ -5320,10 +5362,10 @@ input[type="number"] {
   .contact-box-inner-item
   .contact-box-btn {
   background-color: hsl(148, 59%, 31.2%);
-  border-radius: 0.5rem;
+  border-radius: 8px;
   padding-block: 1.125rem;
   padding-inline: 2rem;
-  font-size: 0.875rem;
+  font-size: 14px;
   padding: 18px 32px;
   color: white;
 }
@@ -5339,19 +5381,19 @@ input[type="number"] {
 }
 .contact .contact-row .contact-right {
   width: 33.33%;
-  padding-right: calc(1.5rem * .5);
-  padding-left: calc(1.5rem * .5);
-  margin-top: 3rem;
+  padding-right: calc(24px * .5);
+  padding-left: calc(24px * .5);
+  margin-top: 48px;
 }
 .contact .contact-row .contact-right .contact-box {
-  border-radius: 1rem;
+  border-radius: 16px;
   border: 1px solid #e6e6e6;
-  padding-block: 2.5rem;
-  padding-inline: 1.5rem;
+  padding-block: 40px;
+  padding-inline: 24px;
 }
 .contact .contact-row .contact-right .contact-box > h6 {
   margin-block-end: 2rem;
-  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 1.5rem);
+  font-size: clamp(1.125rem, 0.769rem + 0.6813vw, 24px);
   color: #121535;
   font-family: Quicksand, sans-serif;
   font-weight: 700;
@@ -5359,8 +5401,8 @@ input[type="number"] {
   padding: 0 0 16px;
 }
 .contact .contact-row .contact-right .contact-box .contact-box-r-inner {
-  gap: 1rem;
-  margin-block-end: 1rem;
+  gap: 16px;
+  margin-block-end: 16px;
   align-items: center;
   display: flex;
 }
@@ -5374,9 +5416,9 @@ input[type="number"] {
   display: flex;
   border-radius: 50%;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
   color: #299e60;
   border: 1px solid #e6e6e6;
 }
@@ -5386,7 +5428,7 @@ input[type="number"] {
   .contact-box
   .contact-box-r-inner
   .contact-box-r-inner-link {
-  font-size: 1rem;
+  font-size: 16px;
   display: inline-block;
   transition: 0.2s linear;
   color: #1a1a1a;
@@ -5400,21 +5442,21 @@ input[type="number"] {
   color: #299e60;
 }
 .contact .contact-row .contact-right .contact-bottom {
-  gap: 1rem;
+  gap: 16px;
   align-items: center;
   display: flex;
-  margin-block-start: 1.5rem;
+  margin-block-start: 24px;
   flex-wrap: wrap;
 }
 .contact .contact-row .contact-right .contact-bottom .contact-bottom-link {
-  gap: 0.5rem;
+  gap: 8px;
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   background-color: #121535;
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-inline: 1rem;
+  padding-inline: 16px;
   padding: 0.625rem;
   flex-wrap: wrap;
 }
@@ -5435,7 +5477,7 @@ input[type="number"] {
   .contact-bottom
   .contact-bottom-link
   .contact-bottom-link-icon {
-  border-radius: 0.5rem;
+  border-radius: 8px;
   font-size: 1.25rem;
   background-color: #299e60;
   height: 2rem;
@@ -6045,7 +6087,7 @@ input[type="number"] {
     display: none;
   }
   .item1 h2 {
-    font-size: clamp(2.25rem, -0.0733rem + 6.3692vw, 4.5rem);
+    font-size: clamp(2.25rem, -0.07348px + 6.3692vw, 4.5rem);
   }
 }
 
