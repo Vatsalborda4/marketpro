@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const HeaderButtom = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +42,7 @@ const HeaderButtom = () => {
                 </span>
                 <ul className="category-submenu">
                   <li className="category-submenu-item">
-                    <Link className="" to="#">
+                    <a className="" href="#">
                       <span className="">
                         <i className="ph ph-carrot"></i>
                       </span>
@@ -51,41 +50,41 @@ const HeaderButtom = () => {
                       <span className="caret">
                         <i className="ph ph-caret-right"></i>
                       </span>
-                   </Link>
+                    </a>
                     <div className="category-submenu-item-inner ">
                       <h6 className="category-submenu-item-inner-title">
                         Vegetables &amp; Fruit
                       </h6>
                       <ul className="category-submenu-item-inner-item">
                         <li>
-                          <Link to="#">Potato &amp; Tomato 000</Link>
+                          <a href="#">Potato &amp; Tomato 000</a>
                         </li>
                         <li>
-                          <Link to="#">Cucumber &amp; Capsicum</Link>
+                          <a href="#">Cucumber &amp; Capsicum</a>
                         </li>
                         <li>
-                          <Link to="#">Leafy Vegetables</Link>
+                          <a href="#">Leafy Vegetables</a>
                         </li>
                         <li>
-                          <Link to="#">Root Vegetables</Link>
+                          <a href="#">Root Vegetables</a>
                         </li>
                         <li>
-                          <Link to="#">Beans &amp; Okra</Link>
+                          <a href="#">Beans &amp; Okra</a>
                         </li>
                         <li>
-                          <Link to="#">Cabbage &amp; Cauliflower</Link>
+                          <a href="#">Cabbage &amp; Cauliflower</a>
                         </li>
                         <li>
-                          <Link to="#">Gourd &amp; Drumstick</Link>
+                          <a href="#">Gourd &amp; Drumstick</a>
                         </li>
                         <li>
-                          <Link to="#">Specialty</Link>
+                          <a href="#">Specialty</a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li className="category-submenu-item">
-                    <Link className="" to="#">
+                    <a className="" href="#">
                       <span className="">
                         <i className="ph ph-brandy"></i>
                       </span>
@@ -93,35 +92,35 @@ const HeaderButtom = () => {
                       <span className="caret">
                         <i className="ph ph-caret-right"></i>
                       </span>
-                   </Link>
+                    </a>
                     <div className="category-submenu-item-inner ">
                       <h6 className="category-submenu-item-inner-title">
                         Beverages
                       </h6>
                       <ul className="category-submenu-item-inner-item">
                         <li>
-                          <Link to="#">Soda &amp; Cocktail Mix</Link>
+                          <a href="#">Soda &amp; Cocktail Mix </a>
                         </li>
                         <li>
-                          <Link to="#"> Sports &amp; Energy Drinks</Link>
+                          <a href="#"> Sports &amp; Energy Drinks</a>
                         </li>
                         <li>
-                          <Link to="#"> Non Alcoholic Drinks</Link>
+                          <a href="#"> Non Alcoholic Drinks</a>
                         </li>
                         <li>
-                          <Link to="#"> Packaged Water</Link>
+                          <a href="#"> Packaged Water </a>
                         </li>
                         <li>
-                          <Link to="#"> Spring Water</Link>
+                          <a href="#"> Spring Water</a>
                         </li>
                         <li>
-                          <Link to="#"> Flavoured Water</Link>
+                          <a href="#"> Flavoured Water </a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li className="category-submenu-item">
-                    <Link className="" to="#">
+                    <a className="" href="#">
                       <span className="">
                         <i className="ph ph-brandy"></i>
                       </span>
@@ -129,29 +128,29 @@ const HeaderButtom = () => {
                       <span className="caret">
                         <i className="ph ph-caret-right"></i>
                       </span>
-                   </Link>
+                    </a>
                     <div className="category-submenu-item-inner">
                       <h6 className="category-submenu-item-inner-title">
                         Meats &amp; Seafood
                       </h6>
                       <ul className="category-submenu-item-inner-item">
                         <li>
-                          <Link to="#"> Fresh Meat</Link>
+                          <a href="#"> Fresh Meat </a>
                         </li>
                         <li>
-                          <Link to="#"> Frozen Meat</Link>
+                          <a href="#"> Frozen Meat</a>
                         </li>
                         <li>
-                          <Link to="#"> Marinated Meat</Link>
+                          <a href="#"> Marinated Meat</a>
                         </li>
                         <li>
-                          <Link to="#"> Fresh &amp; Frozen Meat</Link>
+                          <a href="#"> Fresh &amp; Frozen Meat</a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li className="category-submenu-item">
-                    <Link className="" to="#">
+                    <a className="" href="#">
                       <span className="">
                         <i className="ph ph-brandy"></i>
                       </span>
@@ -159,35 +158,35 @@ const HeaderButtom = () => {
                       <span className="caret">
                         <i className="ph ph-caret-right"></i>
                       </span>
-                   </Link>
+                    </a>
                     <div className="category-submenu-item-inner">
                       <h6 className="category-submenu-item-inner-title">
                         Breakfast &amp; Dairy
                       </h6>
                       <ul className="category-submenu-item-inner-item">
                         <li>
-                          <Link to="#"> Oats &amp; Porridge</Link>
+                          <a href="#"> Oats &amp; Porridge</a>
                         </li>
                         <li>
-                          <Link to="#"> Kids Cereal</Link>
+                          <a href="#"> Kids Cereal</a>
                         </li>
                         <li>
-                          <Link to="#"> Muesli</Link>
+                          <a href="#"> Muesli</a>
                         </li>
                         <li>
-                          <Link to="#"> Flakes</Link>
+                          <a href="#"> Flakes</a>
                         </li>
                         <li>
-                          <Link to="#"> Granola &amp; Cereal Bars</Link>
+                          <a href="#"> Granola &amp; Cereal Bars</a>
                         </li>
                         <li>
-                          <Link to="#"> Instant Noodles</Link>
+                          <a href="#"> Instant Noodles</a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li className="category-submenu-item">
-                    <Link className="" to="#">
+                    <a className="" href="#">
                       <span className="">
                         <i className="ph ph-brandy"></i>
                       </span>
@@ -195,32 +194,32 @@ const HeaderButtom = () => {
                       <span className="caret">
                         <i className="ph ph-caret-right"></i>
                       </span>
-                   </Link>
+                    </a>
                     <div className="category-submenu-item-inner">
                       <h6 className="category-submenu-item-inner-title">
                         Frozen Foods
                       </h6>
                       <ul className="category-submenu-item-inner-item">
                         <li>
-                          <Link to="#"> Instant Noodles</Link>
+                          <a href="#"> Instant Noodles </a>
                         </li>
                         <li>
-                          <Link to="#"> Hakka Noodles</Link>
+                          <a href="#"> Hakka Noodles</a>
                         </li>
                         <li>
-                          <Link to="#"> Cup Noodles</Link>
+                          <a href="#"> Cup Noodles</a>
                         </li>
                         <li>
-                          <Link to="#"> Vermicelli</Link>
+                          <a href="#"> Vermicelli</a>
                         </li>
                         <li>
-                          <Link to="#"> Instant Pasta</Link>
+                          <a href="#"> Instant Pasta</a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li className="category-submenu-item">
-                    <Link className="" to="#">
+                    <a className="" href="#">
                       <span className="">
                         <i className="ph ph-brandy"></i>
                       </span>
@@ -228,32 +227,32 @@ const HeaderButtom = () => {
                       <span className="caret">
                         <i className="ph ph-caret-right"></i>
                       </span>
-                   </Link>
+                    </a>
                     <div className="category-submenu-item-inner">
                       <h6 className="category-submenu-item-inner-title">
                         Biscuits &amp; Snacks
                       </h6>
                       <ul className="category-submenu-item-inner-item">
                         <li>
-                          <Link to="#"> Salted Biscuits</Link>
+                          <a href="#"> Salted Biscuits </a>
                         </li>
                         <li>
-                          <Link to="#"> Marie, Health, Digestive</Link>
+                          <a href="#"> Marie, Health, Digestive</a>
                         </li>
                         <li>
-                          <Link to="#"> Cream Biscuits &amp; Wafers</Link>
+                          <a href="#"> Cream Biscuits &amp; Wafers </a>
                         </li>
                         <li>
-                          <Link to="#"> Glucose &amp; Milk biscuits</Link>
+                          <a href="#"> Glucose &amp; Milk biscuits</a>
                         </li>
                         <li>
-                          <Link to="#"> Cookies</Link>
+                          <a href="#"> Cookies</a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li className="category-submenu-item">
-                    <Link className="" to="#">
+                    <a className="" href="#">
                       <span className="">
                         <i className="ph ph-brandy"></i>
                       </span>
@@ -261,32 +260,32 @@ const HeaderButtom = () => {
                       <span className="">
                         <i className="ph ph-caret-right"></i>
                       </span>
-                   </Link>
+                    </a>
                     <div className="category-submenu-item-inner">
                       <h6 className="category-submenu-item-inner-title">
                         Grocery &amp; Staples
                       </h6>
                       <ul className="category-submenu-item-inner-item">
                         <li>
-                          <Link to="#"> Lemon, Ginger &amp; Garlic</Link>
+                          <a href="#"> Lemon, Ginger &amp; Garlic </a>
                         </li>
                         <li>
-                          <Link to="#"> Indian &amp; Exotic Herbs</Link>
+                          <a href="#"> Indian &amp; Exotic Herbs</a>
                         </li>
                         <li>
-                          <Link to="#"> Orangic Vegetables</Link>
+                          <a href="#"> Orangic Vegetables</a>
                         </li>
                         <li>
-                          <Link to="#">Orangic Fruits</Link>
+                          <a href="#">Orangic Fruits </a>
                         </li>
                         <li>
-                          <Link to="#"> Orangic Dry Fruits</Link>
+                          <a href="#"> Orangic Dry Fruits</a>
                         </li>
                         <li>
-                          <Link to="#"> Orangic Dals &amp; pulses</Link>
+                          <a href="#"> Orangic Dals &amp; pulses</a>
                         </li>
                         <li>
-                          <Link to="#"> Orangic Millet &amp; Flours</Link>
+                          <a href="#"> Orangic Millet &amp; Flours</a>
                         </li>
                       </ul>
                     </div>
@@ -297,94 +296,93 @@ const HeaderButtom = () => {
             <div className="header-bottom-menu">
               <ul className="menu-inner">
                 <li className="menu-item">
-                  <Link to="#">Home</Link>
+                  <a href="#">Home</a>
                   <ul className="sum-menu">
                     <li className="sum-menu-item">
-                      <Link to="#">Home Grocery</Link>
+                      <a href="#">Home Grocery</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#">Home Electronics</Link>
+                      <a href="#">Home Electronics</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#">Home Fashion</Link>
+                      <a href="#">Home Fashion</a>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item">
-                  <Link to="#">Shop</Link>
+                  <a href="#">Shop</a>
                   <ul className="sum-menu">
                     <li className="sum-menu-item">
-                      <Link to="#">Shop</Link>
+                      <a href="#">Shop</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#">Shop Details</Link>
+                      <a href="#">Shop Details</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#"> Shop Details Two</Link>
+                      <a href="#"> Shop Details Two</a>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item">
                   <span className="pages-new" style={{lineHeight:"21px"}}>New</span>
-                  <Link to="#">Pages</Link>
+                  <a href="#">Pages</a>
                   <ul className="sum-menu">
                     <li className="sum-menu-item">
-                      <Link to="#">Cart</Link>
+                      <a href="#">Cart</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#">Wishlist</Link>
+                      <a href="#">Wishlist</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#">Checkout</Link>
+                      <a href="#">Checkout</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#">Become Seller</Link>
+                      <a href="#">Become Seller</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#">Account</Link>
+                      <a href="#">Account</a>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item">
                   <span className="pages-new vendors-new">New</span>
 
-                  <Link to="#">Vendors</Link>
+                  <a href="#">Vendors</a>
                   <ul className="sum-menu">
                     <li className="sum-menu-item">
-                      <Link to="#">Vendors</Link>
+                      <a href="#">Vendors</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#">Vendor Details</Link>
+                      <a href="#">Vendor Details</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#">Vendors Two</Link>
+                      <a href="#">Vendors Two</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#">Vendors Two Details</Link>
+                      <a href="#">Vendors Two Details</a>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item">
-                  <Link to="#">Blog</Link>
+                  <a href="#">Blog</a>
                   <ul className="sum-menu">
                     <li className="sum-menu-item">
-                      <Link to="#">Blog</Link>
+                      <a href="#">Blog</a>
                     </li>
                     <li className="sum-menu-item">
-                      <Link to="#">Blog Details</Link>
+                      <a href="#">Blog Details</a>
                     </li>
                   </ul>
                 </li>
                 <li className="menu-item">
-                  <Link to="Contact">Contact Us</Link>
-                  
+                  <a href="#">Contact Us</a>
                 </li>
               </ul>
             </div>
             <div className="header-buttom-call">
-              <Link to="/tel:01234567890">
+              <a href="/tel:01234567890">
                 <i className="ph ph-phone-call"></i> 01-234 567 890
-             </Link>
+              </a>
             </div>
 
             <div className="header-right">
@@ -395,16 +393,16 @@ const HeaderButtom = () => {
                       <i className="ph ph-magnifying-glass"></i>
                     </span>
                   </button>
-                  <Link to="#">
+                  <a href="#">
                     <span>
                       <i className="ph ph-heart"></i>
                     </span>
-                 </Link>
-                  <Link to="#">
+                  </a>
+                  <a href="#">
                     <span>
                       <i className="ph ph-shopping-cart-simple"></i>
                     </span>
-                 </Link>
+                  </a>
                 </div>
               </div>
               <button className="header-right-menuicon toggle-btn" onClick={toggleSidebar}>
@@ -418,25 +416,25 @@ const HeaderButtom = () => {
         <span className="close-btn" onClick={toggleSidebar}>✕</span>
         <h2 className="logo"><img src="assets/images/logo.webp" alt="logo" /></h2>
         <ul className="sidebar-menu">
-          <li className="menu-item"><Link to="#" className="text">Home</Link></li>
-          <li className="menu-item"><Link to="#" className="text">Shop</Link></li>
-          <li className="menu-item"><Link to="#" className="text">pages</Link></li>
-          <li className="menu-item"><Link to="#" className="text">Vendors</Link></li>
-          <li className="menu-item"><Link to="#" className="text">Blog</Link></li>
-          <li className="menu-item"><Link to="#" className="text">Contact us</Link></li>
+          <li className="menu-item"><a href="#" className="text">Home</a></li>
+          <li className="menu-item"><a href="#" className="text">Shop</a></li>
+          <li className="menu-item"><a href="#" className="text">pages</a></li>
+          <li className="menu-item"><a href="#" className="text">Vendors</a></li>
+          <li className="menu-item"><a href="#" className="text">Blog</a></li>
+          <li className="menu-item"><a href="#" className="text">Contact us</a></li>
         </ul>
       </div>
       <div className={`sidebar2 ${isOpen2 ? 'open' : ''}`}>
         <span className="close-btn" onClick={toggleSidebar2}>✕</span>
         <h2 className="logo"><img src="assets/images/logo.webp" alt="logo" /></h2>
         <ul className="sidebar-menu">
-          <li className="menu-item"><Link to="#" className="text"><span><i className="ph ph-carrot"></i></span>vegetables & Fruit</Link></li>
-          <li className="menu-item"><Link to="#" className="text"><span><i className="ph ph-brandy"></i></span>Beverages</Link></li>
-          <li className="menu-item"><Link to="#" className="text"><span><i className="ph ph-brandy"></i></span>meats & Seafood</Link></li>
-          <li className="menu-item"><Link to="#" className="text"><span><i className="ph ph-brandy"></i></span>breackfast & dairy</Link></li>
-          <li className="menu-item"><Link to="#" className="text"><span><i className="ph ph-brandy"></i></span>frozen foods</Link></li>
-          <li className="menu-item"><Link to="#" className="text"><span><i className="ph ph-brandy"></i></span>biscuits & snacks</Link></li>
-          <li className="menu-item"><Link to="#" className="text"><span><i className="ph ph-brandy"></i></span>grocery & staples</Link></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-carrot"></i></span>vegetables & Fruit</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>Beverages</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>meats & Seafood</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>breackfast & dairy</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>frozen foods</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>biscuits & snacks</a></li>
+          <li className="menu-item"><a href="#" className="text"><span><i className="ph ph-brandy"></i></span>grocery & staples</a></li>
         </ul>
       </div>
     </>
@@ -444,4 +442,3 @@ const HeaderButtom = () => {
 };
 
 export default HeaderButtom;
-
