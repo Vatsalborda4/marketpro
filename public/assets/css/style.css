@@ -2103,6 +2103,15 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
+  transition: all 0.2s linear;
+}
+.flash-sales
+  .section-heading
+  .section-heading-inner
+  .section-heading-inner-item-right
+  .section-heading-link:hover {
+color: #28a745;
+text-decoration: underline;
 }
 .flash-sales .flash-sales-slider {
   display: flex;
@@ -2839,6 +2848,9 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   position: relative;
   transition: 0.2s linear;
 }
+.Recommended-heading .common-tab > .nav-item > .nav-link:hover{
+  color: #28a745;
+}
 .active {
   color: #fff !important;
   background-color: #299e60 !important;
@@ -2914,7 +2926,15 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
+  transition: all 0.2 linear;
 }
+.hotdeals-heading
+  .hotdeals-heading-inner
+  .hotdeals-heading-inner-item-right
+  .hotdeals-heading-link:hover{
+    color: #28a745;
+    text-decoration: underline;
+  }
 .hotdeals-inner {
   display: flex;
   flex-wrap: wrap;
@@ -3427,7 +3447,17 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
+  transition: all 0.2s linear;
 }
+.newarrival
+  .newarrival-heading
+  .newarrival-heading-inner
+  .newarrival-heading-inner-item-right
+  .newarrival-heading-link:hover{
+    color: #28a745;
+    text-decoration: underline;
+  }
+
 .newarrival .newarrival-inner {
   display: flex;
   flex-wrap: wrap;
@@ -3814,7 +3844,16 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   color: #4d4d4d;
   font-weight: 500;
   display: inline-block;
+  transition: all 0.2s linear;
 }
+.Organic
+  .Organic-heading
+  .Organic-heading-inner
+  .Organic-heading-inner-item-right
+  .Organic-heading-link:hover{
+    color: #28a745;
+    text-decoration: underline;
+  }
 .Organic .Organic-inner {
   display: flex;
   flex-wrap: wrap;
@@ -4725,6 +4764,7 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 
 .topvendors .topvendors-link:hover {
   color: #299e60;
+  text-decoration: underline;
 }
 
 .topvendors .vendor-grid {
@@ -4951,11 +4991,18 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
   gap: 15px;
 }
 
-.brand-inner a {
+.brand-inner>a {
+  
   color: #111;
   font-weight: 500;
   text-decoration: none;
+  transition: all 0.2s linear;
 }
+.brand-inner>a:hover{
+  color: #28a745;
+  text-decoration: underline;
+}
+
 
 .arwbtn {
   width: 40px;
