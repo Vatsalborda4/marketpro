@@ -93,7 +93,7 @@ const Feature = () => {
                 slidesPerView: 5, // for viewports up to 991px
               },
               992: {
-                slidesPerView: 6, // for viewports 992px and above
+                slidesPerView: 5, // for viewports 992px and above
               },
             }}
             navigation

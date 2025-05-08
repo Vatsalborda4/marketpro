@@ -28,7 +28,10 @@ const Brands = () => {
                       slidesPerView: 4, // for viewports up to 991px
                     },
                     576: {
-                      slidesPerView: 6, // for viewports 992px and above
+                      slidesPerView: 5, // for viewports 992px and above
+                    },
+                    1199: {
+                      slidesPerView: 5, // for viewports 992px and above
                     },
                   }}
               loop>
