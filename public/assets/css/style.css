@@ -1202,7 +1202,7 @@ option {
   position: absolute;
   visibility: hidden;
   width: 300px;
-  padding: 16px 0;
+  padding-block: 16px;
   z-index: 99999999999;
   box-shadow: 0 7px 21px -5px #0000001a, 0 4px 21px -4px #0000001a;
 }
