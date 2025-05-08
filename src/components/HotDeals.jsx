@@ -226,7 +226,10 @@ const HotDeals = () => {
                   576: {
                     slidesPerView: 2,
                   },
-                  1199: {},
+                  1199: {
+                    slidesPerView: 3,
+
+                  },
                 }}
                 spaceBetween={7}
                 loop={true}
@@ -281,7 +284,7 @@ const HotDeals = () => {
                               {product.rating}
                             </span>
                             <span className="hotdeals-product-card-rating-star">
-                              <i class="ph-fill ph-star"></i>{" "}
+                              <i className="ph-fill ph-star"></i>{" "}
                             </span>
                             <span className="hotdeals-product-card-rating-totle">
                               {product.reviews}

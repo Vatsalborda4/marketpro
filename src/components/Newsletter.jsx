@@ -4,16 +4,16 @@ const Newsletter = () => {
     <>
       <div className="newsletter-outer">
         <div className="container">
-          <div class="newsletter">
+          <div className="newsletter">
             <img src="assets\images\newsletter-bg.webp" alt="" />
-            <div class="item1">
+            <div className="item1">
               <h2>
                 Don’t Miss Out on
   
                 Grocery Deals
               </h2>
               <p>SIGN UP FOR THE UPDATE NEWSLETTER</p>
-              <form class="form">
+              <form className="form">
                 <input
                   type="email"
                   placeholder="Your email address..."
@@ -22,7 +22,7 @@ const Newsletter = () => {
                 <button type="submit">Subscribe</button>
               </form>
             </div>
-            <div class="item2">
+            <div className="item2">
               <img
                 src="assets\images\newsletter-img.webp"
                 alt="Grocery Basket"
