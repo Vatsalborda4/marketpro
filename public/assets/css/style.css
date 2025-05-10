@@ -5524,6 +5524,7 @@ input[type="number"] {
     gap: 1rem ;
     align-items: center;
   display: flex;
+  flex-wrap: wrap;  
 }
  .vendor-header .vendor-header-actions .vendor-form-wrapper{
   display: block;
@@ -6017,6 +6018,10 @@ input[type="number"] {
     width: 50%;
     text-align: righ;
   }
+  .vendor-header .vendor-header-actions .vendor-form-wrapper .vendor-form-input {
+	width: 200px;
+
+}
 }
 /* end media 1199px  */
 
