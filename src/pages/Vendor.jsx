@@ -3,7 +3,6 @@ import Breadcrumb from "../components/Breadcrumb";
 import Newsletter from "../components/Newsletter";
 import Shipping from "../components/Shipping";
 import { Link } from "react-router-dom";
-
 const vendors = [
   {
     id: 1,
