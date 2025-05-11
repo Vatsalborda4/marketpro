@@ -6,6 +6,7 @@ import Header from "./Header";
 import Home from "./pages/Home";
 import ContactUs from "./pages/ContactUs";
 import Vendor from "./pages/Vendor";
+import Shop from "./pages/Shop";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -14,9 +15,9 @@ root.render(
     <Header />
     <Routes>
        <Route path="/" element={<Home/>} />
-      {/* <Route path="about" element={<About />} /> */}
-      <Route path="contact" element={<ContactUs />} /> 
-      <Route path="vendor" element={<Vendor />} /> 
+      <Route path="/shop" element={<Shop />} />
+      <Route path="/contact" element={<ContactUs />} /> 
+      <Route path="/vendor" element={<Vendor />} /> 
     </Routes>
     <Footer />
   </BrowserRouter>
