@@ -299,7 +299,7 @@ const Shop = () => {
               {/* <!-- image --> */}
               <div className="img-outer">
                 <div className="img-inner">
-                  <img src="assets/images/advertise-img1.png" alt="IMG.JPG" />
+                  <img src="assets/images/advertise-img1.webp" alt="IMG.JPG" />
                 </div>
               </div>
             </div>
