@@ -6585,6 +6585,20 @@ align-items: center;
     width: auto;
   }
   /* contact page end */
+  /* shop page  */
+  .shop .shop-inner  .shop-left{
+    width: 100%;
+  }
+  .shop .shop-inner .shop-right{
+    width: 100%;
+  }
+  .img-outer .img-inner img {
+	height: auto;
+	max-width: 100%;
+  width: auto;
+	vertical-align: middle;
+}
+  /* shop page  */
 }
 
 /* end media 991px  */
