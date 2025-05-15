@@ -1719,7 +1719,6 @@ footer .footer-inner .footer-social .footer-icon > div > a:hover {
 .footer-bottom .footer-bottom-inner .footer-bottom-end {
   display: flex;
   width: 50%;
-
   padding-right: 5px;
 }
 .footer-bottom .footer-bottom-inner .footer-bottom-end p {
@@ -5938,6 +5937,25 @@ input[type="number"] {
     width: auto;
   }
   /* contact page end */
+  .Recommended-heading {
+    display: block;
+  }
+  .Recommended-heading > h5{
+    margin-bottom: 10px;
+  }
+  .footer-bottom .footer-bottom-inner {
+    display: block;
+  }
+  .footer-bottom .footer-bottom-inner p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-bottom .footer-bottom-inner .footer-bottom-end{
+    padding-right: 0px;
+  }
+  .footer-bottom .footer-bottom-inner .footer-bottom-end p {
+    text-align: start;
+  }
 }
 
 /* end media 991px  */
