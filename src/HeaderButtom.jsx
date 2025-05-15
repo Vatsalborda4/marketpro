@@ -311,10 +311,10 @@ const HeaderButtom = () => {
                   </ul>
                 </li>
                 <li className="menu-item">
-                  <Link to="#">Shop</Link>
+                  <Link to="/shop">Shop</Link>
                   <ul className="sum-menu">
                     <li className="sum-menu-item">
-                      <Link to="#">Shop</Link>
+                      <Link to="/shop">Shop</Link>
                     </li>
                     <li className="sum-menu-item">
                       <Link to="#">Shop Details</Link>
@@ -348,10 +348,10 @@ const HeaderButtom = () => {
                 <li className="menu-item">
                   <span className="pages-new vendors-new">New</span>
 
-                  <Link to="#">Vendors</Link>
+                  <Link to="/vendor">Vendors</Link>
                   <ul className="sum-menu">
                     <li className="sum-menu-item">
-                      <Link to="#">Vendors</Link>
+                      <Link to="/vendor">Vendors</Link>
                     </li>
                     <li className="sum-menu-item">
                       <Link to="#">Vendor Details</Link>
