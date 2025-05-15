@@ -297,7 +297,7 @@ const HeaderButtom = () => {
             <div className="header-bottom-menu">
               <ul className="menu-inner">
                 <li className="menu-item">
-                  <Link to="#">Home</Link>
+                  <Link to="/">Home</Link>
                   <ul className="sum-menu">
                     <li className="sum-menu-item">
                       <Link to="#">Home Grocery</Link>
