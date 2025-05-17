@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import ContactUs from "./pages/ContactUs";
 import Vendor from "./pages/Vendor";
 import Shop from "./pages/Shop";
+import ProductDetails from "./pages/ProductDetails";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -18,6 +19,7 @@ root.render(
       <Route path="/shop" element={<Shop />} />
       <Route path="/contact" element={<ContactUs />} /> 
       <Route path="/vendor" element={<Vendor />} /> 
+      <Route path="/Product" element={<ProductDetails />} /> 
     </Routes>
     <Footer />
   </BrowserRouter>
