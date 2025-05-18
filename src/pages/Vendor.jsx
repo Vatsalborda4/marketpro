@@ -3,6 +3,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import Newsletter from "../components/Newsletter";
 import Shipping from "../components/Shipping";
 import { Link } from "react-router-dom";
+
 const vendors = [
   {
     id: 1,
@@ -302,76 +303,76 @@ const Vendor = () => {
         </div>
         <ul className="pagination ">
           <li className="page-item">
-            <a
+            <Link
               className="page-link "
-              href="/vendor"
+              to="/vendor"
             >
               <i className="ph-bold ph-arrow-left"></i>
-            </a>
+            </Link>
           </li>
           <li className="page-item ">
-            <a
+            <Link
               className="page-link active "
-              href="/vendor"
+              to="/vendor"
             >
               01
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a
+            <Link
               className="page-link "
-              href="/vendor"
+              to="/vendor"
             >
               02
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a
+            <Link
               className="page-link "
-              href="/vendor"
+              to="/vendor"
             >
               03
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a
+            <Link
               className="page-link "
-              href="/vendor"
+              to="/vendor"
             >
               04
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a
+            <Link
               className="page-link "
-              href="/vendor"
+              to="/vendor"
             >
               05
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a
+            <Link
               className="page-link "
-              href="/vendor"
+              to="/vendor"
             >
               06
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a
+            <Link
               className="page-link "
-              href="/vendor"
+              to="/vendor"
             >
               07
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a
+            <Link
               className=""
-              href="/vendor"
+              to="/vendor"
             >
               <i className="ph-bold ph-arrow-right"></i>
-            </a>
+            </Link>
           </li>
         </ul>
       </section>

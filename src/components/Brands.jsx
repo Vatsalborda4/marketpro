@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 
+import { Link } from "react-router-dom";
 
 const Brands = () => {
   return (
@@ -13,7 +14,7 @@ const Brands = () => {
             <div className="brand-title">
               <h2>Shop by Brands</h2>
               <div className="brand-inner">
-                <a href="#">View All Deals</a>
+                <Link to="#">View All Deals</Link>
               </div>
             </div>
             <div className="brands-logos">

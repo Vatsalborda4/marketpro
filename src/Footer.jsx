@@ -2,6 +2,7 @@ import React from "react";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,9 +18,9 @@ const Footer = () => {
           <div className="footer-inner">
             <div className="footer-info">
               <div className="footer-logo">
-                <a href="#">
+                <Link to="#">
                   <img src="assets\images\logo.webp" alt="logo" />
-                </a>
+                </Link>
               </div>
               <p className="footer-text">
                 We're Grocery Shop, an innovative team of food supliers.
@@ -38,9 +39,9 @@ const Footer = () => {
                     <span><i className="ph-fill ph-phone-call"></i></span>
                   </div>
                   <div className="footer-li-text">
-                    <a href="/tel:+0012345678">+00 123 456 789</a>
+                    <Link to="/tel:+0012345678">+00 123 456 789</Link>
                     <span>or</span>
-                    <a href="/tel:+0987654321">+00 987 654 321</a>
+                    <Link to="/tel:+0987654321">+00 987 654 321</Link>
                   </div>
                 </li>
                 <li>
@@ -48,9 +49,9 @@ const Footer = () => {
                    <span> <i className="ph-fill ph-envelope"></i></span>
                   </div>
                   <div className="footer-li-text">
-                    <a href="/mailto:support24@marketpro.com">
+                    <Link to="/mailto:support24@marketpro.com">
                       support24@marketpro.com
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -58,85 +59,85 @@ const Footer = () => {
             <ui className="footer-item">
               <li className="footer-item-title"> Information</li>
               <li>
-                <a href="#">Become a Vendor</a>
+                <Link to="#">Become a Vendor</Link>
               </li>
               <li>
-                <a href="#">Affiliate Program</a>
+                <Link to="#">Affiliate Program</Link>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <Link to="#">Privacy Policy</Link>
               </li>
               <li>
-                <a href="#">Our Suppliers</a>
+                <Link to="#">Our Suppliers</Link>
               </li>
               <li>
-                <a href="#">Extended Plan</a>
+                <Link to="#">Extended Plan</Link>
               </li>
               <li>
-                <a href="#">Community</a>
+                <Link to="#">Community</Link>
               </li>
             </ui>
             <ui className="footer-item">
               <li className="footer-item-title"> Customer Support</li>
               <li>
-                <a href="#">Help Center</a>
+                <Link to="#">Help Center</Link>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <Link to="#">Contact Us</Link>
               </li>
               <li>
-                <a href="#">Report Abuse</a>
+                <Link to="#">Report Abuse</Link>
               </li>
               <li>
-                <a href="#">Submit and Dispute</a>
+                <Link to="#">Submit and Dispute</Link>
               </li>
               <li>
-                <a href="#">Policies & Rules</a>
+                <Link to="#">Policies & Rules</Link>
               </li>
               <li>
-                <a href="#">Online Shopping</a>
+                <Link to="#">Online Shopping</Link>
               </li>
             </ui>
             <ui className="footer-item">
               <li className="footer-item-title"> My Account</li>
               <li>
-                <a href="#">My Account</a>
+                <Link to="#">My Account</Link>
               </li>
               <li>
-                <a href="#">Order History</a>
+                <Link to="#">Order History</Link>
               </li>
               <li>
-                <a href="#">Shoping Cart</a>
+                <Link to="#">Shoping Cart</Link>
               </li>
               <li>
-                <a href="#">Compare</a>
+                <Link to="#">Compare</Link>
               </li>
               <li>
-                <a href="#">Help Ticket</a>
+                <Link to="#">Help Ticket</Link>
               </li>
               <li>
-                <a href="#">Wishlist</a>
+                <Link to="#">Wishlist</Link>
               </li>
             </ui>
             <ui className="footer-item">
               <li className="footer-item-title">Daily Groceries</li>
               <li>
-                <a href="#">Dairy & Eggs</a>
+                <Link to="#">Dairy & Eggs</Link>
               </li>
               <li>
-                <a href="#">Meat & Seafood</a>
+                <Link to="#">Meat & Seafood</Link>
               </li>
               <li>
-                <a href="#">Breakfast Food</a>
+                <Link to="#">Breakfast Food</Link>
               </li>
               <li>
-                <a href="#">Household Supplies</a>
+                <Link to="#">Household Supplies</Link>
               </li>
               <li>
-                <a href="#">Bread & Bakery</a>
+                <Link to="#">Bread & Bakery</Link>
               </li>
               <li>
-                <a href="#">Pantry Staples</a>
+                <Link to="#">Pantry Staples</Link>
               </li>
             </ui>
             <div className="footer-social">
@@ -154,24 +155,24 @@ const Footer = () => {
               </li>
               <li className="footer-icon">
                 <div>
-                  <a href="#">
+                  <Link to="#">
                     <span><i className="ph-fill ph-facebook-logo"></i></span>
-                  </a>
+                  </Link>
                 </div>
                 <div>
-                  <a href="#">
+                  <Link to="#">
                     <span><i className="ph-fill ph-twitter-logo"></i></span>
-                  </a>
+                  </Link>
                 </div>
                 <div>
-                  <a href="#">
+                  <Link to="#">
                     <span><i className="ph-fill ph-instagram-logo"></i></span>
-                  </a>
+                  </Link>
                 </div>
                 <div>
-                  <a href="#">
+                  <Link to="#">
                     <span ><i className="ph-fill ph-linkedin-logo"></i></span>
-                  </a>
+                  </Link>
                 </div>
               </li>
             </div>

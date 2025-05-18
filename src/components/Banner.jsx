@@ -2,6 +2,7 @@ import React from "react";
 // import Swiper core and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,11 +13,11 @@ const Banner = () => {
     <div className="banner">
       <div className="container">
         <div className="banner-inner">
-          <a href="#" className="scroll-down">
+          <Link to="#" className="scroll-down">
             <span>
               <i className="ph ph-caret-double-down"></i>
             </span>
-          </a>
+          </Link>
           <Swiper
             // install Swiper modules
             modules={[Autoplay]}
@@ -35,12 +36,12 @@ const Banner = () => {
                   <h1 className="banner-item-title">
                     Daily Grocery Order and Get Express Delivery
                   </h1>
-                  <a href="#">
+                  <Link to="#">
                     Explore Shop{" "}
                     <span className="Banner-icon">
                       <i className="ph ph-shopping-cart-simple"></i>
                     </span>
-                  </a>
+                  </Link>
                 </div>
                 <div className="banner-item-thumb">
                   <img src="assets/images/banner-img1.webp" alt="banner-img" />
@@ -53,12 +54,12 @@ const Banner = () => {
                   <h1 className="banner-item-title">
                     Daily Grocery Order and Get Express Delivery
                   </h1>
-                  <a href="#">
+                  <Link to="#">
                     Explore Shop{" "}
                     <span className="Banner-icon">
                       <i className="ph ph-shopping-cart-simple"></i>
                     </span>
-                  </a>
+                  </Link>
                 </div>
                 <div className="banner-item-thumb">
                   <img src="assets/images/banner-img3.webp" alt="banner-img" />

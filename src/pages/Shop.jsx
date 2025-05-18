@@ -2,6 +2,7 @@ import react from "react";
 import Breadcrumb from "../components/Breadcrumb";
 import Shipping from "../components/Shipping";
 import { Link } from "react-router-dom";
+
 const products = [
   {
     id: 1,
@@ -393,76 +394,76 @@ const Shop = () => {
         </div>
               <ul class="pagination ">
                 <li class="page-item">
-                  <a
+                  <Link
                     class="shop-page-link "
-                    href="/shop"
+                    to="/shop"
                   >
                     <i class="ph-bold ph-arrow-left"></i>
-                  </a>
+                  </Link>
                 </li>
                 <li class="page-item ">
-                  <a
+                  <Link
                     class="shop-page-link active"
-                    href="/shop"
+                    to="/shop"
                   >
                     01
-                  </a>
+                  </Link>
                 </li>
                 <li class="page-item">
-                  <a
+                  <Link
                     class="shop-page-link "
-                    href="/shop"
+                    to="/shop"
                   >
                     02
-                  </a>
+                  </Link>
                 </li>
                 <li class="page-item">
-                  <a
+                  <Link
                     class="shop-page-link "
-                    href="/shop"
+                    to="/shop"
                   >
                     03
-                  </a>
+                  </Link>
                 </li>
                 <li class="page-item">
-                  <a
+                  <Link
                     class="shop-page-link "
-                    href="/shop"
+                    to="/shop"
                   >
                     04
-                  </a>
+                  </Link>
                 </li>
                 <li class="page-item">
-                  <a
+                  <Link
                     class="shop-page-link "
-                    href="/shop"
+                    to="/shop"
                   >
                     05
-                  </a>
+                  </Link>
                 </li>
                 <li class="page-item">
-                  <a
+                  <Link
                     class="shop-page-link "
-                    href="/shop"
+                    to="/shop"
                   >
                     06
-                  </a>
+                  </Link>
                 </li>
                 <li class="page-item">
-                  <a
+                  <Link
                     class="shop-page-link "
-                    href="/shop"
+                    to="/shop"
                   >
                     07
-                  </a>
+                  </Link>
                 </li>
                 <li class="page-item">
-                  <a
+                  <Link
                     class="shop-page-link "
-                    href="/shop"
+                    to="/shop"
                   >
                     <i class="ph-bold ph-arrow-right"></i>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

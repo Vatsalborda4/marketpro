@@ -8,6 +8,8 @@ import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaAngleDown } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
+
 // import HeaderButtom from "./HeaderButtom";
 
 
@@ -22,16 +24,16 @@ const Header = () => {
             {/* left side */}
             <ul className="header-top-item ready">
               <li className="header-top-item header-top-icon">
-                <a href="#">Become A Seller</a>
+                <Link to="#">Become A Seller</Link>
               </li>
               <li className="header-top-item header-top-icon">
-                <a href="#">About us</a>
+                <Link to="#">About us</Link>
               </li>
               <li className="header-top-item header-top-icon">
-                <a href="#">Free Delivery</a>
+                <Link to="#">Free Delivery</Link>
               </li>
               <li className="header-top-item">
-                <a href="#">Returns Policy</a>
+                <Link to="#">Returns Policy</Link>
               </li>
             </ul>
 
@@ -39,7 +41,7 @@ const Header = () => {
             <ul className="header-top-item header-top-item-right">
               {/* <div className="space-between1"> */}
               <li className="header-top-item header-top-icon menu">
-                <a href="#">Help Center</a>
+                <Link to="#">Help Center</Link>
                 <ul className="sub-menu">
                   <li>
                     <span className="icon"><PiHeadset /></span>
@@ -52,7 +54,7 @@ const Header = () => {
                 </ul>
               </li>
               <li className="header-top-item header-top-icon menu">
-                <a href="#">Eng</a>
+                <Link to="#">Eng</Link>
                 <ul className="sub-menu">
                   <li>
                     <span className="img"><img src="assets/images/flag1.webp" alt="flag-1" /></span>
@@ -81,7 +83,7 @@ const Header = () => {
                 </ul>
               </li>
               <li className="header-top-item header-top-icon menu">
-                <a href="#">USD</a>
+                <Link to="#">USD</Link>
                 <ul className="sub-menu">
                   <li>
                     <span className="img"><img src="assets\images\flag1.webp" alt="flag-1" /></span>
@@ -112,19 +114,19 @@ const Header = () => {
               {/* </div> */}
               {/* <div className="spce-between2"> */}
               <li className="header-top-item">
-                <a href="#">
+                <Link to="#">
                   <span>
                     <i className="fa-regular fa-circle-user"></i>
                   </span>
                   My Account
-                </a>
+                </Link>
               </li>
               {/* </div> */}
             </ul>
             <div className="header-top-item header-top-item-right media space-between">
               <ul className="space-between1">
                 <li className="header-top-item header-top-icon menu">
-                  <a href="#">Help Center</a>
+                  <Link to="#">Help Center</Link>
                   <ul className="sub-menu">
                     <li>
                       <span className="icon"><PiHeadset /></span>
@@ -137,7 +139,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="header-top-item header-top-icon menu">
-                  <a href="#">Eng</a>
+                  <Link to="#">Eng</Link>
                   <ul className="sub-menu">
                     <li>
                       <span className="img"><img src="assets/images/flag1.webp" alt="flag-1" /></span>
@@ -166,7 +168,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="header-top-item header-top-icon menu">
-                  <a href="#">USD</a>
+                  <Link to="#">USD</Link>
                   <ul className="sub-menu">
                     <li>
                       <span className="img"><img src="assets/images/flag1.webp" alt="flag-1" /></span>
@@ -197,12 +199,12 @@ const Header = () => {
               </ul>
               <ul className="spce-between2">
                 <li className="header-top-item">
-                  <a href="#">
+                  <Link to="#">
                     <span>
                       <i className="ph ph-user-circle"></i>
                     </span>
                     My Account
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
