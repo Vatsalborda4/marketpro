@@ -13,7 +13,7 @@ const Banner = () => {
     <div className="banner">
       <div className="container">
         <div className="banner-inner">
-          <Link to="#" className="scroll-down">
+          <Link to="/" className="scroll-down">
             <span>
               <i className="ph ph-caret-double-down"></i>
             </span>
@@ -36,7 +36,7 @@ const Banner = () => {
                   <h1 className="banner-item-title">
                     Daily Grocery Order and Get Express Delivery
                   </h1>
-                  <Link to="#">
+                  <Link to="/">
                     Explore Shop{" "}
                     <span className="Banner-icon">
                       <i className="ph ph-shopping-cart-simple"></i>
@@ -54,7 +54,7 @@ const Banner = () => {
                   <h1 className="banner-item-title">
                     Daily Grocery Order and Get Express Delivery
                   </h1>
-                  <Link to="#">
+                  <Link to="/">
                     Explore Shop{" "}
                     <span className="Banner-icon">
                       <i className="ph ph-shopping-cart-simple"></i>

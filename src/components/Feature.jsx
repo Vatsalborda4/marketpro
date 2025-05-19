@@ -104,13 +104,13 @@ const Feature = () => {
               <SwiperSlide key={index}>
                 <div className="feature-item">
                   <div className="feature-item-thumb">
-                    <Link to="#">
+                    <Link to="/">
                       <img src={item.img} alt={`feature-img-${index}`} />
                     </Link>
                   </div>
                   <div className="feature-item-content">
                     <h6>
-                      <Link to="#">{item.title}</Link>
+                      <Link to="/">{item.title}</Link>
                     </h6>
                     <span>{item.products}</span>
                   </div>

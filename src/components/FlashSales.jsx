@@ -18,7 +18,7 @@ const FlashSales = () => {
               Flash Sales Today
             </h5>
             <div className="section-heading-inner-item-right">
-              <Link to="#" className="section-heading-link">
+              <Link to="/" className="section-heading-link">
                 View All Deals
               </Link>
             </div>
@@ -70,7 +70,7 @@ const FlashSales = () => {
                     <span className="seconds" />39 Sec
                   </li>
                 </ul>
-                <Link to="#" className="flash-sales-slider-btn">
+                <Link to="/" className="flash-sales-slider-btn">
                   Shop Now
                   <span className="flash-sales-slider-btn-inner">
                     <i className="ph ph-arrow-right" />
@@ -107,7 +107,7 @@ const FlashSales = () => {
                     <span className="seconds" />29 Sec
                   </li>
                 </ul>
-                <Link to="#" className="flash-sales-slider-btn">
+                <Link to="/" className="flash-sales-slider-btn">
                   Shop Now
                   <span className="flash-sales-slider-btn-inner">
                     <i className="ph ph-arrow-right" />
@@ -144,7 +144,7 @@ const FlashSales = () => {
                     <span className="seconds" />39 Sec
                   </li>
                 </ul>
-                <Link to="#" className="flash-sales-slider-btn">
+                <Link to="/" className="flash-sales-slider-btn">
                   Shop Now
                   <span className="flash-sales-slider-btn-inner">
                     <i className="ph ph-arrow-right" />

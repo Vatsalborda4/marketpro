@@ -15,7 +15,7 @@ const Delivery = () => {
                     <div className="delivery-text">
                         <h4>We Delivery on Next Day from 10:00 AM to 08:00 PM</h4>
                         <p>For Orders starts from $100</p>
-                        <Link to="#">
+                        <Link to="/">
                             Shop Now
                             <span>
                                 <i className="fa-solid fa-arrow-right"></i>

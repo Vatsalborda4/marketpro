@@ -15,10 +15,14 @@ import Delivery from "../components/Delivery";
 import Brands from "../components/Brands";
 import Shipping from "../components/Shipping";
 import Newsletter from "../components/Newsletter";
+import Popup from "./Popup";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   return (
     <>
+    <ScrollToTop />
+    <Popup/>
       {/* Banner */}
       <Banner />
 

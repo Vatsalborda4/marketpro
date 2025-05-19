@@ -28,7 +28,7 @@ const Offer = () => {
                   </span>
                 </div>
                 <Link
-                  to="#"
+                  to="/"
                   className="offer-inner-item-btn"
                   tabIndex={0}
                 >
@@ -62,7 +62,7 @@ const Offer = () => {
                   </span>
                 </div>
                 <Link
-                  to="#"
+                  to="/"
                   className="offer-inner-item-btn"
                   tabIndex={0}
                 >

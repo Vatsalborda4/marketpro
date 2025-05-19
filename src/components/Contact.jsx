@@ -149,7 +149,7 @@ const Contact = () => {
                         </div>
                         <div className="contact-bottom">
                             <Link
-                                to="#"
+                                to="/"
                                 className="contact-bottom-link"
                             >
                                 <span className="contact-bottom-link-s1">Get Support On Call</span>
@@ -158,7 +158,7 @@ const Contact = () => {
                                 </span>
                             </Link>
                             <Link
-                                to="#"
+                                to="/"
                                 className="contact-bottom-link"
                             >
                                 <span className="contact-bottom-link-s1">Get Direction</span>

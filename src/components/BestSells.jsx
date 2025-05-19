@@ -3,56 +3,56 @@ import { Link } from "react-router-dom";
 
 const products = [
   {
-    id: 1,
+    id: 19,
     sale: "",
-    img: "assets/images/best-sell1.webp",
+    img: "/assets/images/best-sell1.webp",
     title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
+    originalPrice: "$29.99",
     discountedPrice: "$14.99",
-    rating: "4.8",
-    reviews: "(17k)",
-    progress: 35,
-    sold: "18/35",
+    rating: "4.6",
+    reviews: "(16k)",
+    progress: 55,
+    sold: "30/55",
   },
   {
-    id: 2,
+    id: 20,
     sale: "",
-    img: "assets/images/best-sell2.webp",
+    img: "/assets/images/best-sell2.webp",
     title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
-    rating: "4.8",
-    reviews: "(17k)",
-    progress: 35,
-    sold: "18/35",
+    originalPrice: "$27.99",
+    discountedPrice: "$13.49",
+    rating: "4.9",
+    reviews: "(20k)",
+    progress: 65,
+    sold: "42/65",
   },
   {
-    id: 3,
+    id: 21,
     sale: "",
-    img: "assets/images/best-sell3.webp",
+    img: "/assets/images/best-sell3.webp",
     title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
-    rating: "4.8",
-    reviews: "(17k)",
-    progress: 35,
-    sold: "18/35",
+    originalPrice: "$30.99",
+    discountedPrice: "$15.49",
+    rating: "4.7",
+    reviews: "(14k)",
+    progress: 50,
+    sold: "25/50",
   },
   {
-    id: 4,
+    id: 22,
     sale: "",
-    img: "assets/images/best-sell4.webp",
+    img: "/assets/images/best-sell4.webp",
     title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
+    originalPrice: "$28.49",
+    discountedPrice: "$13.99",
     rating: "4.8",
     reviews: "(17k)",
-    progress: 35,
-    sold: "18/35",
+    progress: 60,
+    sold: "36/60",
   },
 ];
 const BestSells = () => {
@@ -68,9 +68,9 @@ const BestSells = () => {
         </div>
         <div className="BestSells-inner">
           {products.map((product) => (
-            <div className="BestSells-inner-item" key={product.id}>
+            <Link to={`product/${product.id}`} className="BestSells-inner-item" key={product.id}>
               <div className="BestSells-card">
-                <Link to="#" className="BestSells-card-img">
+                <Link to={`product/${product.id}`} className="BestSells-card-img">
                   <img src={product.img} alt={product.title} />
                   <div className="BestSells-time">
                     <span>9 Houres</span>
@@ -100,7 +100,7 @@ const BestSells = () => {
                     </span>
                   </div>
                   <h6 className="BestSells-card-title">
-                    <Link to="#" className="BestSells-card-title-inner">
+                    <Link to="/" className="BestSells-card-title-inner">
                       {product.title}
                     </Link>
                   </h6>
@@ -130,7 +130,7 @@ const BestSells = () => {
                       Sold: {product.sold}
                     </span>
                   </div>
-                  <Link to="#" className="BestSells-card-add">
+                  <Link to={`product/${product.id}`} className="BestSells-card-add">
                     Add To Cart <i className="ph ph-shopping-cart" />
                   </Link>
                 </div>
@@ -141,7 +141,7 @@ const BestSells = () => {
                   Sale 50%
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="BestSells-inner-left">
@@ -173,7 +173,7 @@ const BestSells = () => {
               </ul>
               <div className="btn-div">
                 <Link
-                  to="#"
+                  to="/"
                   className="BestSells-offer-inner-item-btn"
                   tabIndex={0}
                 >

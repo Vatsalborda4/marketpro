@@ -24,16 +24,16 @@ const Header = () => {
             {/* left side */}
             <ul className="header-top-item ready">
               <li className="header-top-item header-top-icon">
-                <Link to="#">Become A Seller</Link>
+                <Link to="/">Become A Seller</Link>
               </li>
               <li className="header-top-item header-top-icon">
-                <Link to="#">About us</Link>
+                <Link to="/">About us</Link>
               </li>
               <li className="header-top-item header-top-icon">
-                <Link to="#">Free Delivery</Link>
+                <Link to="/">Free Delivery</Link>
               </li>
               <li className="header-top-item">
-                <Link to="#">Returns Policy</Link>
+                <Link to="/">Returns Policy</Link>
               </li>
             </ul>
 
@@ -41,7 +41,7 @@ const Header = () => {
             <ul className="header-top-item header-top-item-right">
               {/* <div className="space-between1"> */}
               <li className="header-top-item header-top-icon menu">
-                <Link to="#">Help Center</Link>
+                <Link to="/">Help Center</Link>
                 <ul className="sub-menu">
                   <li>
                     <span className="icon"><PiHeadset /></span>
@@ -54,7 +54,7 @@ const Header = () => {
                 </ul>
               </li>
               <li className="header-top-item header-top-icon menu">
-                <Link to="#">Eng</Link>
+                <Link to="/">Eng</Link>
                 <ul className="sub-menu">
                   <li>
                     <span className="img"><img src="assets/images/flag1.webp" alt="flag-1" /></span>
@@ -83,7 +83,7 @@ const Header = () => {
                 </ul>
               </li>
               <li className="header-top-item header-top-icon menu">
-                <Link to="#">USD</Link>
+                <Link to="/">USD</Link>
                 <ul className="sub-menu">
                   <li>
                     <span className="img"><img src="assets\images\flag1.webp" alt="flag-1" /></span>
@@ -114,7 +114,7 @@ const Header = () => {
               {/* </div> */}
               {/* <div className="spce-between2"> */}
               <li className="header-top-item">
-                <Link to="#">
+                <Link to="/">
                   <span>
                     <i className="fa-regular fa-circle-user"></i>
                   </span>
@@ -126,7 +126,7 @@ const Header = () => {
             <div className="header-top-item header-top-item-right media space-between">
               <ul className="space-between1">
                 <li className="header-top-item header-top-icon menu">
-                  <Link to="#">Help Center</Link>
+                  <Link to="/">Help Center</Link>
                   <ul className="sub-menu">
                     <li>
                       <span className="icon"><PiHeadset /></span>
@@ -139,7 +139,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="header-top-item header-top-icon menu">
-                  <Link to="#">Eng</Link>
+                  <Link to="/">Eng</Link>
                   <ul className="sub-menu">
                     <li>
                       <span className="img"><img src="assets/images/flag1.webp" alt="flag-1" /></span>
@@ -168,7 +168,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="header-top-item header-top-icon menu">
-                  <Link to="#">USD</Link>
+                  <Link to="/">USD</Link>
                   <ul className="sub-menu">
                     <li>
                       <span className="img"><img src="assets/images/flag1.webp" alt="flag-1" /></span>
@@ -199,7 +199,7 @@ const Header = () => {
               </ul>
               <ul className="spce-between2">
                 <li className="header-top-item">
-                  <Link to="#">
+                  <Link to="/">
                     <span>
                       <i className="ph ph-user-circle"></i>
                     </span>

@@ -17,7 +17,7 @@ const Promotional = () => {
                 <h6 className="promotional-banner-item-title ">
                   Everyday Fresh Meat
                 </h6>
-                <Link to="#" className="promotional-a">
+                <Link to="/" className="promotional-a">
                   Shop Now
                   <span className="promotional-icon ">
                     <i className="ph ph-arrow-right" />
@@ -37,7 +37,7 @@ const Promotional = () => {
                 <h6 className="promotional-banner-item-title ">
                   Daily Fresh Vegetables
                 </h6>
-                <Link to="#" className="promotional-a">
+                <Link to="/" className="promotional-a">
                   Shop Now
                   <span className="promotional-icon ">
                     <i className="ph ph-arrow-right" />
@@ -57,7 +57,7 @@ const Promotional = () => {
                 <h6 className="promotional-banner-item-title ">
                   Everyday Fresh Milk
                 </h6>
-                <Link to="#" className="promotional-a">
+                <Link to="/" className="promotional-a">
                   Shop Now
                   <span className="promotional-icon ">
                     <i className="ph ph-arrow-right" />
@@ -77,7 +77,7 @@ const Promotional = () => {
                 <h6 className="promotional-banner-item-title ">
                   Everyday Fresh Fruits
                 </h6>
-                <Link to="#" className="promotional-a">
+                <Link to="/" className="promotional-a">
                   Shop Now
                   <span className="promotional-icon ">
                     <i className="ph ph-arrow-right" />

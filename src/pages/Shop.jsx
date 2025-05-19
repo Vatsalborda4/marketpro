@@ -338,19 +338,19 @@ const Shop = () => {
               <div className="product-card">
                 {product.sale && (
                   <Link
-                    to="#"
+                    to="/"
                     className="product-sale"
                     style={getSaleStyle(product.sale)}
                   >
                     {product.sale}
                   </Link>
                 )}
-                <Link to="#" className="product-card-img">
+                <Link to="/" className="product-card-img">
                   <img src={product.img} alt={product.title} />
                 </Link>
                 <div className="product-card-content">
                   <h6 className="product-card-title">
-                    <Link to="#" className="product-card-title-inner">
+                    <Link to="/" className="product-card-title-inner">
                       {product.title}
                     </Link>
                   </h6>
@@ -382,7 +382,7 @@ const Shop = () => {
                       {product.reviews}
                     </span>
                   </div>
-                  <Link to="#" className="Recommended-add">
+                  <Link to="/" className="Recommended-add">
                     Add To Cart <i className="ph ph-shopping-cart" />
                   </Link>
                 </div>

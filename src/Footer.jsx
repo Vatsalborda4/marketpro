@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="footer-inner">
             <div className="footer-info">
               <div className="footer-logo">
-                <Link to="#">
+                <Link to="/">
                   <img src="assets\images\logo.webp" alt="logo" />
                 </Link>
               </div>
@@ -59,85 +59,85 @@ const Footer = () => {
             <ui className="footer-item">
               <li className="footer-item-title"> Information</li>
               <li>
-                <Link to="#">Become a Vendor</Link>
+                <Link to="/">Become a Vendor</Link>
               </li>
               <li>
-                <Link to="#">Affiliate Program</Link>
+                <Link to="/">Affiliate Program</Link>
               </li>
               <li>
-                <Link to="#">Privacy Policy</Link>
+                <Link to="/">Privacy Policy</Link>
               </li>
               <li>
-                <Link to="#">Our Suppliers</Link>
+                <Link to="/">Our Suppliers</Link>
               </li>
               <li>
-                <Link to="#">Extended Plan</Link>
+                <Link to="/">Extended Plan</Link>
               </li>
               <li>
-                <Link to="#">Community</Link>
+                <Link to="/">Community</Link>
               </li>
             </ui>
             <ui className="footer-item">
               <li className="footer-item-title"> Customer Support</li>
               <li>
-                <Link to="#">Help Center</Link>
+                <Link to="/">Help Center</Link>
               </li>
               <li>
-                <Link to="#">Contact Us</Link>
+                <Link to="/">Contact Us</Link>
               </li>
               <li>
-                <Link to="#">Report Abuse</Link>
+                <Link to="/">Report Abuse</Link>
               </li>
               <li>
-                <Link to="#">Submit and Dispute</Link>
+                <Link to="/">Submit and Dispute</Link>
               </li>
               <li>
-                <Link to="#">Policies & Rules</Link>
+                <Link to="/">Policies & Rules</Link>
               </li>
               <li>
-                <Link to="#">Online Shopping</Link>
+                <Link to="/">Online Shopping</Link>
               </li>
             </ui>
             <ui className="footer-item">
               <li className="footer-item-title"> My Account</li>
               <li>
-                <Link to="#">My Account</Link>
+                <Link to="/">My Account</Link>
               </li>
               <li>
-                <Link to="#">Order History</Link>
+                <Link to="/">Order History</Link>
               </li>
               <li>
-                <Link to="#">Shoping Cart</Link>
+                <Link to="/">Shoping Cart</Link>
               </li>
               <li>
-                <Link to="#">Compare</Link>
+                <Link to="/">Compare</Link>
               </li>
               <li>
-                <Link to="#">Help Ticket</Link>
+                <Link to="/">Help Ticket</Link>
               </li>
               <li>
-                <Link to="#">Wishlist</Link>
+                <Link to="/">Wishlist</Link>
               </li>
             </ui>
             <ui className="footer-item">
               <li className="footer-item-title">Daily Groceries</li>
               <li>
-                <Link to="#">Dairy & Eggs</Link>
+                <Link to="/">Dairy & Eggs</Link>
               </li>
               <li>
-                <Link to="#">Meat & Seafood</Link>
+                <Link to="/">Meat & Seafood</Link>
               </li>
               <li>
-                <Link to="#">Breakfast Food</Link>
+                <Link to="/">Breakfast Food</Link>
               </li>
               <li>
-                <Link to="#">Household Supplies</Link>
+                <Link to="/">Household Supplies</Link>
               </li>
               <li>
-                <Link to="#">Bread & Bakery</Link>
+                <Link to="/">Bread & Bakery</Link>
               </li>
               <li>
-                <Link to="#">Pantry Staples</Link>
+                <Link to="/">Pantry Staples</Link>
               </li>
             </ui>
             <div className="footer-social">
@@ -155,22 +155,22 @@ const Footer = () => {
               </li>
               <li className="footer-icon">
                 <div>
-                  <Link to="#">
+                  <Link to="/">
                     <span><i className="ph-fill ph-facebook-logo"></i></span>
                   </Link>
                 </div>
                 <div>
-                  <Link to="#">
+                  <Link to="/">
                     <span><i className="ph-fill ph-twitter-logo"></i></span>
                   </Link>
                 </div>
                 <div>
-                  <Link to="#">
+                  <Link to="/">
                     <span><i className="ph-fill ph-instagram-logo"></i></span>
                   </Link>
                 </div>
                 <div>
-                  <Link to="#">
+                  <Link to="/">
                     <span ><i className="ph-fill ph-linkedin-logo"></i></span>
                   </Link>
                 </div>
@@ -199,6 +199,11 @@ const Footer = () => {
         </div>
       </div>
       {/* end footer bottom  */}
+
+
+      {/* <button id="top" onclick="topbtn()">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button> */}
     </>
   );
 };

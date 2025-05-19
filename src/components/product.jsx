@@ -1,50 +1,268 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useParams } from "react-router-dom";
 
 const products = [
   {
     id: 1,
     sale: "",
-    img: "assets/images/product-img7.webp",
-    title: "C-500 Antioxidant Protect Dietary Supplement",
+    img: "/assets/images/product-img1.webp",
+    title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
-    rating: "4.8",
-    reviews: "(17k)",
+    originalPrice: "$30.99",
+    discountedPrice: "$15.49",
+    rating: "4.7",
+    reviews: "(12k)",
+    progress: 50,
+    sold: "25/50",
   },
   {
     id: 2,
-    sale: "Sale 50%",
-    img: "assets/images/product-img8.webp",
-    title: "Marcel's Modern Pantry Almond Unsweetened",
+    sale: "",
+    img: "/assets/images/product-img2.webp",
+    title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
-    rating: "4.8",
-    reviews: "(17k)",
+    originalPrice: "$27.49",
+    discountedPrice: "$13.99",
+    rating: "4.9",
+    reviews: "(20k)",
+    progress: 40,
+    sold: "16/40",
   },
   {
     id: 3,
-    sale: "Sale 50%",
-    img: "assets/images/product-img9.webp",
-    title: "O Organics Milk, Whole, Vitamin D",
+    sale: "",
+    img: "/assets/images/product-img3.webp",
+    title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
-    rating: "4.8",
-    reviews: "(17k)",
+    originalPrice: "$29.99",
+    discountedPrice: "$14.49",
+    rating: "4.6",
+    reviews: "(15k)",
+    progress: 60,
+    sold: "36/60",
   },
   {
     id: 4,
+    sale: "",
+    img: "/assets/images/product-img1.webp",
+    title: "Taylor Farms Broccoli Florets Vegetables",
+    store: "By Lucky Supermarket",
+    originalPrice: "$31.99",
+    discountedPrice: "$16.99",
+    rating: "4.8",
+    reviews: "(18k)",
+    progress: 30,
+    sold: "9/30",
+  },
+  {
+    id: 5,
+    sale: "",
+    img: "/assets/images/product-img5.webp",
+    title: "Taylor Farms Broccoli Florets Vegetables",
+    store: "By Lucky Supermarket",
+    originalPrice: "$26.99",
+    discountedPrice: "$12.99",
+    rating: "4.5",
+    reviews: "(10k)",
+    progress: 45,
+    sold: "20/45",
+  },
+  {
+    id: 6,
+    sale: "",
+    img: "/assets/images/product-img6.webp",
+    title: "Taylor Farms Broccoli Florets Vegetables",
+    store: "By Lucky Supermarket",
+    originalPrice: "$32.49",
+    discountedPrice: "$17.49",
+    rating: "4.9",
+    reviews: "(22k)",
+    progress: 70,
+    sold: "49/70",
+  },
+  {
+    id: 7,
+    sale: "",
+    img: "/assets/images/product-img7.webp",
+    title: "C-500 Antioxidant Protect Dietary Supplement",
+    store: "By Lucky Supermarket",
+    originalPrice: "$34.99",
+    discountedPrice: "$19.99",
+    rating: "4.4",
+    reviews: "(8k)",
+  },
+  {
+    id: 8,
+    sale: "Sale 50%",
+    img: "/assets/images/product-img8.webp",
+    title: "Marcel's Modern Pantry Almond Unsweetened",
+    store: "By Lucky Supermarket",
+    originalPrice: "$29.49",
+    discountedPrice: "$14.74",
+    rating: "4.7",
+    reviews: "(14k)",
+  },
+  {
+    id: 9,
+    sale: "Sale 50%",
+    img: "/assets/images/product-img9.webp",
+    title: "O Organics Milk, Whole, Vitamin D",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.49",
+    discountedPrice: "$14.24",
+    rating: "4.8",
+    reviews: "(16k)",
+  },
+  {
+    id: 10,
     sale: "Best Sale",
-    img: "assets/images/product-img10.webp",
+    img: "/assets/images/product-img10.webp",
     title: "Whole Grains and Seeds Organic Bread",
     store: "By Lucky Supermarket",
+    originalPrice: "$27.99",
+    discountedPrice: "$13.49",
+    rating: "4.6",
+    reviews: "(13k)",
+  },
+  {
+    id: 11,
+    sale: "",
+    img: "/assets/images/product-img11.webp",
+    title: "Luceme Yogurt, Lowfat, Strawberry",
+    store: "By Lucky Supermarket",
+    originalPrice: "$25.99",
+    discountedPrice: "$12.49",
+    rating: "4.9",
+    reviews: "(19k)",
+  },
+  {
+    id: 12,
+    sale: "Sale 50%",
+    img: "/assets/images/product-img12.webp",
+    title: "Nature Valley Whole Grain Oats and Honey Protein",
+    store: "By Lucky Supermarket",
+    originalPrice: "$30.49",
+    discountedPrice: "$15.24",
+    rating: "4.5",
+    reviews: "(11k)",
+  },
+  {
+    id: 13,
+    sale: "",
+    img: "/assets/images/product-img13.webp",
+    title: "C-500 Antioxidant Protect Dietary Supplement",
+    store: "By Lucky Supermarket",
+    originalPrice: "$33.99",
+    discountedPrice: "$18.99",
+    rating: "4.7",
+    reviews: "(17k)",
+  },
+  {
+    id: 14,
+    sale: "Sale 50%",
+    img: "/assets/images/product-img14.webp",
+    title: "C-500 Antioxidant Protect Dietary Supplement",
+    store: "By Lucky Supermarket",
+    originalPrice: "$31.49",
+    discountedPrice: "$15.74",
+    rating: "4.8",
+    reviews: "(15k)",
+  },
+  {
+    id: 15,
+    sale: "New",
+    img: "/assets/images/product-img15.webp",
+    title: "C-500 Antioxidant Protect Dietary Supplement",
+    store: "By Lucky Supermarket",
+    originalPrice: "$35.99",
+    discountedPrice: "$20.99",
+    rating: "4.6",
+    reviews: "(9k)",
+  },
+  {
+    id: 16,
+    sale: "Sale 50%",
+    img: "/assets/images/product-img16.webp",
+    title: "Good & Gather Farmed Atlantic Salmon",
+    store: "By Lucky Supermarket",
+    originalPrice: "$36.99",
+    discountedPrice: "$18.49",
+    rating: "4.9",
+    reviews: "(21k)",
+  },
+  {
+    id: 17,
+    sale: "Sale 50%",
+    img: "/assets/images/product-img17.webp",
+    title: "Market Pantry 41-50 Raw Large Shrimp",
+    store: "By Lucky Supermarket",
+    originalPrice: "$34.49",
+    discountedPrice: "$17.24",
+    rating: "4.7",
+    reviews: "(12k)",
+  },
+  {
+    id: 18,
+    sale: "New",
+    img: "/assets/images/product-img18.webp",
+    title: "Tropicana 100% Juice, Orange, No Pulp",
+    store: "By Lucky Supermarket",
     originalPrice: "$28.99",
+    discountedPrice: "$14.49",
+    rating: "4.8",
+    reviews: "(18k)",
+  },
+  {
+    id: 19,
+    sale: "",
+    img: "/assets/images/best-sell1.webp",
+    title: "Taylor Farms Broccoli Florets Vegetables",
+    store: "By Lucky Supermarket",
+    originalPrice: "$29.99",
     discountedPrice: "$14.99",
+    rating: "4.6",
+    reviews: "(16k)",
+    progress: 55,
+    sold: "30/55",
+  },
+  {
+    id: 20,
+    sale: "",
+    img: "/assets/images/best-sell2.webp",
+    title: "Taylor Farms Broccoli Florets Vegetables",
+    store: "By Lucky Supermarket",
+    originalPrice: "$27.99",
+    discountedPrice: "$13.49",
+    rating: "4.9",
+    reviews: "(20k)",
+    progress: 65,
+    sold: "42/65",
+  },
+  {
+    id: 21,
+    sale: "",
+    img: "/assets/images/best-sell3.webp",
+    title: "Taylor Farms Broccoli Florets Vegetables",
+    store: "By Lucky Supermarket",
+    originalPrice: "$30.99",
+    discountedPrice: "$15.49",
+    rating: "4.7",
+    reviews: "(14k)",
+    progress: 50,
+    sold: "25/50",
+  },
+  {
+    id: 22,
+    sale: "",
+    img: "/assets/images/best-sell4.webp",
+    title: "Taylor Farms Broccoli Florets Vegetables",
+    store: "By Lucky Supermarket",
+    originalPrice: "$28.49",
+    discountedPrice: "$13.99",
     rating: "4.8",
     reviews: "(17k)",
+    progress: 60,
+    sold: "36/60",
   },
 ];
 
@@ -54,34 +272,38 @@ const getSaleStyle = (sale) => {
   if (sale.toLowerCase() === "") return { display: "none" };
   if (sale === "Best Sale") return { backgroundColor: "#2563eb" };
 };
+
 const Product = () => {
-  useEffect(() => {
-    const interval = setInterval(() => {}, 1000);
-    return () => clearInterval(interval);
-  }, []);
+  const { id } = useParams(); // Get the product ID from the URL
+  const product = products.find((p) => p.id === parseInt(id)); // Find the product by ID
 
-  const productImages = [
-    "assets/images/product-details-thumb1.png",
-    "assets/images/product-details-thumb2.png",
-    "assets/images/product-details-thumb3.png",
-    "assets/images/product-details-thumb2.png",
-  ];
-
-  // Increment & decrement
+  // State for quantity and main image
   const [quantity, setQuantity] = useState(1);
+  const [mainImage, setMainImage] = useState(
+    product ? product.img : "/assets/images/product-details-thumb1.png"
+  );
+
   const incrementQuantity = () => setQuantity(quantity + 1);
   const decrementQuantity = () =>
     setQuantity(quantity > 1 ? quantity - 1 : quantity);
-  const [mainImage, setMainImage] = useState(productImages[0]);
 
-  const settingsThumbs = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    focusOnSelect: true,
-  };
+  // If no product is found, display a fallback message
+  if (!product) {
+    return (
+      <section className="product-section">
+        <div className="container">
+          <h5>Product not found</h5>
+        </div>
+      </section>
+    );
+  }
+
+  // Use the product's img as the thumbnail (since no separate thumbnails array is provided)
+  const productThumbnails = [product.img];
+
+  // Calculate progress percentage for the progress bar
+  const progressPercentage = product.progress ? `${product.progress}%` : "0%";
+  const availableStock = product.sold ? product.sold.split("/")[1] : "N/A";
 
   return (
     <>
@@ -95,14 +317,13 @@ const Product = () => {
                     <div className="product-image">
                       <div className="image-container">
                         <div className="image-inner">
-                          <img src={mainImage} alt="Main Product" />
+                          <img src={mainImage} alt={product.title} />
                         </div>
                       </div>
                     </div>
                     <div className="product-thumbnails">
                       <div className="thumbnails-container">
-                        {/* <Slider {...settingsThumbs}> */}
-                        {productImages.map((image, index) => (
+                        {productThumbnails.map((image, index) => (
                           <div
                             className="thumbnail-item"
                             key={index}
@@ -111,40 +332,37 @@ const Product = () => {
                             <img
                               className="thumbnail-image"
                               src={image}
-                              alt={`Thumbnail ${index}`}
+                              alt={`Thumbnail ${product.title}`}
                             />
                           </div>
                         ))}
-                        {/* </Slider> */}
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="product-content-inner">
                   <div className="product-content">
-                    <h5 className="content-title">
-                      Lay's Potato Chips Onion Flavored
-                    </h5>
+                    <h5 className="content-title">{product.title}</h5>
                     <div className="rating-section">
                       <div className="rating-stars">
-                        <span className="star-icon">
-                          <i className="ph-fill ph-star" />
-                        </span>
-                        <span className="star-icon">
-                          <i className="ph-fill ph-star" />
-                        </span>
-                        <span className="star-icon">
-                          <i className="ph-fill ph-star" />
-                        </span>
-                        <span className="star-icon">
-                          <i className="ph-fill ph-star" />
-                        </span>
-                        <span className="star-icon">
-                          <i className="ph-fill ph-star" />
-                        </span>
+                        {[...Array(5)].map((_, i) => (
+                          <span className="star-icon" key={i}>
+                            <i
+                              className={`ph-fill ph-star ${
+                                i < Math.floor(parseFloat(product.rating))
+                                  ? ""
+                                  : parseFloat(product.rating) > i
+                                  ? "ph-star-half"
+                                  : ""
+                              }`}
+                            />
+                          </span>
+                        ))}
                       </div>
-                      <span className="rating-text">4.7 Star Rating</span>
-                      <span className="review-count">(21,671)</span>
+                      <span className="rating-text">
+                        {product.rating} Star Rating
+                      </span>
+                      <span className="review-count">{product.reviews}</span>
                       <span className="sku-divider">|</span>
                       <span className="sku-info">
                         <span className="sku-label">SKU:</span>EB4DRP
@@ -158,10 +376,14 @@ const Product = () => {
                     </p>
                     <div className="price-section">
                       <div className="price-info">
-                        <h4 className="current-price">$25.00</h4>
-                        <span className="original-price">$38.00</span>
+                        <h4 className="current-price">
+                          {product.discountedPrice}
+                        </h4>
+                        <span className="original-price">
+                          {product.originalPrice}
+                        </span>
                       </div>
-                      <Link to="#" className="whatsapp-button">
+                      <Link to="/" className="whatsapp-button">
                         Order on What'sApp
                       </Link>
                     </div>
@@ -192,32 +414,34 @@ const Product = () => {
                         Remains until the end of the offer
                       </span>
                     </div>
-                    <div className="stock-section">
-                      <div className="stock-info">
-                        <span className="stock-icon">
-                          <i className="ph-fill ph-lightning" />
-                        </span>
-                        <h6 className="stock-text">
-                          Products are almost sold out
-                        </h6>
-                      </div>
-                      <div
-                        className="progress-bar"
-                        role="progressbar"
-                        aria-label="Basic example"
-                        aria-valuenow={32}
-                        aria-valuemin={0}
-                        aria-valuemax={100}
-                      >
+                    {product.progress && (
+                      <div className="stock-section">
+                        <div className="stock-info">
+                          <span className="stock-icon">
+                            <i className="ph-fill ph-lightning" />
+                          </span>
+                          <h6 className="stock-text">
+                            Products are almost sold out
+                          </h6>
+                        </div>
                         <div
-                          className="progress-fill"
-                          style={{ width: "32%" }}
-                        />
+                          className="progress-bar"
+                          role="progressbar"
+                          aria-label="Basic example"
+                          aria-valuenow={product.progress}
+                          aria-valuemin={0}
+                          aria-valuemax={100}
+                        >
+                          <div
+                            className="progress-fill"
+                            style={{ width: progressPercentage }}
+                          />
+                        </div>
+                        <span className="stock-availability">
+                          Available only: {availableStock}
+                        </span>
                       </div>
-                      <span className="stock-availability">
-                        Available only: 45
-                      </span>
-                    </div>
+                    )}
                     <span className="quantity-label">Quantity:</span>
                     <div className="quantity-section">
                       <div className="quantity-controls">
@@ -243,22 +467,18 @@ const Product = () => {
                             <i className="ph ph-plus" />
                           </button>
                         </div>
-                        <Link to="#" className="cart-button">
+                        <Link to="/" className="cart-button">
                           <i className="ph ph-shopping-cart" /> Add To Cart
                         </Link>
                       </div>
                       <div className="action-buttons">
-                        <Link to="#" className="wishlist-button">
+                        <Link to="/" className="wishlist-button">
                           <i className="ph ph-heart" />
                         </Link>
-                        <Link to="#" className="wishlist-button">
+                        <Link to="/" className="wishlist-button">
                           <i className="ph ph-shuffle" />
                         </Link>
-                        <Link
-                          to="#"
-                          className="wishlist-button
-                                                "
-                        >
+                        <Link to="/" className="wishlist-button">
                           <i className="ph ph-share-network" />
                         </Link>
                       </div>
@@ -293,7 +513,7 @@ const Product = () => {
                       <span className="store-icon">
                         <i className="ph ph-storefront" />
                       </span>
-                      <span className="store-name">by Marketpro</span>
+                      <span className="store-name">{product.store}</span>
                     </div>
                     <Link to="/shop" className="store-button">
                       View Store
@@ -375,12 +595,11 @@ const Product = () => {
         </div>
       </section>
 
-      {/* //  */}
       <div className="product">
         <div className="container">
           <div className="Recommended-heading">
-            <h5 className="">Recommended for you</h5>
-            <ul className="common-tab " id="pills-tab" role="tablist">
+            <h5 className="">You Might Also Like</h5>
+            <ul className="common-tab" id="pills-tab" role="tablist">
               <li className="nav-item" role="presentation">
                 <button
                   className="nav-link"
@@ -392,30 +611,36 @@ const Product = () => {
                   aria-controls="pills-organic"
                   aria-selected="false"
                 >
-                  All Products{" "}
+                  All Products
                 </button>
               </li>
             </ul>
           </div>
           <div className="product-inner">
-            {products.map((product) => (
+            {products.slice(0, 4).map((product) => (
               <div className="product-inner-item" key={product.id}>
                 <div className="product-card">
                   {product.sale && (
                     <Link
-                      to="#"
+                      to="/"
                       className="product-sale"
                       style={getSaleStyle(product.sale)}
                     >
                       {product.sale}
                     </Link>
                   )}
-                  <Link to="#" className="product-card-img">
+                  <Link
+                    to={`/product/${product.id}`}
+                    className="product-card-img"
+                  >
                     <img src={product.img} alt={product.title} />
                   </Link>
                   <div className="product-card-content">
                     <h6 className="product-card-title">
-                      <Link to="#" className="product-card-title-inner">
+                      <Link
+                        to={`/product/${product.id}`}
+                        className="product-card-title-inner"
+                      >
                         {product.title}
                       </Link>
                     </h6>
@@ -447,7 +672,7 @@ const Product = () => {
                         {product.reviews}
                       </span>
                     </div>
-                    <Link to="#" className="Recommended-add">
+                    <Link to="/" className="Recommended-add">
                       Add To Cart <i className="ph ph-shopping-cart" />
                     </Link>
                   </div>
@@ -460,5 +685,4 @@ const Product = () => {
     </>
   );
 };
-
 export default Product;

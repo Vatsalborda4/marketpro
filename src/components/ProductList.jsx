@@ -2,83 +2,83 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const products = [
-  {
+ {
     id: 1,
     sale: "",
-    img: "assets/images/product-img1.webp",
+    img: "/assets/images/product-img1.webp",
     title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
-    rating: "4.8",
-    reviews: "(17k)",
-    progress: 35,
-    sold: "18/35"
+    originalPrice: "$30.99",
+    discountedPrice: "$15.49",
+    rating: "4.7",
+    reviews: "(12k)",
+    progress: 50,
+    sold: "25/50",
   },
   {
     id: 2,
     sale: "",
-    img: "assets/images/product-img2.webp",
+    img: "/assets/images/product-img2.webp",
     title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
-    rating: "4.8",
-    reviews: "(17k)",
-    progress: 35,
-    sold: "18/35"
+    originalPrice: "$27.49",
+    discountedPrice: "$13.99",
+    rating: "4.9",
+    reviews: "(20k)",
+    progress: 40,
+    sold: "16/40",
   },
   {
     id: 3,
     sale: "",
-    img: "assets/images/product-img3.webp",
+    img: "/assets/images/product-img3.webp",
     title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
-    rating: "4.8",
-    reviews: "(17k)",
-    progress: 35,
-    sold: "18/35"
+    originalPrice: "$29.99",
+    discountedPrice: "$14.49",
+    rating: "4.6",
+    reviews: "(15k)",
+    progress: 60,
+    sold: "36/60",
   },
   {
     id: 4,
     sale: "",
-    img: "assets/images/product-img1.webp",
+    img: "/assets/images/product-img1.webp",
     title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
+    originalPrice: "$31.99",
+    discountedPrice: "$16.99",
     rating: "4.8",
-    reviews: "(17k)",
-    progress: 35,
-    sold: "18/35"
+    reviews: "(18k)",
+    progress: 30,
+    sold: "9/30",
   },
   {
     id: 5,
     sale: "",
-    img: "assets/images/product-img5.webp",
+    img: "/assets/images/product-img5.webp",
     title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
-    rating: "4.8",
-    reviews: "(17k)",
-    progress: 35,
-    sold: "18/35"
+    originalPrice: "$26.99",
+    discountedPrice: "$12.99",
+    rating: "4.5",
+    reviews: "(10k)",
+    progress: 45,
+    sold: "20/45",
   },
   {
     id: 6,
     sale: "",
-    img: "assets/images/product-img6.webp",
+    img: "/assets/images/product-img6.webp",
     title: "Taylor Farms Broccoli Florets Vegetables",
     store: "By Lucky Supermarket",
-    originalPrice: "$28.99",
-    discountedPrice: "$14.99",
-    rating: "4.8",
-    reviews: "(17k)",
-    progress: 35,
-    sold: "18/35"
+    originalPrice: "$32.49",
+    discountedPrice: "$17.49",
+    rating: "4.9",
+    reviews: "(22k)",
+    progress: 70,
+    sold: "49/70",
   },
 ];
 const ProductList = () => {
@@ -87,12 +87,12 @@ const ProductList = () => {
       <div className="container">
         <div className="product-inner">
           {products.map((product) => (
-            <div className="product-inner-item" key={product.id}>
+            <Link to={`/product/${product.id}`} className="product-inner-item" key={product.id}>
               <div className="product-card">
-                <Link to="#" className="product-card-add">
+                <Link to={`/product/${product.id}`} className="product-card-add">
                   Add <i className="ph ph-shopping-cart" />
                 </Link>
-                <Link to="#" className="product-card-img">
+                <Link to={`product/${product.id}`} className="product-card-img">
                   <img src={product.img} alt={product.title} />
                 </Link>
                 <div className="product-card-content">
@@ -117,7 +117,7 @@ const ProductList = () => {
                     </span>
                   </div>
                   <h6 className="product-card-title">
-                    <Link to="#" className="product-card-title-inner">
+                    <Link to={`product/${product.id}`} className="product-card-title-inner">
                       {product.title}
                     </Link>
                   </h6>
@@ -149,7 +149,7 @@ const ProductList = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

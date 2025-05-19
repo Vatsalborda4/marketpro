@@ -14,7 +14,7 @@ const Brands = () => {
             <div className="brand-title">
               <h2>Shop by Brands</h2>
               <div className="brand-inner">
-                <Link to="#">View All Deals</Link>
+                <Link to="/">View All Deals</Link>
               </div>
             </div>
             <div className="brands-logos">
