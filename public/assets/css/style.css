@@ -6749,7 +6749,7 @@ ge e*/
 /* popup start  */
 .pop-outer {
   width: 100%;
-  z-index: 1;
+  z-index: 10000;
   height: 100%;
   display: block;
   background-color: #00000078;
@@ -7479,6 +7479,27 @@ ge e*/
     vertical-align: middle;
   }
   /* shop page  */
+
+    .pop-inner {
+    width: 85%; /* Adjust width to fit better on smaller screens */
+    height: auto; /* Let the height be flexible for different content lengths */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .pop-inner h2 {
+    font-size: 26px; /* Adjust heading size for smaller screens */
+  }
+
+  .pop-inner p {
+    font-size: 12px; /* Adjust text size */
+    line-height: 20px;
+  }
+
+  .pop-inner .email {
+    width: 80%; /* Make email input a bit larger */
+    max-width: none;
+  }
+
 }
 
 /* end media 991px  */
@@ -7635,6 +7656,24 @@ ge e*/
   }
   .item1 h2 {
     font-size: clamp(2.25rem, -0.0733rem + 6.3692vw, 4.5rem);
+  }
+    .pop-inner h2 {
+    font-size: 24px;
+  }
+
+ .pop-inner p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+    .pop-inner .email {
+    width: 80%;
+    max-width: none;
+  }
+
+    .pop-inner .sub {
+    width: 100%;
+    padding: 10px;
   }
 }
 
@@ -7810,6 +7849,23 @@ ge e*/
     .contact-box-inner
     .contact-box-inner-item {
     width: 100%;
+  }
+    .pop-inner {
+    width: 90%;
+    padding: 15px;
+  }
+
+ .pop-inner h2 {
+    font-size: 20px;
+  }
+
+    .pop-inner .email {
+    width: 100%;
+  }
+
+   .pop-inner .sub {
+    width: 100%;
+    padding: 12px 20px;
   }
 }
 
