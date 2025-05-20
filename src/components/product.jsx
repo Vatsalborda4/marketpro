@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
 const products = [
   {
@@ -617,68 +620,96 @@ const Product = () => {
             </ul>
           </div>
           <div className="product-inner">
-            {products.slice(0, 4).map((product) => (
-              <div className="product-inner-item" key={product.id}>
-                <div className="product-card">
-                  {product.sale && (
-                    <Link
-                      to="/"
-                      className="product-sale"
-                      style={getSaleStyle(product.sale)}
-                    >
-                      {product.sale}
-                    </Link>
-                  )}
-                  <Link
-                    to={`/product/${product.id}`}
-                    className="product-card-img"
-                  >
-                    <img src={product.img} alt={product.title} />
-                  </Link>
-                  <div className="product-card-content">
-                    <h6 className="product-card-title">
+            <Swiper
+              className="Organic-inner"
+              modules={[Autoplay]}
+              loop={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              slidesPerView={4}
+              spaceBetween={7}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                426: {
+                  slidesPerView: 2,
+                },
+                576: {
+                  slidesPerView: 3,
+                },
+                992: {
+                  slidesPerView: 4,
+                },
+              }}
+            >
+              {products.slice(0, 4).map((product) => (
+                <SwiperSlide key={product.id}>
+                  <div className="product-inner-item" style={{ width: "100% " }}>
+                    <div className="product-card">
+                      {product.sale && (
+                        <Link
+                          to="/"
+                          className="product-sale"
+                          style={getSaleStyle(product.sale)}
+                        >
+                          {product.sale}
+                        </Link>
+                      )}
                       <Link
                         to={`/product/${product.id}`}
-                        className="product-card-title-inner"
+                        className="product-card-img"
                       >
-                        {product.title}
+                        <img src={product.img} alt={product.title} />
                       </Link>
-                    </h6>
-                    <div className="product-card-Lucky">
-                      <span className="product-card-storefront">
-                        <i className="ph-fill ph-storefront" />
-                      </span>
-                      <span className="product-card-Lucky-text">
-                        {product.store}
-                      </span>
+                      <div className="product-card-content">
+                        <h6 className="product-card-title">
+                          <Link
+                            to={`/product/${product.id}`}
+                            className="product-card-title-inner"
+                          >
+                            {product.title}
+                          </Link>
+                        </h6>
+                        <div className="product-card-Lucky">
+                          <span className="product-card-storefront">
+                            <i className="ph-fill ph-storefront" />
+                          </span>
+                          <span className="product-card-Lucky-text">
+                            {product.store}
+                          </span>
+                        </div>
+                        <div className="product-card-price">
+                          <span className="product-card-price-dec">
+                            {product.originalPrice}
+                          </span>
+                          <span className="product-card-price-ong">
+                            {product.discountedPrice}{" "}
+                            <span className="product-card-price-oty">/Qty</span>
+                          </span>
+                        </div>
+                        <div className="product-card-rating">
+                          <span className="product-card-rating-num">
+                            {product.rating}
+                          </span>
+                          <span className="product-card-rating-star">
+                            <i className="ph-fill ph-star" />
+                          </span>
+                          <span className="product-card-rating-totle">
+                            {product.reviews}
+                          </span>
+                        </div>
+                        <Link to="/" className="Recommended-add">
+                          Add To Cart <i className="ph ph-shopping-cart" />
+                        </Link>
+                      </div>
                     </div>
-                    <div className="product-card-price">
-                      <span className="product-card-price-dec">
-                        {product.originalPrice}
-                      </span>
-                      <span className="product-card-price-ong">
-                        {product.discountedPrice}{" "}
-                        <span className="product-card-price-oty">/Qty</span>
-                      </span>
-                    </div>
-                    <div className="product-card-rating">
-                      <span className="product-card-rating-num">
-                        {product.rating}
-                      </span>
-                      <span className="product-card-rating-star">
-                        <i className="ph-fill ph-star" />
-                      </span>
-                      <span className="product-card-rating-totle">
-                        {product.reviews}
-                      </span>
-                    </div>
-                    <Link to="/" className="Recommended-add">
-                      Add To Cart <i className="ph ph-shopping-cart" />
-                    </Link>
                   </div>
-                </div>
-              </div>
-            ))}
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>

@@ -7499,7 +7499,9 @@ ge e*/
     width: 80%; /* Make email input a bit larger */
     max-width: none;
   }
-
+.product-content-inner,.product-left,.product-right,.product-item-inner {
+	width: 100%;
+}
 }
 
 /* end media 991px  */
